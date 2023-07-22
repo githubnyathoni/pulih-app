@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 function MainLayout({ children }) {
   return (
-    <div className="w-full pt-16">
+    <div className="w-full">
       {/* Header */}
       {children}
       {/* Footer */}

@@ -15,3 +15,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.bg-pink {
+  background-color: #FFE7F9;
+}
+
+.text-pink {
+  color: #C01A78;
+}
