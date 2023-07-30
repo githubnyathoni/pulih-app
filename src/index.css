@@ -20,6 +20,32 @@ code {
   background-color: #FFE7F9;
 }
 
-.text-pink {
+.bg-primary {
+  background-color: #C01A78;
+}
+
+.text-primary {
   color: #C01A78;
+}
+
+.text-secondary {
+  color: #953106;
+}
+
+.h-screen-header {
+  min-height: calc(100vh - 80px);
+}
+
+.bg-shape-1 {
+  background-image: url('./images/home/shape1.png');
+  background-repeat: no-repeat;
+  background-position: bottom -40px left;
+  background-size: 200px;
+}
+
+.bg-shape-2 {
+  background-image: url('./images/home/shape2.png');
+  background-repeat: no-repeat;
+  background-position: right -170px bottom -40px;
+  background-size: 30%;
 }
