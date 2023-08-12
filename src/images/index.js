@@ -14,6 +14,11 @@ import LeftArrowInactive from './home/left_inactive.png';
 import LeftArrowActive from './home/left_active.png';
 import RightArrowInactive from './home/right_inactive.png';
 import RightArrowActive from './home/right_active.png';
+import DownArrow from './home/down_arrow.png';
+import Twitter from './default/twitter.png';
+import Instagram from './default/instagram.png';
+import Facebook from './default/facebook.png';
+import Whatsapp from './default/whatsapp.png';
 
 const Images = {
   Logo,
@@ -32,6 +37,11 @@ const Images = {
   LeftArrowActive,
   RightArrowInactive,
   RightArrowActive,
+  DownArrow,
+  Twitter,
+  Instagram,
+  Facebook,
+  Whatsapp,
 };
 
 export default Images;

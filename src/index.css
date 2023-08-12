@@ -16,12 +16,12 @@ code {
     monospace;
 }
 
-.bg-pink {
-  background-color: #FFE7F9;
-}
-
 .bg-primary {
   background-color: #C01A78;
+}
+
+.bg-pink {
+  background-color: #FFE7F9;
 }
 
 .text-primary {
@@ -48,4 +48,48 @@ code {
   background-repeat: no-repeat;
   background-position: right -170px bottom -40px;
   background-size: 30%;
+}
+
+.bg-shape-quote {
+  background-image: url('./images/home/shape_quote1.png'), url('./images/home/shape_quote2.png');
+  background-repeat: no-repeat, no-repeat;
+  background-position: right -30px top, left -20px bottom;
+}
+
+.bg-shape-closer {
+  background-image: url('./images/home/shape3.png');
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 25%;
+}
+
+.bg-merchandise {
+  background-image: url('./images/home/ilustrasi_merchandise.png');
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 60%;
+}
+
+.bg-about {
+  background-image: url('./images/about/shape.png');
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 7%;
+}
+
+.img-md {
+  width: 32px;
+  height: 32px;
+}
+
+.w-34-percent {
+  width: 34%;
+}
+
+.border-b-primary {
+  border-bottom: 1px solid #C01A78;
+}
+
+.border-b-third {
+  border-bottom: 0.5px solid #E95FAD;
 }

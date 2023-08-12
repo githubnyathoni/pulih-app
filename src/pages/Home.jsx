@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Carousel } from 'flowbite-react';
 import MainLayout from '../layout/MainLayout';
 import Header from '../components/Header';
 import Images from '../images';
@@ -6,6 +7,7 @@ import Button from '../components/Button';
 import ServiceCard from '../components/ServiceCard';
 import PsychologistCard from '../components/PsychologistCard';
 import ButtonIcon from '../components/ButtonIcon';
+import Footer from '../components/Footer';
 
 const quotes = require('../lib/quotes.json');
 
@@ -15,7 +17,7 @@ function QuoteCard() {
 
   return (
     <div className="container flex justify-center items-center mx-auto h-screen-header">
-      <div className="flex bg-pink w-9/12 py-16 px-12 rounded-3xl gap-4">
+      <div className="flex bg-pink w-9/12 py-16 px-12 rounded-3xl gap-4 bg-shape-quote">
         {
           currentIndex === 0
             ? (
@@ -74,10 +76,94 @@ function QuoteCard() {
   );
 }
 
+function FaqCard() {
+  return (
+    <div className="container flex flex-col justify-center items-center mx-auto h-screen-header">
+      <h1 className="text-3xl text-primary font-bold mb-8">Apa yang bisa kami bantu?</h1>
+      <div className="w-9/12">
+        <div className="flex justify-between items-center rounded-t-3xl bg-pink py-6 px-8 border-b-third shadow-lg">
+          <h6 className="text-primary">
+            Bagaimana cara melakukan pendaftaran konseling di Pulih@thePeak?
+          </h6>
+          <ButtonIcon>
+            <img src={Images.DownArrow} alt="down arrow" className="img-md" />
+          </ButtonIcon>
+        </div>
+        <div className="flex justify-between items-center bg-pink py-6 px-8 border-b-third shadow-lg">
+          <h6 className="text-primary">
+            Jenis konsultasi apa saja yang disediakan oleh Pulih@thePeak?
+          </h6>
+          <ButtonIcon>
+            <img src={Images.DownArrow} alt="down arrow" className="img-md" />
+          </ButtonIcon>
+        </div>
+        <div className="flex justify-between items-center bg-pink py-6 px-8 border-b-third shadow-lg">
+          <h6 className="text-primary">
+            Apakah konseling di Pulih@thePeak dapat dilakukan secara offline?
+          </h6>
+          <ButtonIcon>
+            <img src={Images.DownArrow} alt="down arrow" className="img-md" />
+          </ButtonIcon>
+        </div>
+        <div className="flex justify-between items-center rounded-b-3xl bg-pink py-6 px-8 shadow-lg">
+          <h6 className="text-primary">
+            Berapa lama sesi konseling dilakukan?
+          </h6>
+          <ButtonIcon>
+            <img src={Images.DownArrow} alt="down arrow" className="img-md" />
+          </ButtonIcon>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function InstagramCard() {
+  return (
+    <div>
+      <h1 className="text-primary text-3xl font-bold">
+        Temukan kami di Instagram
+      </h1>
+      <Button>
+        Lihat konten lainnya
+        <b>@pulihatp</b>
+      </Button>
+    </div>
+  );
+}
+
+function MerchandiseCard() {
+  return (
+    <div className="flex flex-col justify-center bg-primary w-1/3 h-80 p-12 rounded-3xl bg-merchandise">
+      <h1 className="text-white font-bold text-3xl">Merchandise</h1>
+      <h1 className="text-white font-bold text-3xl">Pulih@thePeak</h1>
+      <Button className="bg-pink text-primary mt-4">
+        Lihat Produk
+        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11.3 20.2856C11.1167 20.1023 11.0207 19.869 11.012 19.5856C11.0033 19.3023 11.091 19.069 11.275 18.8856L16.175 13.9856H5C4.71667 13.9856 4.479 13.8896 4.287 13.6976C4.095 13.5056 3.99934 13.2683 4 12.9856C4 12.7023 4.096 12.4646 4.288 12.2726C4.48 12.0806 4.71734 11.985 5 11.9856H16.175L11.275 7.08564C11.0917 6.90231 11.004 6.66898 11.012 6.38564C11.02 6.10231 11.116 5.86898 11.3 5.68564C11.4833 5.50231 11.7167 5.41064 12 5.41064C12.2833 5.41064 12.5167 5.50231 12.7 5.68564L19.3 12.2856C19.4 12.369 19.471 12.4733 19.513 12.5986C19.555 12.724 19.5757 12.853 19.575 12.9856C19.575 13.119 19.5543 13.244 19.513 13.3606C19.4717 13.4773 19.4007 13.5856 19.3 13.6856L12.7 20.2856C12.5167 20.469 12.2833 20.5606 12 20.5606C11.7167 20.5606 11.4833 20.469 11.3 20.2856Z" fill="#C01A78" />
+        </svg>
+      </Button>
+    </div>
+  );
+}
+
+function CloserSection() {
+  return (
+    <div className="bg-shape-closer">
+      <div className="container flex justify-center items-center mx-auto h-screen-header">
+        <div className="flex justify-around w-full">
+          <InstagramCard />
+          <MerchandiseCard />
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function Home() {
   return (
     <MainLayout>
-      <Header />
+      <Header page="Home" />
       <div className="bg-pink bg-shape-1">
         <div className="flex justify-between items-center container mx-auto h-screen-header gap-8">
           <div>
@@ -199,6 +285,31 @@ function Home() {
         </div>
       </div>
       <QuoteCard />
+      <FaqCard />
+      <CloserSection />
+      <Carousel>
+        <img
+          alt="..."
+          src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
+        />
+        <img
+          alt="..."
+          src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
+        />
+        <img
+          alt="..."
+          src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
+        />
+        <img
+          alt="..."
+          src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
+        />
+        <img
+          alt="..."
+          src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
+        />
+      </Carousel>
+      <Footer />
     </MainLayout>
   );
 }
