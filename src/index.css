@@ -24,6 +24,10 @@ code {
   background-color: #FFE7F9;
 }
 
+.bg-pink-primary {
+  background-color: #E95FAD;
+}
+
 .text-primary {
   color: #C01A78;
 }
@@ -61,6 +65,13 @@ code {
   background-repeat: no-repeat;
   background-position: left bottom;
   background-size: 25%;
+}
+
+.bg-shape-service {
+  background-image: url('./images/service/shape.png');
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 15%;
 }
 
 .bg-merchandise {

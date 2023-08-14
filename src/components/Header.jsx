@@ -12,8 +12,12 @@ function Header({ page }) {
           <a href="/" className={page === 'Home' && 'border-b-primary'}>
             Beranda
           </a>
-          <a href="/about" className={page === 'About' && 'border-b-primary'}>Tentang Kami</a>
-          <a href="/services">Layanan</a>
+          <a href="/about" className={page === 'About' && 'border-b-primary'}>
+            Tentang Kami
+          </a>
+          <a href="/service" className={page === 'Service' && 'border-b-primary'}>
+            Layanan
+          </a>
           <a href="/psychologist">Psikolog</a>
           <a href="/merchandise">Merchandise</a>
         </div>
