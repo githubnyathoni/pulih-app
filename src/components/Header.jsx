@@ -18,7 +18,9 @@ function Header({ page }) {
           <a href="/service" className={page === 'Service' && 'border-b-primary'}>
             Layanan
           </a>
-          <a href="/psychologist">Psikolog</a>
+          <a href="/psychologist" className={page === 'Psychologist' && 'border-b-primary'}>
+            Psikolog
+          </a>
           <a href="/merchandise">Merchandise</a>
         </div>
         <div className="flex items-center gap-4 text-primary">
