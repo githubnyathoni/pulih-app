@@ -5,6 +5,7 @@ import PsychologistCard from '../components/PsychologistCard';
 import psychologistList from '../lib/psychologist_list';
 import practionerList from '../lib/practioner_list';
 import Footer from '../components/Footer';
+import MainLayout from '../layout/MainLayout';
 
 function AboutPsychologist() {
   return (
@@ -73,11 +74,13 @@ function PractionerSection() {
 function Psychologist() {
   return (
     <div>
-      <Header page="Psychologist" />
-      <AboutPsychologist />
-      <PsychologistSection />
-      <PractionerSection />
-      <Footer />
+      <MainLayout>
+        <Header page="Psychologist" />
+        <AboutPsychologist />
+        <PsychologistSection />
+        <PractionerSection />
+        <Footer />
+      </MainLayout>
     </div>
   );
 }
