@@ -9,7 +9,7 @@ import Footer from '../components/Footer';
 function ServiceSection() {
   return (
     <div className="flex items-center justify-center container mx-auto h-screen-header">
-      <div className="flex w-10/12 gap-4">
+      <div className="flex w-10/12 gap-12">
         <img src={ServiceImages.Service} alt="layanan pulih@thepeak" style={{ width: '50%' }} />
         <div className="flex flex-col justify-center">
           <h1 className="text-primary text-5xl font-bold">
