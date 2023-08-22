@@ -7,7 +7,7 @@ function Header({ page }) {
   return (
     <div className="bg-pink sticky top-0">
       <div className="flex container mx-auto justify-between py-2">
-        <img src={Images.Logo} alt="logo pulih at the peak" width="60px" />
+        <img src={Images.Logo} alt="logo pulih at the peak" width="70px" />
         <div className="flex items-center gap-10 text-primary">
           <a href="/" className={page === 'Home' && 'border-b-primary'}>
             Beranda

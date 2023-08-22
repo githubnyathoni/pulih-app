@@ -65,7 +65,7 @@ function VisionMission() {
 function TogetherSection() {
   return (
     <div className="container mx-auto">
-      <h1 className="text-primary text-center text-4xl font-bold">
+      <h1 className="text-primary text-center text-5xl font-bold">
         Ragam Kegiatan Bersama Pulih@thePeak
       </h1>
       <div id="first-row" className="flex justify-center gap-8 my-10">

@@ -33,7 +33,7 @@ function ServiceCategories() {
         <h1 className="text-primary text-5xl font-bold">
           Kategori Layanan Pulih@thePeak
         </h1>
-        <p className="text-secondary mt-2">
+        <p className="text-secondary mt-6">
           Bersama Pulih@thePeak, anda dapat berkonsultasi dengan Psikolog sesuai kebutuhan anda.
         </p>
         <div className="flex mt-16">
@@ -79,24 +79,24 @@ function ServiceCategories() {
 function WhySection() {
   return (
     <div className="container mx-auto my-24">
-      <h1 className="text-center text-primary text-4xl font-bold">
+      <h1 className="text-center text-primary text-5xl font-bold">
         Kenapa Pulih@thePeak?
       </h1>
       <div className="flex justify-around mt-16">
         <div className="flex flex-col items-center gap-6">
-          <img src={ServiceImages.WhyFirst} alt="kenapa pulih@thepeak" width="200px" />
+          <img src={ServiceImages.WhyFirst} alt="kenapa pulih@thepeak" width="150px" />
           <p className="text-secondary">
             Psikolog berpengalaman sesuai dengan bidangnya
           </p>
         </div>
         <div className="flex flex-col items-center gap-6">
-          <img src={ServiceImages.WhySecond} alt="kenapa pulih@thepeak" width="200px" />
+          <img src={ServiceImages.WhySecond} alt="kenapa pulih@thepeak" width="150px" />
           <p className="text-secondary">
             Menjunjung tinggi kode etik profesi
           </p>
         </div>
         <div className="flex flex-col items-center gap-6">
-          <img src={ServiceImages.WhyThird} alt="kenapa pulih@thepeak" width="200px" />
+          <img src={ServiceImages.WhyThird} alt="kenapa pulih@thepeak" width="150px" />
           <p className="text-secondary">
             Memiliki pemahaman mendalam tentang perspektif gender
           </p>

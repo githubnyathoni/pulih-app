@@ -5,7 +5,7 @@ function PsychologistCard({
   photo, alt, name, skills,
 }) {
   return (
-    <div className="rounded-xl shadow-lg w-72">
+    <div className="rounded-xl shadow-lg w-72 cursor-pointer">
       <img src={photo} alt={alt} className="rounded-t-xl" />
       <div className="p-4">
         <h6 className="text-primary font-bold">
@@ -14,7 +14,7 @@ function PsychologistCard({
         <div className="mt-2">
           {
             skills.map((skill) => (
-              <div key={skill} className="inline-block m-1 rounded-full border border-rose-700 text-sm px-2 py-0.5">
+              <div key={skill} className="inline-block m-1 rounded-full border border-rose-700 text-xs px-2 py-0.5">
                 {skill}
               </div>
             ))
