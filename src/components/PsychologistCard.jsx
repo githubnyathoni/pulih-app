@@ -5,7 +5,7 @@ function PsychologistCard({
   photo, alt, name, skills,
 }) {
   return (
-    <div className="rounded-xl shadow-lg w-72 cursor-pointer">
+    <div className="rounded-xl shadow-lg w-64 cursor-pointer">
       <img src={photo} alt={alt} className="rounded-t-xl" />
       <div className="p-4">
         <h6 className="text-primary font-bold">

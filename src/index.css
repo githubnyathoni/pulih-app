@@ -97,6 +97,10 @@ code {
   width: 34%;
 }
 
+.border-primary {
+  border: 2px solid #C01A78;
+}
+
 .border-b-primary {
   border-bottom: 1px solid #C01A78;
 }

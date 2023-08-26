@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Carousel } from 'flowbite-react';
 import { Link } from 'react-router-dom';
 import MainLayout from '../layout/MainLayout';
 import Header from '../components/Header';
@@ -9,6 +8,7 @@ import ServiceCard from '../components/ServiceCard';
 import PsychologistCard from '../components/PsychologistCard';
 import ButtonIcon from '../components/ButtonIcon';
 import Footer from '../components/Footer';
+import psychologistList from '../lib/psychologist_list';
 
 const quotes = require('../lib/quotes.json');
 
@@ -166,6 +166,16 @@ function CloserSection() {
 }
 
 function Home() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const previousSlide = () => {
+    setCurrentIndex(currentIndex - 1);
+  };
+
+  const nextSlide = () => {
+    setCurrentIndex(currentIndex + 1);
+  };
+
   return (
     <MainLayout>
       <Header page="Home" />
@@ -173,7 +183,7 @@ function Home() {
         <div className="flex justify-between items-center container mx-auto h-screen-header gap-16">
           <div>
             <h1 className="text-7xl text-primary font-bold">Invest In Your Mental Health</h1>
-            <p className="text-secondary text-justify mt-6">
+            <p className="text-secondary mt-6">
               Pulih@thePeak lebih mendukung tindakan pencegahan khususnya dalam kesehatan
               mental. Salah satu caranya dengan investasi kesehatan mental untuk diri sendiri
               dan keluarga. Dengan memelihara dan menjaga kesehatan mental diri sendiri sejak
@@ -192,7 +202,7 @@ function Home() {
           <img src={Images.HomeImage2} alt="pulih at the psychologists" width="40%" />
           <div className="mt-20">
             <h1 className="text-4xl text-primary font-bold">Tentang Pulih@thePeak</h1>
-            <p className="text-secondary text-justify mt-6">
+            <p className="text-secondary mt-6">
               Pulih@thePeak didirikan pada 21 April 2014, yang didedikasikan
               sebagaikeberlanjutan dari Yayasan Pulih yaitu organisasi nirlaba yang
               berkiprah sejak tahun 2002 dalam pemulihan trauma psikologis dan psikososial.
@@ -247,7 +257,7 @@ function Home() {
       </div>
       <div className="h-screen-header ml-20 mt-20 mr-8">
         <div className="flex justify-between">
-          <div className="flex flex-col justify-between mr-8">
+          <div className="flex flex-col justify-between mr-8 w-4/12">
             <div />
             <div className="">
               <h1 className="text-primary text-3xl font-bold">Psikolog Pulih@thePeak</h1>
@@ -264,65 +274,39 @@ function Home() {
                 </Button>
               </Link>
             </div>
-            <div className="flex gap-2">
-              <ButtonIcon className="w-12">
+            <div className="flex gap-2 mb-4">
+              <ButtonIcon className="w-12" onClick={previousSlide}>
                 <img src={Images.LeftArrowInactive} alt="left arrow" />
               </ButtonIcon>
-              <ButtonIcon className="w-12">
+              <ButtonIcon className="w-12" onClick={nextSlide}>
                 <img src={Images.RightArrowActive} alt="right arrow" />
               </ButtonIcon>
             </div>
           </div>
-          <div className="flex gap-2">
-            <PsychologistCard
-              photo={Images.Livia}
-              alt="ibu livia"
-              name="Livia Istania Dea Flavia
-              Iskandar, S.Psi., Psikolog"
-              skills={['Bipolar', 'Derpresi', 'Borderline', 'Anxiety', 'Youth', 'Work-family Balance', 'Gender-based Violence', '+1']}
-            />
-            <PsychologistCard
-              photo={Images.Livia}
-              alt="ibu livia"
-              name="Livia Istania Dea Flavia
-              Iskandar, S.Psi., Psikolog"
-              skills={['Bipolar', 'Derpresi', 'Borderline', 'Anxiety', 'Youth', 'Work-family Balance', 'Gender-based Violence', '+1']}
-            />
-            <PsychologistCard
-              photo={Images.Livia}
-              alt="ibu livia"
-              name="Livia Istania Dea Flavia
-              Iskandar, S.Psi., Psikolog"
-              skills={['Bipolar', 'Derpresi', 'Borderline', 'Anxiety', 'Youth', 'Work-family Balance', 'Gender-based Violence', '+1']}
-            />
+          <div className="w-8/12 overflow-hidden">
+            <div
+              className="flex transition ease-out duration-40"
+              style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+            >
+              <div className="flex p-4 gap-5">
+                {
+                  psychologistList.map((item) => (
+                    <PsychologistCard
+                      photo={item.photo}
+                      alt={item.alt}
+                      name={item.name}
+                      skills={item.skills}
+                    />
+                  ))
+                }
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <QuoteCard />
       <FaqCard />
       <CloserSection />
-      <Carousel>
-        <img
-          alt="..."
-          src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
-        />
-        <img
-          alt="..."
-          src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
-        />
-        <img
-          alt="..."
-          src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
-        />
-        <img
-          alt="..."
-          src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
-        />
-        <img
-          alt="..."
-          src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
-        />
-      </Carousel>
       <Footer />
     </MainLayout>
   );

@@ -5,7 +5,7 @@ import Button from './Button';
 
 function Header({ page }) {
   return (
-    <div className="bg-pink sticky top-0">
+    <div className="bg-pink sticky top-0 z-10">
       <div className="flex container mx-auto justify-between py-2">
         <img src={Images.Logo} alt="logo pulih at the peak" width="70px" />
         <div className="flex items-center gap-10 text-primary">

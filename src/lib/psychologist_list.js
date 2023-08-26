@@ -134,6 +134,174 @@ const psychologistList = [
     photo: PsychologistImages.Agustina,
     alt: 'Ibu Ika',
   },
+  {
+    name: 'Widaningrum, S.Psi., Psikolog',
+    skills: [
+      'Youth and Adult Psychologist',
+      'Human Resources Consultant',
+    ],
+    photo: PsychologistImages.Agustina,
+    alt: 'Ibu Widaningrum',
+  },
+  {
+    name: 'Abas Supeli, S.Psi., M.Sc., Ph.D., Psikolog',
+    skills: [
+      'Psikologi Klinis terutama Couple Relationship',
+    ],
+    photo: PsychologistImages.Abas,
+    alt: 'Bapak Abas',
+  },
+  {
+    name: 'Mersedes Tanok, S. Psi., Psikolog',
+    skills: [
+      'Job Profile',
+      'Talent Acquisition',
+      'Assessment Center',
+      'Konseling Keluarga',
+      'Kesiapan Masuk Sekolah',
+      '+3',
+    ],
+    photo: PsychologistImages.Agustina,
+    alt: 'Ibu Mersedes',
+  },
+  {
+    name: 'Dra. Diah Astarini',
+    skills: [
+      'Konseling Pernikahan',
+      'Hubungan Perkawinan',
+    ],
+    photo: PsychologistImages.Agustina,
+    alt: 'Ibu Diah',
+  },
+  {
+    name: 'Drs. Danny Irawan Yatim, M.A., Ed. M.',
+    skills: [
+      'Youth related to drug abuse and HIV',
+    ],
+    photo: PsychologistImages.Danny,
+    alt: 'Bapak Danny',
+  },
+  {
+    name: 'Rika Ermasari',
+    skills: [
+      'Stres dan Kesehatan',
+      'Depresi',
+      'Pengembangan Diri',
+    ],
+    photo: PsychologistImages.Agustina,
+    alt: 'Ibu Rika',
+  },
+  {
+    name: 'Ariesti Pritawati, M. Psi., Psikolog',
+    skills: [
+      'Konseling individu',
+      'Konseling pasangan',
+    ],
+    photo: PsychologistImages.Agustina,
+    alt: 'Ibu Ariesti',
+  },
+  {
+    name: 'Shanen Emily, M.Psi., Psikolog',
+    skills: [
+      'Stres dan Kesehatan',
+      'Depresi',
+      'Pengembangan Diri',
+      'Kecemasan',
+      'Relasi dengan Pasangan',
+    ],
+    photo: PsychologistImages.Shanen,
+    alt: 'Ibu Shanen',
+  },
+  {
+    name: 'Prita Pradipta, M.Psi., Psikolog',
+    skills: [
+      'Depresi dan kecemasan',
+      'Pengampunan',
+      'Manajemen stress',
+      'Pertumbuhan diri',
+      '+1',
+    ],
+    photo: PsychologistImages.Prita,
+    alt: 'Ibu Prita',
+  },
+  {
+    name: 'Bella Amanda Maharani, M.Psi., Psikolog',
+    skills: [
+      'Klinis',
+      'Konseling Orang Tua',
+      'Minat Bakat',
+    ],
+    photo: PsychologistImages.Bella,
+    alt: 'Ibu Bella',
+  },
+  {
+    name: 'Hanina Maulidha, M.Psi., Psikolog',
+    skills: [
+      'Anak dan Remaja',
+      'Bullying',
+      'Counseling Career',
+      'Minat Bakat',
+      'Emosi',
+      'Kesiapan Sekolah',
+      '+2',
+    ],
+    photo: PsychologistImages.Hanina,
+    alt: 'Ibu Hanina',
+  },
+  {
+    name: 'Angellia Lestari Christiani',
+    skills: [
+      'Romantic Relationship with Partner',
+      'Sexual Orientation',
+      'Self Development',
+    ],
+    photo: PsychologistImages.Angelia,
+    alt: 'Ibu Angellia',
+  },
+  {
+    name: 'Rami Busyra Ikram, M.Psi., Psikolog',
+    skills: [
+      'Personal Empowerment',
+      'Chronic Illness',
+      'Family Issues',
+      'Work Related Stress',
+      'Trauma',
+      '+3',
+    ],
+    photo: PsychologistImages.Rami,
+    alt: 'Ibu Rami',
+  },
+  {
+    name: 'Niken Paramita, M.Psi., Psikolog',
+    skills: [
+      'Bakat Siswa',
+      'Anak dan Remaja',
+    ],
+    photo: PsychologistImages.Niken,
+    alt: 'Ibu Niken',
+  },
+  {
+    name: 'Shinta Utami, S.Psi., M.Psi., Psikolog',
+    skills: [
+      'Minat Bakat',
+      'Couple and Family',
+      'Youth & Adult',
+      'Depression/Anxiety/Trauma',
+      'Couple/Pre-marital',
+    ],
+    photo: PsychologistImages.Shinta,
+    alt: 'Ibu Shinta',
+  },
+  {
+    name: 'Rini Ariani, M. Psi., Psikolog',
+    skills: [
+      'Educational of Child and Teenager',
+      'School-related problems',
+      'Interest and talent',
+    ],
+    photo: PsychologistImages.Agustina,
+    alt: 'Ibu Rini',
+  },
 ];
 
 export default psychologistList;
