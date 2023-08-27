@@ -301,6 +301,8 @@ function Home() {
                       alt={item.alt}
                       name={item.name}
                       skills={item.skills}
+                      slug={item.slug}
+                      link="psychologist"
                     />
                   ))
                 }

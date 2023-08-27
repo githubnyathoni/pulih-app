@@ -52,6 +52,7 @@ function PsychologistSection() {
               name={item.name}
               skills={item.skills}
               slug={item.slug}
+              link="psychologist"
             />
           ))
         }
@@ -99,6 +100,8 @@ function PractionerSection() {
               alt={item.alt}
               name={item.name}
               skills={item.skills}
+              slug={item.slug}
+              link="practioner"
             />
           ))
         }
