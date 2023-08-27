@@ -78,41 +78,82 @@ function QuoteCard() {
 }
 
 function FaqCard() {
+  const [selectedQuestion, setSelectedQuestion] = useState(null);
+
   return (
     <div className="container flex flex-col justify-center items-center mx-auto h-screen-header">
       <h1 className="text-3xl text-primary font-bold mb-8">Apa yang bisa kami bantu?</h1>
       <div className="w-9/12">
-        <div className="flex justify-between items-center rounded-t-3xl bg-pink py-6 px-8 border-b-third shadow-lg">
-          <h6 className="text-primary">
-            Bagaimana cara melakukan pendaftaran konseling di Pulih@thePeak?
-          </h6>
-          <ButtonIcon>
-            <img src={Images.DownArrow} alt="down arrow" className="img-md" />
-          </ButtonIcon>
+        <div>
+          <div className="flex justify-between items-center rounded-t-3xl bg-pink py-6 px-8 border-b-third shadow-lg">
+            <h6 className="text-primary">
+              Bagaimana cara melakukan pendaftaran konseling di Pulih@thePeak?
+            </h6>
+            <ButtonIcon onClick={() => setSelectedQuestion(selectedQuestion === 0 ? null : 0)}>
+              <img
+                src={Images.DownArrow}
+                alt="down arrow"
+                className={`img-md ${selectedQuestion === 0 && 'rotate-180'}`}
+              />
+            </ButtonIcon>
+          </div>
+          <div className={`bg-pink-100 px-8 text-secondary border-b-third transition-all duration-300 ${selectedQuestion === 0 ? 'visible h-10 py-2' : 'invisible h-0'}`}>
+            Silahkan Whatsapp ke nomor 083128769871
+          </div>
         </div>
-        <div className="flex justify-between items-center bg-pink py-6 px-8 border-b-third shadow-lg">
-          <h6 className="text-primary">
-            Jenis konsultasi apa saja yang disediakan oleh Pulih@thePeak?
-          </h6>
-          <ButtonIcon>
-            <img src={Images.DownArrow} alt="down arrow" className="img-md" />
-          </ButtonIcon>
+        <div>
+          <div className="flex justify-between items-center bg-pink py-6 px-8 border-b-third shadow-lg">
+            <h6 className="text-primary">
+              Jenis konsultasi apa saja yang disediakan oleh Pulih@thePeak?
+            </h6>
+            <ButtonIcon onClick={() => setSelectedQuestion(selectedQuestion === 1 ? null : 1)}>
+              <img
+                src={Images.DownArrow}
+                alt="down arrow"
+                className={`img-md ${selectedQuestion === 0 && 'rotate-180'}`}
+              />
+            </ButtonIcon>
+          </div>
+          <div className={`bg-pink-100 px-8 text-secondary border-b-third transition-all duration-300 ${selectedQuestion === 1 ? 'visible h-16 py-2' : 'invisible h-0'}`}>
+            Konseling psikologis dan psikoterapi (individual dan kelompok), Konseling pra-nikah,
+            Konseling perkawinan Konseling keluarga, Konseling keuangan keluarga, Konsultasi karir.
+          </div>
         </div>
-        <div className="flex justify-between items-center bg-pink py-6 px-8 border-b-third shadow-lg">
-          <h6 className="text-primary">
-            Apakah konseling di Pulih@thePeak dapat dilakukan secara offline?
-          </h6>
-          <ButtonIcon>
-            <img src={Images.DownArrow} alt="down arrow" className="img-md" />
-          </ButtonIcon>
+        <div>
+          <div className="flex justify-between items-center bg-pink py-6 px-8 border-b-third shadow-lg">
+            <h6 className="text-primary">
+              Apakah konseling di Pulih@thePeak dapat dilakukan secara offline?
+            </h6>
+            <ButtonIcon onClick={() => setSelectedQuestion(selectedQuestion === 2 ? null : 2)}>
+              <img
+                src={Images.DownArrow}
+                alt="down arrow"
+                className={`img-md ${selectedQuestion === 2 && 'rotate-180'}`}
+              />
+            </ButtonIcon>
+          </div>
+          <div className={`bg-pink-100 px-8 text-secondary border-b-third transition-all duration-300 ${selectedQuestion === 2 ? 'visible h-18 py-2' : 'invisible h-0'}`}>
+            Kegiatan konseling dapat dilakukan secara online (Zoom/Chat) dan offline.
+            Konseling via “Chat” hanya dapat dilakukan sesuai dengan mendapat persetujuan
+            dari psikolog.
+          </div>
         </div>
-        <div className="flex justify-between items-center rounded-b-3xl bg-pink py-6 px-8 shadow-lg">
-          <h6 className="text-primary">
-            Berapa lama sesi konseling dilakukan?
-          </h6>
-          <ButtonIcon>
-            <img src={Images.DownArrow} alt="down arrow" className="img-md" />
-          </ButtonIcon>
+        <div>
+          <div className={`flex justify-between items-center bg-pink py-6 px-8 shadow-lg ${selectedQuestion !== 3 && 'rounded-b-3xl'}`}>
+            <h6 className="text-primary">
+              Berapa lama sesi konseling dilakukan?
+            </h6>
+            <ButtonIcon onClick={() => setSelectedQuestion(selectedQuestion === 3 ? null : 3)}>
+              <img
+                src={Images.DownArrow}
+                alt="down arrow"
+                className={`img-md ${selectedQuestion === 3 && 'rotate-180'}`}
+              />
+            </ButtonIcon>
+          </div>
+          <div className={`rounded-b-3xl bg-pink-100 px-8 text-secondary border-b-third transition-all duration-300 ${selectedQuestion === 3 ? 'visible h-10 py-2' : 'invisible h-0'}`}>
+            Kegiatan konseling dilakukan selama 75 menit.
+          </div>
         </div>
       </div>
     </div>

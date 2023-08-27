@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import MainLayout from '../layout/MainLayout';
 import Header from '../components/Header';
 import ServiceImages from '../images/service';
 import Images from '../images';
 import ButtonIcon from '../components/ButtonIcon';
 import Footer from '../components/Footer';
+import serviceCategories from '../lib/service_categories';
 
 function ServiceSection() {
   return (
@@ -27,6 +28,9 @@ function ServiceSection() {
 }
 
 function ServiceCategories() {
+  const [selectedCategories, setSelectedCategories] = useState(0);
+  const currentCategory = serviceCategories[selectedCategories];
+
   return (
     <div className="bg-shape-service">
       <div className="flex flex-col items-center justify-center container mx-auto py-24">
@@ -37,38 +41,94 @@ function ServiceCategories() {
           Bersama Pulih@thePeak, anda dapat berkonsultasi dengan Psikolog sesuai kebutuhan anda.
         </p>
         <div className="flex mt-16">
-          <div className="bg-pink-primary text-white font-bold rounded-l-full py-4 px-8 ">
+          <div
+            className={`${selectedCategories === 0 ? 'bg-pink-primary text-white font-bold' : 'bg-pink text-secondary'} rounded-l-full py-4 px-8 duration-200 transition-all`}
+            onClick={() => setSelectedCategories(0)}
+            onKeyDown={() => setSelectedCategories(0)}
+            role="button"
+            tabIndex={0}
+          >
             Konseling Individu
           </div>
-          <div className="bg-pink text-secondary py-4 px-8 ">
+          <div
+            className={`${selectedCategories === 1 ? 'bg-pink-primary text-white font-bold' : 'bg-pink text-secondary'} py-4 px-8 duration-200 transition-all`}
+            onClick={() => setSelectedCategories(1)}
+            onKeyDown={() => setSelectedCategories(1)}
+            role="button"
+            tabIndex={0}
+          >
             Konseling Pasangan
           </div>
-          <div className="bg-pink text-secondary py-4 px-8 ">
+          <div
+            className={`${selectedCategories === 2 ? 'bg-pink-primary text-white font-bold' : 'bg-pink text-secondary'} py-4 px-8 duration-200 transition-all`}
+            onClick={() => setSelectedCategories(2)}
+            onKeyDown={() => setSelectedCategories(2)}
+            role="button"
+            tabIndex={0}
+          >
             Konseling Keluarga
           </div>
-          <div className="bg-pink text-secondary py-4 px-8 ">
+          <div
+            className={`${selectedCategories === 3 ? 'bg-pink-primary text-white font-bold' : 'bg-pink text-secondary'} py-4 px-8 duration-200 transition-all`}
+            onClick={() => setSelectedCategories(3)}
+            onKeyDown={() => setSelectedCategories(3)}
+            role="button"
+            tabIndex={0}
+          >
             Pemeriksaan Psikologis
           </div>
-          <div className="bg-pink text-secondary py-4 px-8 ">
+          <div
+            className={`${selectedCategories === 4 ? 'bg-pink-primary text-white font-bold' : 'bg-pink text-secondary'} py-4 px-8 duration-200 transition-all`}
+            onClick={() => setSelectedCategories(4)}
+            onKeyDown={() => setSelectedCategories(4)}
+            role="button"
+            tabIndex={0}
+          >
             Pelatihan/Workshop
           </div>
-          <div className="bg-pink text-secondary rounded-r-full py-4 px-8 ">
+          <div
+            className={`${selectedCategories === 5 ? 'bg-pink-primary text-white font-bold' : 'bg-pink text-secondary'} rounded-r-full py-4 px-8 duration-200 transition-all`}
+            onClick={() => setSelectedCategories(5)}
+            onKeyDown={() => setSelectedCategories(5)}
+            role="button"
+            tabIndex={0}
+          >
             Pelatihan/Workshop
           </div>
         </div>
         <div className="flex justify-between w-full mt-24">
-          <ButtonIcon className="w-12">
-            <img src={Images.LeftArrowInactive} alt="left arrow inactive" width="32px" />
-          </ButtonIcon>
-          <div className="flex items-center">
-            <p className="text-secondary mr-12">
-              Konsultasi psikologis one on one (1 psikolog dan 1 klien).
+          {
+            selectedCategories > 0
+              ? (
+                <ButtonIcon className="w-12" onClick={() => setSelectedCategories(selectedCategories - 1)}>
+                  <img src={Images.LeftArrowActive} alt="left arrow active" width="32px" />
+                </ButtonIcon>
+              )
+              : (
+                <ButtonIcon className="w-12 cursor-not-allowed">
+                  <img src={Images.LeftArrowInactive} alt="left arrow inactive" width="32px" />
+                </ButtonIcon>
+              )
+          }
+          <div className="flex items-center w-2/3">
+            <p className="text-secondary mr-12 ease-in-out transition-all duration-100 w-2/3">
+              { currentCategory.description }
             </p>
-            <img src={Images.IlustrasiIndividu} alt="ilustrasi konseling individu" />
+            <img src={currentCategory.image} alt="ilustrasi konseling individu" width="200px" />
           </div>
-          <ButtonIcon className="w-12">
-            <img src={Images.RightArrowActive} alt="right arrow active" width="32px" />
-          </ButtonIcon>
+          {
+            selectedCategories < 5
+              ? (
+                <ButtonIcon className="w-12" onClick={() => setSelectedCategories(selectedCategories + 1)}>
+                  <img src={Images.RightArrowActive} alt="right arrow active" width="32px" />
+                </ButtonIcon>
+              )
+              : (
+                <ButtonIcon className="w-12 cursor-not-allowed">
+                  <img src={Images.RightArrowInactive} alt="right arrow inactive" width="32px" />
+                </ButtonIcon>
+              )
+          }
         </div>
       </div>
       <WhySection />
