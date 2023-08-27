@@ -125,6 +125,11 @@ function InstagramCard() {
       <h1 className="text-primary text-3xl font-bold">
         Temukan kami di Instagram
       </h1>
+      <div className="flex my-4 gap-4">
+        <img src={Images.Instagram1} alt="post of instagram" width="128px" />
+        <img src={Images.Instagram2} alt="post of instagram" width="128px" />
+        <img src={Images.Instagram3} alt="post of instagram" width="128px" />
+      </div>
       <Link to="https://www.instagram.com/pulihatp/" target="_blank">
         <Button>
           Lihat konten lainnya

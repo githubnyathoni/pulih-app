@@ -51,6 +51,7 @@ function PsychologistSection() {
               alt={item.alt}
               name={item.name}
               skills={item.skills}
+              slug={item.slug}
             />
           ))
         }

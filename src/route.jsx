@@ -5,6 +5,7 @@ import About from './pages/About';
 import Service from './pages/Service';
 import Psychologist from './pages/Psychologist';
 import Merchandise from './pages/Merchandise';
+import PsychologistDetail from './pages/PsychologistDetail';
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
   {
     path: '/psychologist',
     element: <Psychologist />,
+  },
+  {
+    path: '/psychologist/:slug',
+    element: <PsychologistDetail />,
   },
   {
     path: '/merchandise',

@@ -19,6 +19,9 @@ import Twitter from './default/twitter.png';
 import Instagram from './default/instagram.png';
 import Facebook from './default/facebook.png';
 import Whatsapp from './default/whatsapp.png';
+import Instagram1 from './home/instagram1.jpg';
+import Instagram2 from './home/instagram2.jpg';
+import Instagram3 from './home/instagram3.jpg';
 
 const Images = {
   Logo,
@@ -42,6 +45,9 @@ const Images = {
   Instagram,
   Facebook,
   Whatsapp,
+  Instagram1,
+  Instagram2,
+  Instagram3,
 };
 
 export default Images;
