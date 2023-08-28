@@ -92,6 +92,9 @@ function TogetherSection() {
           <img src={AboutImages.ThirdRowB} alt="Ragam Kegiatan Bersama Pulih@thePeak" />
         </div>
       </div>
+      <div id="fourth-row" className="flex justify-center gap-8 my-10">
+        <img src={AboutImages.FourthRow} style={{ borderRadius: '3rem' }} alt="Ragam Kegiatan Bersama Pulih@thePeak" />
+      </div>
     </div>
   );
 }

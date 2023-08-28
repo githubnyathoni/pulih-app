@@ -7,6 +7,7 @@ import SecondRowA from './secondrow-a.png';
 import SecondRowB from './secondrow-b.png';
 import ThirdRowA from './thirdrow-a.png';
 import ThirdRowB from './thirdrow-b.png';
+import FourthRow from './fourthrow.jpeg';
 
 const AboutImages = {
   Squad,
@@ -18,6 +19,7 @@ const AboutImages = {
   SecondRowB,
   ThirdRowA,
   ThirdRowB,
+  FourthRow,
 };
 
 export default AboutImages;
