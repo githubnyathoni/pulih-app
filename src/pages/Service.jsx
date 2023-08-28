@@ -96,7 +96,7 @@ function ServiceCategories() {
             Pelatihan/Workshop
           </div>
         </div>
-        <div className="flex justify-between w-full mt-24">
+        <div className="flex justify-between max-w-screen-xl mt-24">
           {
             selectedCategories > 0
               ? (

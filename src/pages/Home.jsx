@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import MainLayout from '../layout/MainLayout';
@@ -85,11 +86,16 @@ function FaqCard() {
       <h1 className="text-3xl text-primary font-bold mb-8">Apa yang bisa kami bantu?</h1>
       <div className="w-9/12">
         <div>
-          <div className="flex justify-between items-center rounded-t-3xl bg-pink py-6 px-8 border-b-third shadow-lg">
+          <div
+            className="flex justify-between items-center rounded-t-3xl bg-pink py-6 px-8 border-b-third shadow-lg"
+            onClick={() => setSelectedQuestion(selectedQuestion === 0 ? null : 0)}
+            role="button"
+            tabIndex={0}
+          >
             <h6 className="text-primary">
               Bagaimana cara melakukan pendaftaran konseling di Pulih@thePeak?
             </h6>
-            <ButtonIcon onClick={() => setSelectedQuestion(selectedQuestion === 0 ? null : 0)}>
+            <ButtonIcon>
               <img
                 src={Images.DownArrow}
                 alt="down arrow"
@@ -97,34 +103,44 @@ function FaqCard() {
               />
             </ButtonIcon>
           </div>
-          <div className={`bg-pink-100 px-8 text-secondary border-b-third transition-all duration-300 ${selectedQuestion === 0 ? 'visible h-10 py-2' : 'invisible h-0'}`}>
+          <div className={`bg-slate-50 px-8 text-secondary border-b-third transition-all duration-300 ${selectedQuestion === 0 ? 'visible h-18 py-6' : 'invisible h-0'}`}>
             Silahkan Whatsapp ke nomor 083128769871
           </div>
         </div>
         <div>
-          <div className="flex justify-between items-center bg-pink py-6 px-8 border-b-third shadow-lg">
+          <div
+            className="flex justify-between items-center bg-pink py-6 px-8 border-b-third shadow-lg"
+            onClick={() => setSelectedQuestion(selectedQuestion === 1 ? null : 1)}
+            role="button"
+            tabIndex={0}
+          >
             <h6 className="text-primary">
               Jenis konsultasi apa saja yang disediakan oleh Pulih@thePeak?
             </h6>
-            <ButtonIcon onClick={() => setSelectedQuestion(selectedQuestion === 1 ? null : 1)}>
+            <ButtonIcon>
               <img
                 src={Images.DownArrow}
                 alt="down arrow"
-                className={`img-md ${selectedQuestion === 0 && 'rotate-180'}`}
+                className={`img-md ${selectedQuestion === 1 && 'rotate-180'}`}
               />
             </ButtonIcon>
           </div>
-          <div className={`bg-pink-100 px-8 text-secondary border-b-third transition-all duration-300 ${selectedQuestion === 1 ? 'visible h-16 py-2' : 'invisible h-0'}`}>
+          <div className={`bg-slate-50 px-8 text-secondary border-b-third transition-all duration-300 ${selectedQuestion === 1 ? 'visible h-22 py-4' : 'invisible h-0'}`}>
             Konseling psikologis dan psikoterapi (individual dan kelompok), Konseling pra-nikah,
             Konseling perkawinan Konseling keluarga, Konseling keuangan keluarga, Konsultasi karir.
           </div>
         </div>
         <div>
-          <div className="flex justify-between items-center bg-pink py-6 px-8 border-b-third shadow-lg">
+          <div
+            className="flex justify-between items-center bg-pink py-6 px-8 border-b-third shadow-lg"
+            onClick={() => setSelectedQuestion(selectedQuestion === 2 ? null : 2)}
+            role="button"
+            tabIndex={0}
+          >
             <h6 className="text-primary">
               Apakah konseling di Pulih@thePeak dapat dilakukan secara offline?
             </h6>
-            <ButtonIcon onClick={() => setSelectedQuestion(selectedQuestion === 2 ? null : 2)}>
+            <ButtonIcon>
               <img
                 src={Images.DownArrow}
                 alt="down arrow"
@@ -132,18 +148,23 @@ function FaqCard() {
               />
             </ButtonIcon>
           </div>
-          <div className={`bg-pink-100 px-8 text-secondary border-b-third transition-all duration-300 ${selectedQuestion === 2 ? 'visible h-18 py-2' : 'invisible h-0'}`}>
+          <div className={`bg-slate-50 px-8 text-secondary border-b-third transition-all duration-300 ${selectedQuestion === 2 ? 'visible h-20 py-4' : 'invisible h-0'}`}>
             Kegiatan konseling dapat dilakukan secara online (Zoom/Chat) dan offline.
             Konseling via “Chat” hanya dapat dilakukan sesuai dengan mendapat persetujuan
             dari psikolog.
           </div>
         </div>
         <div>
-          <div className={`flex justify-between items-center bg-pink py-6 px-8 shadow-lg ${selectedQuestion !== 3 && 'rounded-b-3xl'}`}>
+          <div
+            className={`flex justify-between items-center bg-pink py-6 px-8 shadow-lg ${selectedQuestion !== 3 && 'rounded-b-3xl'}`}
+            onClick={() => setSelectedQuestion(selectedQuestion === 3 ? null : 3)}
+            role="button"
+            tabIndex={0}
+          >
             <h6 className="text-primary">
               Berapa lama sesi konseling dilakukan?
             </h6>
-            <ButtonIcon onClick={() => setSelectedQuestion(selectedQuestion === 3 ? null : 3)}>
+            <ButtonIcon>
               <img
                 src={Images.DownArrow}
                 alt="down arrow"
@@ -151,7 +172,7 @@ function FaqCard() {
               />
             </ButtonIcon>
           </div>
-          <div className={`rounded-b-3xl bg-pink-100 px-8 text-secondary border-b-third transition-all duration-300 ${selectedQuestion === 3 ? 'visible h-10 py-2' : 'invisible h-0'}`}>
+          <div className={`rounded-b-3xl bg-slate-50 px-8 text-secondary border-b-third transition-all duration-300 ${selectedQuestion === 3 ? 'visible h-14 py-4' : 'invisible h-0'}`}>
             Kegiatan konseling dilakukan selama 75 menit.
           </div>
         </div>
