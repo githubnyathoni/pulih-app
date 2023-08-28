@@ -42,7 +42,7 @@ function PsychologistSection() {
           </div>
         </div>
       </div>
-      <div className="flex justify-center gap-4 items-center mt-20">
+      <div className="flex justify-center gap-12 items-center mt-20">
         {
           psychologistIndex > 0
             ? (
