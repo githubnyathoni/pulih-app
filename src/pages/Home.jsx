@@ -321,12 +321,38 @@ function Home() {
               </Link>
             </div>
             <div className="flex gap-2 mb-4">
-              <ButtonIcon className="w-12" onClick={previousSlide}>
-                <img src={Images.LeftArrowInactive} alt="left arrow" />
-              </ButtonIcon>
-              <ButtonIcon className="w-12" onClick={nextSlide}>
-                <img src={Images.RightArrowActive} alt="right arrow" />
-              </ButtonIcon>
+              {
+                currentIndex > 0
+                  ? (
+                    <ButtonIcon className="w-12" onClick={previousSlide}>
+                      <img
+                        src={Images.LeftArrowActive}
+                        alt="left arrow"
+                      />
+                    </ButtonIcon>
+                  )
+                  : (
+                    <ButtonIcon className="w-12 cursor-not-allowed">
+                      <img
+                        src={Images.LeftArrowInactive}
+                        alt="left arrow"
+                      />
+                    </ButtonIcon>
+                  )
+              }
+              {
+                currentIndex < 8
+                  ? (
+                    <ButtonIcon className="w-12" onClick={nextSlide}>
+                      <img src={Images.RightArrowActive} alt="right arrow" />
+                    </ButtonIcon>
+                  )
+                  : (
+                    <ButtonIcon className="w-12 cursor-not-allowed">
+                      <img src={Images.RightArrowInactive} alt="right arrow" />
+                    </ButtonIcon>
+                  )
+              }
             </div>
           </div>
           <div className="w-8/12 overflow-hidden">
