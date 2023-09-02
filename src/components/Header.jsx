@@ -7,52 +7,102 @@ import Button from './Button';
 
 function Header({ page }) {
   const [isShow, setIsShow] = useState(false);
+  const [isShowSlideMenu, setIsShowSlideMenu] = useState(false);
 
   return (
-    <div className="bg-pink sticky top-0 z-10">
-      <div className="flex container mx-auto justify-between py-2">
-        <Link to="/">
-          <img src={Images.Logo} alt="logo pulih at the peak" width="70px" />
-        </Link>
-        <div className="flex items-center gap-10 text-primary">
-          <a href="/" className={page === 'Home' && 'border-b-primary'}>
-            Beranda
-          </a>
-          <a href="/about" className={page === 'About' && 'border-b-primary'}>
-            Tentang Kami
-          </a>
-          <a href="/service" className={page === 'Service' && 'border-b-primary'}>
-            Layanan
-          </a>
-          <a href="/psychologist" className={page === 'Psychologist' && 'border-b-primary'}>
-            Psikolog
-          </a>
-          <a href="/merchandise" className={page === 'Merchandise' && 'border-b-primary'}>
-            Merchandise
-          </a>
-        </div>
-        <div className="flex items-center gap-4 text-primary">
-          <div className="relative">
-            <div
-              className="flex items-center cursor-pointer"
-              onClick={() => setIsShow(!isShow)}
-              role="button"
-              tabIndex={0}
-            >
-              ID
-              <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8 8L12 12L16 8" stroke="#C01A78" strokeLinecap="round" />
-              </svg>
+    <div>
+      <div className="bg-pink sticky top-0 z-10">
+        <div className="flex container mx-auto justify-between py-2">
+          <Link to="/">
+            <img src={Images.Logo} alt="logo pulih at the peak" width="70px" />
+          </Link>
+          <div className="hidden lg:flex items-center gap-10 text-primary">
+            <a href="/" className={page === 'Home' && 'border-b-primary'}>
+              Beranda
+            </a>
+            <a href="/about" className={page === 'About' && 'border-b-primary'}>
+              Tentang Kami
+            </a>
+            <a href="/service" className={page === 'Service' && 'border-b-primary'}>
+              Layanan
+            </a>
+            <a href="/psychologist" className={page === 'Psychologist' && 'border-b-primary'}>
+              Psikolog
+            </a>
+            <a href="/merchandise" className={page === 'Merchandise' && 'border-b-primary'}>
+              Merchandise
+            </a>
+          </div>
+          <div className="hidden lg:flex items-center gap-4 text-primary">
+            <div className="relative">
+              <div
+                className="flex items-center cursor-pointer"
+                onClick={() => setIsShow(!isShow)}
+                role="button"
+                tabIndex={0}
+              >
+                ID
+                <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8 8L12 12L16 8" stroke="#C01A78" strokeLinecap="round" />
+                </svg>
+              </div>
+              <div className={`absolute bg-solid-lang p-4 rounded-xl w-40 top-8 right-0 ${isShow ? 'visible' : 'invisible'}`}>
+                <h2 className="text-white">Bahasa Indonesia</h2>
+                <h2 className="text-white mt-2">English</h2>
+              </div>
             </div>
-            <div className={`absolute bg-solid-lang p-4 rounded-xl w-40 top-8 right-0 ${isShow ? 'visible' : 'invisible'}`}>
-              <h2 className="text-white">Bahasa Indonesia</h2>
-              <h2 className="text-white mt-2">English</h2>
+            <Button className="bg-primary">
+              Hubungi Kami
+            </Button>
+          </div>
+          <div
+            className="lg:hidden flex items-center cursor-pointer"
+            onClick={() => setIsShowSlideMenu(true)}
+            tabIndex={0}
+            role="button"
+          >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 6.00098H21M3 12.001H21M3 18.001H21" stroke="#C01A78" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </div>
+        </div>
+      </div>
+      {/* Hamburger Menu Slide */}
+      <div className={`relative z-50 ${!isShowSlideMenu && 'invisible'}`}>
+        <div className="fixed inset-0 bg-gray-800 opacity-25" />
+        <nav className={`fixed top-0 right-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-pink overflow-y-auto text-right transition ease-in-out duration-300 ${!isShowSlideMenu ? 'translate-x-full' : 'translate-x-0'}`}>
+          <div className="flex flex-col items-end justify-between h-full">
+            <svg className="cursor-pointer" onClick={() => setIsShowSlideMenu(false)} width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 2.6416L21 20.4577M3 20.4577L21 2.6416" stroke="#C01A78" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+            <div className="flex flex-col gap-6 text-primary">
+              <a href="/" className={page === 'Home' && 'border-b-primary'}>
+                Beranda
+              </a>
+              <a href="/about" className={page === 'About' && 'border-b-primary'}>
+                Tentang Kami
+              </a>
+              <a href="/service" className={page === 'Service' && 'border-b-primary'}>
+                Layanan
+              </a>
+              <a href="/psychologist" className={page === 'Psychologist' && 'border-b-primary'}>
+                Psikolog
+              </a>
+              <a href="/merchandise" className={page === 'Merchandise' && 'border-b-primary'}>
+                Merchandise
+              </a>
+            </div>
+            <div>
+              <div className="flex items-center border-primary rounded-full text-sm">
+                <div className="bg-primary py-0.5 px-4 rounded-full text-white cursor-pointer">ID</div>
+                <span className="py-0.5 px-4 rounded-full text-primary cursor-pointer">ENG</span>
+              </div>
+              <Button className="bg-primary mt-4">
+                Hubungi Kami
+              </Button>
             </div>
           </div>
-          <Button className="bg-primary">
-            Hubungi Kami
-          </Button>
-        </div>
+        </nav>
       </div>
     </div>
   );

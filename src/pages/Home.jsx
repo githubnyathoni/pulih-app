@@ -322,7 +322,7 @@ function Home() {
           />
         </div>
       </div>
-      <div className="h-screen-header ml-20 mt-20 mr-8">
+      <div className="container-xl mx-auto h-screen-header mt-20">
         <div className="flex justify-between">
           <div className="flex flex-col justify-between mr-8 w-4/12">
             <div />
@@ -379,7 +379,7 @@ function Home() {
           <div className="w-8/12 overflow-hidden">
             <div
               className="flex transition ease-out duration-40"
-              style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+              style={{ transform: `translateX(-${(currentIndex * 100) - (currentIndex / 2)}%)` }}
             >
               <div className="flex p-4 gap-5">
                 {
