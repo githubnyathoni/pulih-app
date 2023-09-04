@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 function ServiceCard({ source, text, alt }) {
   return (
     <div className="flex flex-col items-center">
-      <img src={source} alt={alt} width="80%" />
+      <img src={source} alt={alt} className="w-1/2 lg:w-9/12" />
       <span className="text-secondary mt-2">{ text }</span>
     </div>
   );

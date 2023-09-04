@@ -19,7 +19,7 @@ function QuoteCard() {
 
   return (
     <div className="container flex justify-center items-center mx-auto h-screen-header">
-      <div className="flex bg-pink w-10/12 py-16 px-12 rounded-3xl gap-4 bg-shape-quote">
+      <div className="flex bg-pink w-full lg:w-10/12 py-16 px-12 lg:rounded-3xl gap-4 bg-shape-quote">
         {
           currentIndex === 0
             ? (
@@ -42,7 +42,7 @@ function QuoteCard() {
             )
         }
         <div className="flex flex-col h-72 w-10/12 justify-center">
-          <p className="text-primary text-justify text-2xl font-bold">
+          <p className="text-primary lg:text-justify lg:text-2xl lg:font-bold">
             { quoteActive.quote }
           </p>
           <span className="text-primary mt-6">
@@ -84,10 +84,10 @@ function FaqCard() {
   return (
     <div className="container flex flex-col justify-center items-center mx-auto h-screen-header">
       <h1 className="text-3xl text-primary font-bold mb-8">Apa yang bisa kami bantu?</h1>
-      <div className="w-9/12">
+      <div className="w-full lg:w-9/12">
         <div>
           <div
-            className="flex justify-between items-center rounded-t-3xl bg-pink py-6 px-8 border-b-third shadow-lg"
+            className="flex justify-between items-center lg:rounded-t-3xl bg-pink py-6 px-8 border-b-third shadow-lg"
             onClick={() => setSelectedQuestion(selectedQuestion === 0 ? null : 0)}
             role="button"
             tabIndex={0}
@@ -156,7 +156,7 @@ function FaqCard() {
         </div>
         <div>
           <div
-            className={`flex justify-between items-center bg-pink py-6 px-8 shadow-lg ${selectedQuestion !== 3 && 'rounded-b-3xl'}`}
+            className={`flex justify-between items-center bg-pink py-6 px-8 shadow-lg ${selectedQuestion !== 3 && 'lg:rounded-b-3xl'}`}
             onClick={() => setSelectedQuestion(selectedQuestion === 3 ? null : 3)}
             role="button"
             tabIndex={0}
@@ -172,7 +172,7 @@ function FaqCard() {
               />
             </ButtonIcon>
           </div>
-          <div className={`rounded-b-3xl bg-slate-50 px-8 text-secondary border-b-third transition-all duration-300 ${selectedQuestion === 3 ? 'visible h-14 py-4' : 'invisible h-0'}`}>
+          <div className={`lg:rounded-b-3xl bg-slate-50 px-8 text-secondary border-b-third transition-all duration-300 ${selectedQuestion === 3 ? 'visible h-14 py-4' : 'invisible h-0'}`}>
             Kegiatan konseling dilakukan selama 75 menit.
           </div>
         </div>
@@ -247,9 +247,9 @@ function Home() {
     <MainLayout>
       <Header page="Home" />
       <div className="bg-pink bg-shape-1">
-        <div className="flex justify-between items-center container mx-auto h-screen-header gap-16">
-          <div>
-            <h1 className="text-7xl text-primary font-bold">Invest In Your Mental Health</h1>
+        <div className="flex flex-col-reverse lg:flex-row justify-between items-center container mx-auto h-screen-header gap-16">
+          <div className="pb-16 w-9/12 lg:w-full">
+            <h1 className="text-6xl lg:text-7xl text-primary font-bold">Invest In Your Mental Health</h1>
             <p className="text-secondary mt-6">
               Pulih@thePeak lebih mendukung tindakan pencegahan khususnya dalam kesehatan
               mental. Salah satu caranya dengan investasi kesehatan mental untuk diri sendiri
@@ -261,13 +261,13 @@ function Home() {
               #investinyourmentalhealth
             </p>
           </div>
-          <img src={Images.HomeImage1} alt="psychologist holding hand patient" width="50%" />
+          <img src={Images.HomeImage1} alt="psychologist holding hand patient" className="w-full relative left-12 lg:w-1/2 lg:block" />
         </div>
       </div>
       <div className="bg-shape-2">
-        <div className="container mx-auto flex justify-between gap-12 py-48">
-          <img src={Images.HomeImage2} alt="pulih at the psychologists" width="40%" />
-          <div className="mt-20">
+        <div className="container mx-auto flex flex-col lg:flex-row items-center lg:items-start justify-between gap-12 lg:py-48 py-24">
+          <img src={Images.HomeImage2} alt="pulih at the psychologists" className="lg:w-2/5 w-9/12" />
+          <div className="mt-20 w-9/12 lg:w-full">
             <h1 className="text-4xl text-primary font-bold">Tentang Pulih@thePeak</h1>
             <p className="text-secondary mt-6">
               Pulih@thePeak didirikan pada 21 April 2014, yang didedikasikan
@@ -286,8 +286,8 @@ function Home() {
         </div>
       </div>
       <div className="container mx-auto h-screen-header">
-        <h1 className="text-center text-primary text-4xl font-bold mt-6">Layanan Pulih@thePeak</h1>
-        <div className="flex justify-between mt-16 px-12">
+        <h1 className="text-center text-primary text-3xl lg:text-4xl font-bold mt-6">Layanan Pulih@thePeak</h1>
+        <div className="flex flex-col lg:flex-row lg:justify-between mt-16 px-12 gap-16">
           <ServiceCard
             text="Konseling Individu"
             source={Images.IlustrasiIndividu}
@@ -304,7 +304,7 @@ function Home() {
             alt="ilustrasi konseling keluarga"
           />
         </div>
-        <div className="flex justify-between mt-16 px-12">
+        <div className="flex flex-col lg:flex-row lg:justify-between mt-16 px-12 gap-16">
           <ServiceCard
             text="Pemeriksaan Psikologis"
             source={Images.IlustrasiPsikologis}
