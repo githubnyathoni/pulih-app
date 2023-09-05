@@ -97,10 +97,6 @@ code {
   height: 32px;
 }
 
-.w-34-percent {
-  width: 34%;
-}
-
 .border-primary {
   border: 2px solid #C01A78;
 }
@@ -115,4 +111,14 @@ code {
 
 .container-xl {
   max-width: 1280px;
+}
+
+@media (min-width: 1024px) {
+  .w-34-percent {
+    width: 34%;
+  }
+}
+
+.w-48-percent {
+  width: 48%;
 }

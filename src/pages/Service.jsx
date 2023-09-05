@@ -10,13 +10,13 @@ import serviceCategories from '../lib/service_categories';
 function ServiceSection() {
   return (
     <div className="flex items-center justify-center container mx-auto h-screen-header">
-      <div className="flex w-10/12 gap-12">
-        <img src={ServiceImages.Service} alt="layanan pulih@thepeak" style={{ width: '50%' }} />
+      <div className="flex flex-col lg:flex-row items-center w-10/12 gap-12">
+        <img src={ServiceImages.Service} alt="layanan pulih@thepeak" className="w-4/5 lg:w-1/2" />
         <div className="flex flex-col justify-center">
-          <h1 className="text-primary text-5xl font-bold">
+          <h1 className="text-primary text-3xl lg:text-5xl font-bold">
             Layanan Pulih@thePeak
           </h1>
-          <p className="text-secondary text-justify mt-8">
+          <p className="text-secondary lg:text-justify mt-8">
             Kami telah membantu mengatasi berbagai masalah pribadi maupun keluarga.
             Dengan layanan yang kami sediakan, anda dapat berkonsultasi dimana saja
             dan kapan saja karena kami percaya kesehatan mental  anda adalah prioritas kami.
@@ -33,8 +33,8 @@ function ServiceCategories() {
 
   return (
     <div className="bg-shape-service">
-      <div className="flex flex-col items-center justify-center container mx-auto py-24">
-        <h1 className="text-primary text-5xl font-bold">
+      <div className="flex flex-col items-center justify-center container mx-auto py-24 w-10/12 lg:w-full">
+        <h1 className="text-primary text-3xl lg:text-5xl font-bold">
           Kategori Layanan Pulih@thePeak
         </h1>
         <p className="text-secondary mt-6">
@@ -138,14 +138,14 @@ function ServiceCategories() {
 
 function WhySection() {
   return (
-    <div className="container mx-auto my-24">
-      <h1 className="text-center text-primary text-5xl font-bold">
+    <div className="container mx-auto my-24 w-3/4 lg:w-full">
+      <h1 className="text-center text-primary text-2xl lg:text-5xl font-bold">
         Kenapa Pulih@thePeak?
       </h1>
-      <div className="flex justify-around mt-16">
+      <div className="flex flex-col lg:flex-row justify-around mt-16 gap-12">
         <div className="flex flex-col items-center gap-6">
           <img src={ServiceImages.WhyFirst} alt="kenapa pulih@thepeak" width="150px" />
-          <p className="text-secondary">
+          <p className="text-secondary text-center">
             Psikolog berpengalaman sesuai dengan bidangnya
           </p>
         </div>
@@ -157,7 +157,7 @@ function WhySection() {
         </div>
         <div className="flex flex-col items-center gap-6">
           <img src={ServiceImages.WhyThird} alt="kenapa pulih@thepeak" width="150px" />
-          <p className="text-secondary">
+          <p className="text-secondary text-center">
             Memiliki pemahaman mendalam tentang perspektif gender
           </p>
         </div>

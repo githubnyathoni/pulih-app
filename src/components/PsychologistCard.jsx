@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 function PsychologistCard({
-  photo, alt, name, skills, slug, link,
+  photo, alt, name, skills, slug, link, className,
 }) {
   return (
-    <Link to={`/${link}/${slug}`} className="rounded-xl shadow-lg w-64 cursor-pointer">
+    <Link to={`/${link}/${slug}`} className={`${className} rounded-xl shadow-lg cursor-pointer`}>
       <div>
         <img src={photo} alt={alt} className="rounded-t-xl" />
         <div className="p-4">
@@ -35,6 +35,7 @@ PsychologistCard.propTypes = {
   skills: PropTypes.arrayOf.isRequired,
   slug: PropTypes.string.isRequired,
   link: PropTypes.string.isRequired,
+  className: PropTypes.string.isRequired,
 };
 
 export default PsychologistCard;

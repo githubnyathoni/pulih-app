@@ -11,17 +11,17 @@ import products from '../lib/products';
 function AboutMerchandise() {
   return (
     <div className="flex items-center justify-center container mx-auto h-screen-header">
-      <div className="flex w-10/12 gap-12">
+      <div className="flex flex-col lg:flex-row w-10/12 gap-12">
         <img
           src={MerchandiseImages.Merchandise}
           alt="ilustrasi merchandise"
-          style={{ width: '50%' }}
+          className="my-12 lg:my-0 lg:w-1/2"
         />
         <div className="flex flex-col justify-center">
-          <h1 className="text-primary text-5xl font-bold">
+          <h1 className="text-primary text-3xl lg:text-5xl font-bold">
             Merchandise
           </h1>
-          <p className="text-secondary text-justify mt-8">
+          <p className="text-secondary lg:text-justify mt-8">
             Dengan dedikasi dan rasa cinta tim Pulih kepada para klien kami.
             Kami persembahkan Merchandise yang dibuat dengan penuh kasih yang
             dapat anda miliki.
@@ -34,12 +34,12 @@ function AboutMerchandise() {
 
 function ProductCard({ name, link, image }) {
   return (
-    <div className="w-72">
+    <div className="lg:w-72 w-48-percent">
       <img src={image} alt="totebag" />
       <h1 className="text-primary font-bold my-1 text-lg">{ name }</h1>
       <div className="flex justify-end">
-        <Link to={link} target="_blank">
-          <Button>
+        <Link to={link} target="_blank" className="w-full">
+          <Button className="w-full lg:w-max justify-center rounded-lg lg:rounded-full">
             Buy now
           </Button>
         </Link>
@@ -56,7 +56,7 @@ ProductCard.propTypes = {
 
 function Products() {
   return (
-    <div className="w-full max-w-5xl mx-auto flex flex-wrap justify-between mt-12 pb-8">
+    <div className="w-10/12 lg:w-full max-w-5xl mx-auto flex flex-wrap justify-between mt-12 pb-8 gap-y-8">
       {
         products.map((item) => (
           <ProductCard name={item.name} link={item.link} image={item.image} />

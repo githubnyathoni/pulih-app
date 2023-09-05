@@ -48,7 +48,7 @@ function QuoteCard() {
           <span className="text-primary mt-6">
             { quoteActive.speaker }
           </span>
-          <Button className="mt-6">
+          <Button className="mt-6 w-max">
             Konsultasi dengan kami
           </Button>
         </div>
@@ -183,7 +183,7 @@ function FaqCard() {
 
 function InstagramCard() {
   return (
-    <div>
+    <div className="mx-auto lg:m-0">
       <h1 className="text-primary text-3xl font-bold">
         Temukan kami di Instagram
       </h1>
@@ -204,7 +204,7 @@ function InstagramCard() {
 
 function MerchandiseCard() {
   return (
-    <div className="flex flex-col justify-center bg-primary w-1/3 h-80 p-12 rounded-3xl bg-merchandise">
+    <div className="flex flex-col justify-center bg-primary lg:w-1/3 h-80 p-12 lg:rounded-3xl bg-merchandise w-full">
       <h1 className="text-white font-bold text-3xl">Merchandise</h1>
       <h1 className="text-white font-bold text-3xl">Pulih@thePeak</h1>
       <Link to="/merchandise">
@@ -222,8 +222,8 @@ function MerchandiseCard() {
 function CloserSection() {
   return (
     <div className="bg-shape-closer">
-      <div className="container flex justify-center items-center mx-auto h-screen-header">
-        <div className="flex justify-around w-full">
+      <div className="lg:container flex justify-center items-center lg:mx-auto h-screen-header">
+        <div className="flex flex-col lg:flex-row justify-around w-full gap-12">
           <InstagramCard />
           <MerchandiseCard />
         </div>
