@@ -79,7 +79,7 @@ function PsychologistSection() {
             }
           </div>
         </div>
-        <div className="w-full lg:w-8/12 ml-8 lg:ml-0 overflow-auto lg:overflow-hidden">
+        <div className="w-full lg:w-8/12 pl-8 lg:ml-0 overflow-auto lg:overflow-hidden">
           <div
             className="flex transition ease-out duration-40"
             style={{ transform: `translateX(-${(currentIndex * 100) - (currentIndex / 2)}%)` }}
@@ -296,14 +296,14 @@ function FaqCard() {
 
 function InstagramCard() {
   return (
-    <div className="mx-auto lg:m-0">
-      <h1 className="text-primary text-3xl font-bold">
+    <div className="w-10/12 lg:w-full mx-auto lg:m-0">
+      <h1 className="text-primary text-xl lg:text-3xl font-bold">
         Temukan kami di Instagram
       </h1>
       <div className="flex my-4 gap-4">
-        <img src={Images.Instagram1} alt="post of instagram" width="128px" />
-        <img src={Images.Instagram2} alt="post of instagram" width="128px" />
-        <img src={Images.Instagram3} alt="post of instagram" width="128px" />
+        <img src={Images.Instagram1} alt="post of instagram" className="w-20 lg:w-32" />
+        <img src={Images.Instagram2} alt="post of instagram" className="w-20 lg:w-32" />
+        <img src={Images.Instagram3} alt="post of instagram" className="w-20 lg:w-32" />
       </div>
       <Link to="https://www.instagram.com/pulihatp/" target="_blank">
         <Button>
