@@ -13,9 +13,122 @@ import psychologistList from '../lib/psychologist_list';
 
 const quotes = require('../lib/quotes.json');
 
+function PsychologistSection() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const previousSlide = () => {
+    setCurrentIndex(currentIndex - 1);
+  };
+
+  const nextSlide = () => {
+    setCurrentIndex(currentIndex + 1);
+  };
+
+  return (
+    <div className="container-xl mx-auto h-screen-header mt-20 w-full">
+      <div className="flex flex-col lg:flex-row justify-between">
+        <div className="flex lg:flex-col justify-between lg:mr-8 w-9/12 mx-auto lg:w-4/12">
+          <div />
+          <div className="">
+            <h1 className="text-primary text-lg lg:text-3xl font-bold">Psikolog Pulih@thePeak</h1>
+            <h6 className="text-secondary my-4">
+              Psikolog profesional kami selalu siap mendengarkan
+              cerita anda dimana saja dan kapan saja.
+            </h6>
+            <Link to="/psychologist" className="hidden lg:block">
+              <Button className="w-max">
+                Lihat Selengkapnya
+                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.21443 15.2405C8.0311 15.0571 7.9351 14.8238 7.92643 14.5405C7.91777 14.2571 8.00543 14.0238 8.18943 13.8405L13.0894 8.94048H1.91443C1.6311 8.94048 1.39343 8.84448 1.20143 8.65248C1.00943 8.46048 0.913766 8.22315 0.914432 7.94048C0.914432 7.65715 1.01043 7.41948 1.20243 7.22748C1.39443 7.03548 1.63177 6.93981 1.91443 6.94048H13.0894L8.18943 2.04048C8.0061 1.85714 7.91843 1.62381 7.92643 1.34048C7.93443 1.05715 8.03043 0.823811 8.21443 0.640478C8.39777 0.457145 8.6311 0.365479 8.91443 0.365479C9.19777 0.365479 9.4311 0.457145 9.61443 0.640478L16.2144 7.24048C16.3144 7.32381 16.3854 7.42814 16.4274 7.55348C16.4694 7.67881 16.4901 7.80781 16.4894 7.94048C16.4894 8.07381 16.4688 8.19881 16.4274 8.31548C16.3861 8.43215 16.3151 8.54048 16.2144 8.64048L9.61443 15.2405C9.4311 15.4238 9.19777 15.5155 8.91443 15.5155C8.6311 15.5155 8.39777 15.4238 8.21443 15.2405Z" fill="#FFE7F9" />
+                </svg>
+              </Button>
+            </Link>
+          </div>
+          <div className="hidden lg:flex gap-2 mb-4">
+            {
+              currentIndex > 0
+                ? (
+                  <ButtonIcon className="w-12" onClick={previousSlide}>
+                    <img
+                      src={Images.LeftArrowActive}
+                      alt="left arrow"
+                    />
+                  </ButtonIcon>
+                )
+                : (
+                  <ButtonIcon className="w-12 cursor-not-allowed">
+                    <img
+                      src={Images.LeftArrowInactive}
+                      alt="left arrow"
+                    />
+                  </ButtonIcon>
+                )
+            }
+            {
+              currentIndex < 8
+                ? (
+                  <ButtonIcon className="w-12" onClick={nextSlide}>
+                    <img src={Images.RightArrowActive} alt="right arrow" />
+                  </ButtonIcon>
+                )
+                : (
+                  <ButtonIcon className="w-12 cursor-not-allowed">
+                    <img src={Images.RightArrowInactive} alt="right arrow" />
+                  </ButtonIcon>
+                )
+            }
+          </div>
+        </div>
+        <div className="w-full lg:w-8/12 ml-8 lg:ml-0 overflow-auto lg:overflow-hidden">
+          <div
+            className="flex transition ease-out duration-40"
+            style={{ transform: `translateX(-${(currentIndex * 100) - (currentIndex / 2)}%)` }}
+          >
+            <div className="flex p-4 gap-5">
+              {
+                psychologistList.map((item) => (
+                  <PsychologistCard
+                    photo={item.photo}
+                    alt={item.alt}
+                    name={item.name}
+                    skills={item.skills}
+                    slug={item.slug}
+                    link="psychologist"
+                    className="w-64"
+                  />
+                ))
+              }
+            </div>
+          </div>
+        </div>
+        <Link to="/psychologist" className="ml-12 mt-2 lg:hidden">
+          <Button className="w-max">
+            Lihat Selengkapnya
+            <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.21443 15.2405C8.0311 15.0571 7.9351 14.8238 7.92643 14.5405C7.91777 14.2571 8.00543 14.0238 8.18943 13.8405L13.0894 8.94048H1.91443C1.6311 8.94048 1.39343 8.84448 1.20143 8.65248C1.00943 8.46048 0.913766 8.22315 0.914432 7.94048C0.914432 7.65715 1.01043 7.41948 1.20243 7.22748C1.39443 7.03548 1.63177 6.93981 1.91443 6.94048H13.0894L8.18943 2.04048C8.0061 1.85714 7.91843 1.62381 7.92643 1.34048C7.93443 1.05715 8.03043 0.823811 8.21443 0.640478C8.39777 0.457145 8.6311 0.365479 8.91443 0.365479C9.19777 0.365479 9.4311 0.457145 9.61443 0.640478L16.2144 7.24048C16.3144 7.32381 16.3854 7.42814 16.4274 7.55348C16.4694 7.67881 16.4901 7.80781 16.4894 7.94048C16.4894 8.07381 16.4688 8.19881 16.4274 8.31548C16.3861 8.43215 16.3151 8.54048 16.2144 8.64048L9.61443 15.2405C9.4311 15.4238 9.19777 15.5155 8.91443 15.5155C8.6311 15.5155 8.39777 15.4238 8.21443 15.2405Z" fill="#FFE7F9" />
+            </svg>
+          </Button>
+        </Link>
+      </div>
+    </div>
+  );
+}
 function QuoteCard() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [quoteActive, setQuoteActive] = useState(quotes[currentIndex]);
+
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     if (currentIndex === 2) {
+  //       setQuoteActive(quotes[0]);
+  //       setCurrentIndex(0);
+  //     } else {
+  //       setQuoteActive(quotes[currentIndex + 1]);
+  //       setCurrentIndex(currentIndex + 1);
+  //     }
+  //   }, 5000);
+  //   return () => clearInterval(interval);
+  // }, [currentIndex]);
 
   return (
     <div className="container flex justify-center items-center mx-auto h-screen-header">
@@ -24,14 +137,14 @@ function QuoteCard() {
           currentIndex === 0
             ? (
               <ButtonIcon
-                className="w-12 cursor-not-allowed"
+                className="w-12 cursor-not-allowed hidden lg:block"
               >
                 <img src={Images.LeftArrowInactive} alt="left arrow inactive" />
               </ButtonIcon>
             )
             : (
               <ButtonIcon
-                className="w-12"
+                className="w-12 hidden lg:block"
                 onClick={() => {
                   setQuoteActive(quotes[currentIndex - 1]);
                   setCurrentIndex(currentIndex - 1);
@@ -41,11 +154,11 @@ function QuoteCard() {
               </ButtonIcon>
             )
         }
-        <div className="flex flex-col h-72 w-10/12 justify-center">
-          <p className="text-primary lg:text-justify lg:text-2xl lg:font-bold">
+        <div className="flex flex-col h-72 w-full lg:w-10/12 justify-center">
+          <p className="text-primary lg:text-justify text-sm lg:text-2xl lg:font-bold">
             { quoteActive.quote }
           </p>
-          <span className="text-primary mt-6">
+          <span className="text-primary text-sm lg:text-base mt-6">
             { quoteActive.speaker }
           </span>
           <Button className="mt-6 w-max">
@@ -56,14 +169,14 @@ function QuoteCard() {
           currentIndex === 2
             ? (
               <ButtonIcon
-                className="w-12 cursor-not-allowed"
+                className="w-12 cursor-not-allowed hidden lg:block"
               >
                 <img src={Images.RightArrowInactive} alt="right arrow inactive" />
               </ButtonIcon>
             )
             : (
               <ButtonIcon
-                className="w-12"
+                className="w-12 hidden lg:block"
                 onClick={() => {
                   setQuoteActive(quotes[currentIndex + 1]);
                   setCurrentIndex(currentIndex + 1);
@@ -233,16 +346,6 @@ function CloserSection() {
 }
 
 function Home() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const previousSlide = () => {
-    setCurrentIndex(currentIndex - 1);
-  };
-
-  const nextSlide = () => {
-    setCurrentIndex(currentIndex + 1);
-  };
-
   return (
     <MainLayout>
       <Header page="Home" />
@@ -322,83 +425,7 @@ function Home() {
           />
         </div>
       </div>
-      <div className="container-xl mx-auto h-screen-header mt-20">
-        <div className="flex justify-between">
-          <div className="flex flex-col justify-between mr-8 w-4/12">
-            <div />
-            <div className="">
-              <h1 className="text-primary text-3xl font-bold">Psikolog Pulih@thePeak</h1>
-              <h6 className="text-secondary my-4">
-                Psikolog profesional kami selalu siap mendengarkan
-                cerita anda dimana saja dan kapan saja.
-              </h6>
-              <Link to="/psychologist">
-                <Button className="w-max">
-                  Lihat Selengkapnya
-                  <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M8.21443 15.2405C8.0311 15.0571 7.9351 14.8238 7.92643 14.5405C7.91777 14.2571 8.00543 14.0238 8.18943 13.8405L13.0894 8.94048H1.91443C1.6311 8.94048 1.39343 8.84448 1.20143 8.65248C1.00943 8.46048 0.913766 8.22315 0.914432 7.94048C0.914432 7.65715 1.01043 7.41948 1.20243 7.22748C1.39443 7.03548 1.63177 6.93981 1.91443 6.94048H13.0894L8.18943 2.04048C8.0061 1.85714 7.91843 1.62381 7.92643 1.34048C7.93443 1.05715 8.03043 0.823811 8.21443 0.640478C8.39777 0.457145 8.6311 0.365479 8.91443 0.365479C9.19777 0.365479 9.4311 0.457145 9.61443 0.640478L16.2144 7.24048C16.3144 7.32381 16.3854 7.42814 16.4274 7.55348C16.4694 7.67881 16.4901 7.80781 16.4894 7.94048C16.4894 8.07381 16.4688 8.19881 16.4274 8.31548C16.3861 8.43215 16.3151 8.54048 16.2144 8.64048L9.61443 15.2405C9.4311 15.4238 9.19777 15.5155 8.91443 15.5155C8.6311 15.5155 8.39777 15.4238 8.21443 15.2405Z" fill="#FFE7F9" />
-                  </svg>
-                </Button>
-              </Link>
-            </div>
-            <div className="flex gap-2 mb-4">
-              {
-                currentIndex > 0
-                  ? (
-                    <ButtonIcon className="w-12" onClick={previousSlide}>
-                      <img
-                        src={Images.LeftArrowActive}
-                        alt="left arrow"
-                      />
-                    </ButtonIcon>
-                  )
-                  : (
-                    <ButtonIcon className="w-12 cursor-not-allowed">
-                      <img
-                        src={Images.LeftArrowInactive}
-                        alt="left arrow"
-                      />
-                    </ButtonIcon>
-                  )
-              }
-              {
-                currentIndex < 8
-                  ? (
-                    <ButtonIcon className="w-12" onClick={nextSlide}>
-                      <img src={Images.RightArrowActive} alt="right arrow" />
-                    </ButtonIcon>
-                  )
-                  : (
-                    <ButtonIcon className="w-12 cursor-not-allowed">
-                      <img src={Images.RightArrowInactive} alt="right arrow" />
-                    </ButtonIcon>
-                  )
-              }
-            </div>
-          </div>
-          <div className="w-8/12 overflow-hidden">
-            <div
-              className="flex transition ease-out duration-40"
-              style={{ transform: `translateX(-${(currentIndex * 100) - (currentIndex / 2)}%)` }}
-            >
-              <div className="flex p-4 gap-5">
-                {
-                  psychologistList.map((item) => (
-                    <PsychologistCard
-                      photo={item.photo}
-                      alt={item.alt}
-                      name={item.name}
-                      skills={item.skills}
-                      slug={item.slug}
-                      link="psychologist"
-                    />
-                  ))
-                }
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <PsychologistSection />
       <QuoteCard />
       <FaqCard />
       <CloserSection />
