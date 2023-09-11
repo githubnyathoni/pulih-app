@@ -296,7 +296,7 @@ function FaqCard() {
 
 function InstagramCard() {
   return (
-    <div className="lg:w-full mx-auto lg:m-0">
+    <div className="lg:w-1/3 mx-auto lg:m-0">
       <h1 className="text-primary text-xl lg:text-3xl font-bold">
         Temukan kami di Instagram
       </h1>
