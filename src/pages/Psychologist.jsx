@@ -19,7 +19,7 @@ function AboutPsychologist() {
         />
         <div className="flex flex-col justify-center">
           <h1 className="text-primary text-3xl lg:text-5xl font-bold">
-            Psikolog Terbaik
+            Psikolog Profesional
           </h1>
           <p className="text-secondary lg:text-justify mt-8">
             Psikolog profesional kami memiliki lisensi dan telah membantu ribuan permasalahan

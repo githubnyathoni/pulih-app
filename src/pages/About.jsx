@@ -28,7 +28,7 @@ function Vision() {
       <img src={AboutImages.Vision} alt="ilustrasi visi" className="w-3/5 lg:w-1/3" />
       <div className="flex flex-col justify-center lg:pl-8 mt-8">
         <h1 className="text-primary text-2xl font-bold">Visi</h1>
-        <p className="text-secondary">
+        <p className="text-secondary font-medium">
           Menjadi pusat pemberdayaan perempuan, remaja dan keluarga yang terdepan
           di Indonesia dan diakui secara internasional.
         </p>
@@ -42,7 +42,7 @@ function Mission() {
     <div className="flex flex-col-reverse items-center lg:py-12 lg:flex-row">
       <div className="flex flex-col justify-center pr-8 py-8 lg:py-0">
         <h1 className="text-primary text-2xl font-bold">Misi</h1>
-        <p className="text-secondary">
+        <p className="text-secondary font-medium">
           Memberikan layanan jasa serta dukungan bagi perempuan, remaja, keluarga,
           dan masyarakat melalui berbagai program pemberdayaan yang bersifat kuratif,
           preventif, dan edukatif untuk membangun keluarga yang sehat, sejahtera, dan bahagia.
@@ -91,9 +91,6 @@ function TogetherSection() {
         <div className="lg:w-7/12">
           <img src={AboutImages.ThirdRowB} alt="Ragam Kegiatan Bersama Pulih@thePeak" />
         </div>
-      </div>
-      <div id="fourth-row" className="flex justify-center gap-8 my-10">
-        <img src={AboutImages.FourthRow} style={{ borderRadius: '3rem' }} alt="Ragam Kegiatan Bersama Pulih@thePeak" />
       </div>
     </div>
   );

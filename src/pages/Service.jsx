@@ -145,19 +145,19 @@ function WhySection() {
       <div className="flex flex-col lg:flex-row justify-around mt-16 gap-12">
         <div className="flex flex-col items-center gap-6">
           <img src={ServiceImages.WhyFirst} alt="kenapa pulih@thepeak" width="150px" />
-          <p className="text-secondary text-center">
+          <p className="text-primary text-center font-medium">
             Psikolog berpengalaman sesuai dengan bidangnya
           </p>
         </div>
         <div className="flex flex-col items-center gap-6">
           <img src={ServiceImages.WhySecond} alt="kenapa pulih@thepeak" width="150px" />
-          <p className="text-secondary">
+          <p className="text-primary font-medium">
             Menjunjung tinggi kode etik profesi
           </p>
         </div>
         <div className="flex flex-col items-center gap-6">
           <img src={ServiceImages.WhyThird} alt="kenapa pulih@thepeak" width="150px" />
-          <p className="text-secondary text-center">
+          <p className="text-primary text-center font-medium">
             Memiliki pemahaman mendalam tentang perspektif gender
           </p>
         </div>

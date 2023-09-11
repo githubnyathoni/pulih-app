@@ -296,7 +296,7 @@ function FaqCard() {
 
 function InstagramCard() {
   return (
-    <div className="w-10/12 lg:w-full mx-auto lg:m-0">
+    <div className="lg:w-full mx-auto lg:m-0">
       <h1 className="text-primary text-xl lg:text-3xl font-bold">
         Temukan kami di Instagram
       </h1>
@@ -353,14 +353,14 @@ function Home() {
         <div className="flex flex-col-reverse lg:flex-row justify-between items-center container mx-auto h-screen-header gap-16">
           <div className="pb-16 w-9/12 lg:w-full">
             <h1 className="text-6xl lg:text-7xl text-primary font-bold">Invest In Your Mental Health</h1>
-            <p className="text-secondary mt-6">
+            <p className="text-secondary font-medium mt-6">
               Pulih@thePeak lebih mendukung tindakan pencegahan khususnya dalam kesehatan
               mental. Salah satu caranya dengan investasi kesehatan mental untuk diri sendiri
               dan keluarga. Dengan memelihara dan menjaga kesehatan mental diri sendiri sejak
               dini akan berdampak positif bagi kehidupan sehari-hari dalam keluarga, pendidikan,
               pekerjaan, dan hubungan sosial.
             </p>
-            <p className="text-secondary mt-2">
+            <p className="text-secondary font-medium mt-2">
               #investinyourmentalhealth
             </p>
           </div>
@@ -388,7 +388,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="container mx-auto h-screen-header">
+      <div className="container-xl mx-auto h-screen-header">
         <h1 className="text-center text-primary text-3xl lg:text-4xl font-bold mt-6">Layanan Pulih@thePeak</h1>
         <div className="flex flex-col lg:flex-row lg:justify-between mt-16 px-12 gap-16">
           <ServiceCard

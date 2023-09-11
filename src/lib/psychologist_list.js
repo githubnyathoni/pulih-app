@@ -16,8 +16,7 @@ const psychologistList = [
     skills_detail: [
       'Gender-based Violence',
       'Depression',
-      'Bipolar',
-      'Borderline',
+      'Post Traumatic Stress Disorder (PTSD)',
       'Anxiety',
       'English-speaking Clients',
       'Youth',
