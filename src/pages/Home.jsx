@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import MainLayout from '../layout/MainLayout';
 import Header from '../components/Header';
@@ -31,7 +31,7 @@ function PsychologistSection() {
           <div />
           <div className="">
             <h1 className="text-primary text-lg lg:text-3xl font-bold">Psikolog Pulih@thePeak</h1>
-            <h6 className="text-secondary my-4">
+            <h6 className="text-secondary font-medium my-4">
               Psikolog profesional kami selalu siap mendengarkan
               cerita anda dimana saja dan kapan saja.
             </h6>
@@ -117,18 +117,18 @@ function QuoteCard() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [quoteActive, setQuoteActive] = useState(quotes[currentIndex]);
 
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     if (currentIndex === 2) {
-  //       setQuoteActive(quotes[0]);
-  //       setCurrentIndex(0);
-  //     } else {
-  //       setQuoteActive(quotes[currentIndex + 1]);
-  //       setCurrentIndex(currentIndex + 1);
-  //     }
-  //   }, 5000);
-  //   return () => clearInterval(interval);
-  // }, [currentIndex]);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (currentIndex === 2) {
+        setQuoteActive(quotes[0]);
+        setCurrentIndex(0);
+      } else {
+        setQuoteActive(quotes[currentIndex + 1]);
+        setCurrentIndex(currentIndex + 1);
+      }
+    }, 5000);
+    return () => clearInterval(interval);
+  }, [currentIndex]);
 
   return (
     <div className="container flex justify-center items-center mx-auto h-screen-header">
@@ -158,7 +158,7 @@ function QuoteCard() {
           <p className="text-primary lg:text-justify text-sm lg:text-2xl lg:font-bold">
             { quoteActive.quote }
           </p>
-          <span className="text-primary text-sm lg:text-base mt-6">
+          <span className="text-primary text-sm lg:text-base font-medium mt-6">
             { quoteActive.speaker }
           </span>
           <Button className="mt-6 w-max">
@@ -205,7 +205,7 @@ function FaqCard() {
             role="button"
             tabIndex={0}
           >
-            <h6 className="text-primary">
+            <h6 className="text-primary font-medium">
               Bagaimana cara melakukan pendaftaran konseling di Pulih@thePeak?
             </h6>
             <ButtonIcon>
@@ -216,7 +216,7 @@ function FaqCard() {
               />
             </ButtonIcon>
           </div>
-          <div className={`bg-slate-50 px-8 text-secondary border-b-third transition-all duration-300 ${selectedQuestion === 0 ? 'visible h-18 py-6' : 'invisible h-0'}`}>
+          <div className={`bg-slate-50 px-8 text-secondary font-medium border-b-third transition-all duration-300 ${selectedQuestion === 0 ? 'visible h-18 py-6' : 'invisible h-0'}`}>
             Silahkan Whatsapp ke nomor 083128769871
           </div>
         </div>
@@ -227,7 +227,7 @@ function FaqCard() {
             role="button"
             tabIndex={0}
           >
-            <h6 className="text-primary">
+            <h6 className="text-primary font-medium">
               Jenis konsultasi apa saja yang disediakan oleh Pulih@thePeak?
             </h6>
             <ButtonIcon>
@@ -238,7 +238,7 @@ function FaqCard() {
               />
             </ButtonIcon>
           </div>
-          <div className={`bg-slate-50 px-8 text-secondary border-b-third transition-all duration-300 ${selectedQuestion === 1 ? 'visible h-22 py-4' : 'invisible h-0'}`}>
+          <div className={`bg-slate-50 pl-8 pr-16 text-secondary font-medium border-b-third transition-all duration-300 ${selectedQuestion === 1 ? 'visible h-22 py-4' : 'invisible h-0'}`}>
             Konseling psikologis dan psikoterapi (individual dan kelompok), Konseling pra-nikah,
             Konseling perkawinan Konseling keluarga, Konseling keuangan keluarga, Konsultasi karir.
           </div>
@@ -250,7 +250,7 @@ function FaqCard() {
             role="button"
             tabIndex={0}
           >
-            <h6 className="text-primary">
+            <h6 className="text-primary font-medium">
               Apakah konseling di Pulih@thePeak dapat dilakukan secara offline?
             </h6>
             <ButtonIcon>
@@ -261,7 +261,7 @@ function FaqCard() {
               />
             </ButtonIcon>
           </div>
-          <div className={`bg-slate-50 px-8 text-secondary border-b-third transition-all duration-300 ${selectedQuestion === 2 ? 'visible h-20 py-4' : 'invisible h-0'}`}>
+          <div className={`bg-slate-50 pl-8 pr-16 text-secondary font-medium border-b-third transition-all duration-300 ${selectedQuestion === 2 ? 'visible h-20 py-4' : 'invisible h-0'}`}>
             Kegiatan konseling dapat dilakukan secara online (Zoom/Chat) dan offline.
             Konseling via “Chat” hanya dapat dilakukan sesuai dengan mendapat persetujuan
             dari psikolog.
@@ -274,7 +274,7 @@ function FaqCard() {
             role="button"
             tabIndex={0}
           >
-            <h6 className="text-primary">
+            <h6 className="text-primary font-medium">
               Berapa lama sesi konseling dilakukan?
             </h6>
             <ButtonIcon>
@@ -285,7 +285,7 @@ function FaqCard() {
               />
             </ButtonIcon>
           </div>
-          <div className={`lg:rounded-b-3xl bg-slate-50 px-8 text-secondary border-b-third transition-all duration-300 ${selectedQuestion === 3 ? 'visible h-14 py-4' : 'invisible h-0'}`}>
+          <div className={`lg:rounded-b-3xl bg-slate-50 px-8 text-secondary font-medium border-b-third transition-all duration-300 ${selectedQuestion === 3 ? 'visible h-14 py-4' : 'invisible h-0'}`}>
             Kegiatan konseling dilakukan selama 75 menit.
           </div>
         </div>
@@ -351,7 +351,7 @@ function Home() {
       <Header page="Home" />
       <div className="bg-pink bg-shape-1">
         <div className="flex flex-col-reverse lg:flex-row justify-between items-center container mx-auto h-screen-header gap-16">
-          <div className="pb-16 w-9/12 lg:w-full">
+          <div className="pt-12 w-9/12 lg:w-full">
             <h1 className="text-6xl lg:text-7xl text-primary font-bold">Invest In Your Mental Health</h1>
             <p className="text-secondary font-medium mt-6">
               Pulih@thePeak lebih mendukung tindakan pencegahan khususnya dalam kesehatan
@@ -364,15 +364,15 @@ function Home() {
               #investinyourmentalhealth
             </p>
           </div>
-          <img src={Images.HomeImage1} alt="psychologist holding hand patient" className="w-full relative left-12 lg:w-1/2 lg:block" />
+          <img src={Images.HomeImage1} alt="psychologist holding hand patient" className="w-full relative left-12 w-45-percent lg:block" />
         </div>
       </div>
       <div className="bg-shape-2">
-        <div className="container mx-auto flex flex-col lg:flex-row items-center lg:items-start justify-between gap-12 lg:py-48 py-24">
+        <div className="container mx-auto flex flex-col lg:flex-row items-center lg:items-start justify-between gap-12 lg:pt-36 lg:pb-20 py-24">
           <img src={Images.HomeImage2} alt="pulih at the psychologists" className="lg:w-2/5 w-9/12" />
           <div className="mt-20 w-9/12 lg:w-full">
             <h1 className="text-4xl text-primary font-bold">Tentang Pulih@thePeak</h1>
-            <p className="text-secondary mt-6">
+            <p className="text-secondary font-medium mt-6">
               Pulih@thePeak didirikan pada 21 April 2014, yang didedikasikan
               sebagaikeberlanjutan dari Yayasan Pulih yaitu organisasi nirlaba yang
               berkiprah sejak tahun 2002 dalam pemulihan trauma psikologis dan psikososial.

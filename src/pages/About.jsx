@@ -12,7 +12,7 @@ function AboutSection() {
         <h1 className="text-primary text-3xl lg:text-5xl font-bold">
           Tentang Pulih@thePeak
         </h1>
-        <p className="text-secondary text-left lg:text-center lg:w-6/12 py-6">
+        <p className="text-secondary text-left lg:text-center lg:w-6/12 py-6 font-medium">
           Pulih@thePeak merupakan kewirausahaan sosial yang didirikan pada 21 April 2014,
           yang didedikasikan sebagai keberlanjutan dari Yayasan Pulih yaitu organisasi
           nirlaba yang berkiprah sejak tahun 2002 dalam pemulihan trauma psikologis dan psikososial.

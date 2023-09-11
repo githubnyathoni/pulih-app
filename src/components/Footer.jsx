@@ -5,11 +5,11 @@ import ButtonIcon from './ButtonIcon';
 function Address() {
   return (
     <div>
-      <h1 className="text-primary text-xl">Pulih@thePeak</h1>
-      <p className="text-secondary mt-3">Jl. Brawijaya Raya No.15, RT.3/RW.3, Pulo, Kec. Kby. Baru, Kota Jakarta</p>
-      <p className="text-secondary">Selatan, Daerah Khusus Ibukota Jakarta 12160</p>
-      <p className="text-secondary mt-3">Jl Wolter Mongonsidi No. 73 Zm 23 B, Kebayoran Baru, 12180.</p>
-      <p className="text-secondary mt-3">(021) 72798747</p>
+      <h1 className="text-primary font-medium text-xl">Pulih@thePeak</h1>
+      <p className="text-secondary font-medium text-sm mt-3">Jl. Brawijaya Raya No.15, RT.3/RW.3, Pulo, Kec. Kby. Baru, Kota Jakarta</p>
+      <p className="text-secondary font-medium text-sm">Selatan, Daerah Khusus Ibukota Jakarta 12160</p>
+      <p className="text-secondary font-medium text-sm mt-3">Jl Wolter Mongonsidi No. 73 Zm 23 B, Kebayoran Baru, 12180.</p>
+      <p className="text-secondary font-medium text-sm mt-3">(021) 72798747</p>
     </div>
   );
 }

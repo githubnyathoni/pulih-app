@@ -16,7 +16,7 @@ function Header({ page }) {
           <Link to="/">
             <img src={Images.Logo} alt="logo pulih at the peak" width="70px" />
           </Link>
-          <div className="hidden lg:flex items-center gap-10 text-primary">
+          <div className="hidden lg:flex items-center gap-10 text-primary font-medium">
             <a href="/" className={page === 'Home' && 'border-b-primary'}>
               Beranda
             </a>

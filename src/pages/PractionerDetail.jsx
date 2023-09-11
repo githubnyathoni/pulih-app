@@ -24,7 +24,7 @@ function PractionerSection() {
             {practioner.name}
           </h1>
           <h2 className="text-primary text-xl font-bold mt-6">Profil</h2>
-          <p className="text-secondary leading-loose whitespace-pre-line text-justify mt-2">
+          <p className="text-secondary leading-loose whitespace-pre-line text-justify font-medium mt-2">
             {practioner.profile}
           </p>
           <h2 className="text-primary text-xl font-bold mt-6">Spesialisasi</h2>

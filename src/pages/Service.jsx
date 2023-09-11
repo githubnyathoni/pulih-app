@@ -16,7 +16,7 @@ function ServiceSection() {
           <h1 className="text-primary text-3xl lg:text-5xl font-bold">
             Layanan Pulih@thePeak
           </h1>
-          <p className="text-secondary lg:text-justify mt-8">
+          <p className="text-secondary lg:text-justify font-medium mt-8">
             Kami telah membantu mengatasi berbagai masalah pribadi maupun keluarga.
             Dengan layanan yang kami sediakan, anda dapat berkonsultasi dimana saja
             dan kapan saja karena kami percaya kesehatan mental  anda adalah prioritas kami.
@@ -37,7 +37,7 @@ function ServiceCategories() {
         <h1 className="text-primary text-3xl lg:text-5xl font-bold">
           Kategori Layanan Pulih@thePeak
         </h1>
-        <p className="text-secondary mt-6">
+        <p className="text-secondary font-medium mt-6">
           Bersama Pulih@thePeak, anda dapat berkonsultasi dengan Psikolog sesuai kebutuhan anda.
         </p>
         <div className="flex mt-16">
@@ -111,7 +111,7 @@ function ServiceCategories() {
               )
           }
           <div className="flex items-center w-2/3">
-            <p className="text-secondary mr-12 ease-in-out transition-all duration-100 w-2/3">
+            <p className="text-secondary mr-12 ease-in-out transition-all duration-100 w-2/3 font-medium">
               { currentCategory.description }
             </p>
             <img src={currentCategory.image} alt="ilustrasi konseling individu" width="200px" />
@@ -138,7 +138,7 @@ function ServiceCategories() {
 
 function WhySection() {
   return (
-    <div className="container mx-auto my-24 w-3/4 lg:w-full">
+    <div className="container mx-auto my-24 w-3/4 lg:w-full pb-20">
       <h1 className="text-center text-primary text-2xl lg:text-5xl font-bold">
         Kenapa Pulih@thePeak?
       </h1>
