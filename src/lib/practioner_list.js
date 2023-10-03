@@ -9,7 +9,7 @@ const practionerList = [
     skills_detail: [
       'Praktisi Ahli',
     ],
-    photo: PsychologistImages.Agustina,
+    photo: PsychologistImages.Wrenges,
     alt: 'Ibu Ika',
     slug: 'wrenges-widiastuti',
     profile: `Wrenges Widiastuti adalah seorang akuntan yang juga melanjutkan Pendidikan S2 Manajemen Pembangunan di Asian Institute of Management, Manila. Mengawali karir sebagai auditor di Kemenkeu Republik Indonesia tahun 1987. Berpengalaman bekerja ke beberapa perusahaan swasta yaitu Nestle, Natra Raya, dan Price Waterhouse, sebelum akhirnya fokus berupaya menguatkan manajemen keuangan di berbagai LSM mulai tahun 2005.

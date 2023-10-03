@@ -56,21 +56,20 @@ ProductCard.propTypes = {
 
 function Products() {
   return (
-    <div className="w-10/12 lg:w-full max-w-5xl mx-auto flex flex-wrap justify-between mt-12 pb-8 gap-y-8">
+    <div className="w-10/12 lg:w-full max-w-5xl mx-auto flex flex-wrap lg:justify-between mt-12 pb-8 gap-y-8 gap-x-2">
       {
         products.map((item) => (
           <ProductCard name={item.name} link={item.link} image={item.image} />
         ))
       }
-      <div className="mt-16 flex">
-        <div className="w-72 h-72 rounded-xl bg-pink flex flex-col justify-center items-center">
-          <h1 className="text-secondary font-bold text-3xl">Comming</h1>
-          <h1 className="text-secondary font-bold text-3xl">Soon</h1>
-        </div>
-        <div className="w-72 h-72 rounded-xl bg-pink flex flex-col justify-center items-center ml-20">
-          <h1 className="text-secondary font-bold text-3xl">Comming</h1>
-          <h1 className="text-secondary font-bold text-3xl">Soon</h1>
-        </div>
+      <div className="lg:w-72 w-48-percent">
+        <img src={MerchandiseImages.CommingSoon} alt="totebag" />
+      </div>
+      <div className="lg:w-72 w-48-percent">
+        <img src={MerchandiseImages.CommingSoon} alt="totebag" />
+      </div>
+      <div className="lg:w-72 w-48-percent">
+        <img src={MerchandiseImages.CommingSoon} alt="totebag" />
       </div>
     </div>
   );

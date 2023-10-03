@@ -42,7 +42,7 @@ function ServiceCategories() {
         </p>
         <div className="flex mt-16">
           <div
-            className={`${selectedCategories === 0 ? 'bg-pink-primary text-white font-bold' : 'bg-pink text-secondary'} rounded-l-full py-4 px-8 duration-200 transition-all`}
+            className={`${selectedCategories === 0 ? 'services-category lg:text-white text-primary font-bold' : 'bg-pink text-secondary lg:block hidden'} border-left-category py-4 px-8 duration-200 transition-all`}
             onClick={() => setSelectedCategories(0)}
             onKeyDown={() => setSelectedCategories(0)}
             role="button"
@@ -51,7 +51,7 @@ function ServiceCategories() {
             Konseling Individu
           </div>
           <div
-            className={`${selectedCategories === 1 ? 'bg-pink-primary text-white font-bold' : 'bg-pink text-secondary'} py-4 px-8 duration-200 transition-all`}
+            className={`${selectedCategories === 1 ? 'services-category lg:text-white text-primary font-bold' : 'bg-pink text-secondary lg:block hidden'} py-4 px-8 duration-200 transition-all lg:rounded-none rounded-full`}
             onClick={() => setSelectedCategories(1)}
             onKeyDown={() => setSelectedCategories(1)}
             role="button"
@@ -60,7 +60,7 @@ function ServiceCategories() {
             Konseling Pasangan
           </div>
           <div
-            className={`${selectedCategories === 2 ? 'bg-pink-primary text-white font-bold' : 'bg-pink text-secondary'} py-4 px-8 duration-200 transition-all`}
+            className={`${selectedCategories === 2 ? 'services-category lg:text-white text-primary font-bold' : 'bg-pink text-secondary lg:block hidden'} py-4 px-8 duration-200 transition-all lg:rounded-none rounded-full`}
             onClick={() => setSelectedCategories(2)}
             onKeyDown={() => setSelectedCategories(2)}
             role="button"
@@ -69,7 +69,7 @@ function ServiceCategories() {
             Konseling Keluarga
           </div>
           <div
-            className={`${selectedCategories === 3 ? 'bg-pink-primary text-white font-bold' : 'bg-pink text-secondary'} py-4 px-8 duration-200 transition-all`}
+            className={`${selectedCategories === 3 ? 'services-category lg:text-white text-primary font-bold' : 'bg-pink text-secondary lg:block hidden'} py-4 px-8 duration-200 transition-all lg:rounded-none rounded-full`}
             onClick={() => setSelectedCategories(3)}
             onKeyDown={() => setSelectedCategories(3)}
             role="button"
@@ -78,7 +78,7 @@ function ServiceCategories() {
             Pemeriksaan Psikologis
           </div>
           <div
-            className={`${selectedCategories === 4 ? 'bg-pink-primary text-white font-bold' : 'bg-pink text-secondary'} py-4 px-8 duration-200 transition-all`}
+            className={`${selectedCategories === 4 ? 'services-category lg:text-white text-primary font-bold' : 'bg-pink text-secondary lg:block hidden'} py-4 px-8 duration-200 transition-all lg:rounded-none rounded-full`}
             onClick={() => setSelectedCategories(4)}
             onKeyDown={() => setSelectedCategories(4)}
             role="button"
@@ -87,7 +87,7 @@ function ServiceCategories() {
             Pelatihan/Workshop
           </div>
           <div
-            className={`${selectedCategories === 5 ? 'bg-pink-primary text-white font-bold' : 'bg-pink text-secondary'} rounded-r-full py-4 px-8 duration-200 transition-all`}
+            className={`${selectedCategories === 5 ? 'services-category lg:text-white text-primary font-bold' : 'bg-pink text-secondary lg:block hidden'} border-right-category py-4 px-8 duration-200 transition-all`}
             onClick={() => setSelectedCategories(5)}
             onKeyDown={() => setSelectedCategories(5)}
             role="button"
@@ -96,22 +96,50 @@ function ServiceCategories() {
             Pelatihan/Workshop
           </div>
         </div>
-        <div className="flex justify-between max-w-screen-xl w-full mt-24">
+        <div className="flex lg:justify-between justify-center max-w-screen-xl w-full mt-24">
           {
             selectedCategories > 0
               ? (
-                <ButtonIcon className="w-12" onClick={() => setSelectedCategories(selectedCategories - 1)}>
+                <ButtonIcon className="w-12 lg:block hidden" onClick={() => setSelectedCategories(selectedCategories - 1)}>
                   <img src={Images.LeftArrowActive} alt="left arrow active" width="32px" />
                 </ButtonIcon>
               )
               : (
-                <ButtonIcon className="w-12 cursor-not-allowed">
+                <ButtonIcon className="w-12 cursor-not-allowed lg:block hidden">
                   <img src={Images.LeftArrowInactive} alt="left arrow inactive" width="32px" />
                 </ButtonIcon>
               )
           }
-          <div className="flex items-center w-2/3">
-            <p className="text-secondary mr-12 ease-in-out transition-all duration-100 w-2/3 font-medium">
+          <div className="flex lg:flex-row flex-col-reverse items-center lg:w-2/3 w-full">
+            <div className="flex lg:hidden mt-4">
+              {
+                selectedCategories > 0
+                  ? (
+                    <ButtonIcon className="w-12 lg:hidden block" onClick={() => setSelectedCategories(selectedCategories - 1)}>
+                      <img src={Images.LeftArrowActive} alt="left arrow active" width="32px" />
+                    </ButtonIcon>
+                  )
+                  : (
+                    <ButtonIcon className="w-12 cursor-not-allowed lg:hidden block">
+                      <img src={Images.LeftArrowInactive} alt="left arrow inactive" width="32px" />
+                    </ButtonIcon>
+                  )
+              }
+              {
+                selectedCategories < 5
+                  ? (
+                    <ButtonIcon className="w-12 lg:hidden block" onClick={() => setSelectedCategories(selectedCategories + 1)}>
+                      <img src={Images.RightArrowActive} alt="right arrow active" width="32px" />
+                    </ButtonIcon>
+                  )
+                  : (
+                    <ButtonIcon className="w-12 cursor-not-allowed lg:hidden block">
+                      <img src={Images.RightArrowInactive} alt="right arrow inactive" width="32px" />
+                    </ButtonIcon>
+                  )
+              }
+            </div>
+            <p className="lg:text-left text-center text-secondary mr-12 ease-in-out transition-all duration-100 w-2/3 font-medium lg:mt-0 mt-8">
               { currentCategory.description }
             </p>
             <img src={currentCategory.image} alt="ilustrasi konseling individu" width="200px" />
@@ -119,12 +147,12 @@ function ServiceCategories() {
           {
             selectedCategories < 5
               ? (
-                <ButtonIcon className="w-12" onClick={() => setSelectedCategories(selectedCategories + 1)}>
+                <ButtonIcon className="w-12 lg:block hidden" onClick={() => setSelectedCategories(selectedCategories + 1)}>
                   <img src={Images.RightArrowActive} alt="right arrow active" width="32px" />
                 </ButtonIcon>
               )
               : (
-                <ButtonIcon className="w-12 cursor-not-allowed">
+                <ButtonIcon className="w-12 cursor-not-allowed lg:block hidden">
                   <img src={Images.RightArrowInactive} alt="right arrow inactive" width="32px" />
                 </ButtonIcon>
               )

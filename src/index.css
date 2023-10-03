@@ -113,6 +113,22 @@ code {
   max-width: 1280px;
 }
 
+.w-48-percent {
+  width: 48%;
+}
+
+.services-category {
+  background-color: #FFE7F9;
+}
+
+.border-left-category {
+  border-radius: 9999px;
+}
+
+.border-right-category {
+  border-radius: 9999px;
+}
+
 @media (min-width: 1024px) {
   .w-34-percent {
     width: 34%;
@@ -121,8 +137,16 @@ code {
   .w-45-percent {
     width: 45%;
   }
-}
 
-.w-48-percent {
-  width: 48%;
+  .services-category {
+    background-color: #E95FAD;
+  }
+
+  .border-left-category {
+    border-radius: 9999px 0px 0px 9999px;
+  }
+
+  .border-right-category {
+    border-radius: 0px 9999px 9999px 0px;
+  }
 }
