@@ -1,0 +1,105 @@
+{
+  "home": {
+    "subtagline": "Pulih@thePeak supports prevention efforts especially in the field of mental health for you and your family. Maintaining and taking care of the person's mental health from an early age will positively impact daily life in the family, education, work, and social relationships.",
+    "about": {
+      "title": "About Pulih@thePeak",
+      "description": "Pulih@thePeak was founded on 21st of April  2014, dedicated to the sustainability of the Pulih Foundation as a non-profit organization that has been active since 2002 in the recovery of psychological trauma.",
+      "more": "More Info"
+    },
+    "service": {
+      "individual": "Individual Counseling",
+      "couples": "Couples Counseling",
+      "family": "Family Counseling",
+      "psychological": "Psychological Check",
+      "training": "Training/Workshop",
+      "webinars": "Seminars/Webinars"
+    },
+    "psychological": {
+      "title": "Psychologist at Pulih@thePeak",
+      "description": "Our professional psychologists are always ready to listen to you anywhere and anytime.",
+      "more": "View More"
+    },
+    "quotes": {
+      "supeli": "“Parents are an essential parties who really determine the physical & mental health (mental and spiritual) of their children. The parenting style provided and the relationship between parents-children will shape the child's mental health. Therefore, it is important to form a strong personality base so that it is not easily influenced by the social environment.”",
+      "soraya": "“Don't forget to do self-reflection as a process of learning to know and accept yourself better as you are with high spirit of improvement. You don't need to be a perfect person, just maintain consistency, struggle with your strengths and weaknesses.”",
+      "retno": "“Healthy roles have a big impact on mental health and happiness. Roles can relieve stress, provide comfort, joy, and prevent loneliness.”",
+      "consult": "Consult with us"
+    },
+    "faq": {
+      "title": "What Can We Help?",
+      "question_1": "How do I register for counseling at Pulih@thePeak?",
+      "answer_1": "Hello, if you want to do consult registration you can contact us through WhatsApp at 083128769871",
+      "question_2": "What types of consultations does Pulih@thePeak provide?",
+      "answer_2": "We provide any types of consultations including: Psychological and Psychotherapy Counseling (individual and group), Premarital Counseling, Marriage Counseling, Family Counseling, Family Financial Counseling, Career Consultation",
+      "question_3": "Can counseling at Pulih@thePeak be done offline?",
+      "answer_3": "Counseling activities can be carried out online (Zoom/Chat) and offline. “Offline” counseling can only be done if you have received approval from a psychologist through online counseling first",
+      "question_4": "How long does a counseling session last?",
+      "answer_4": "The counseling session was carried out for 75 minutes"
+    },
+    "instagram": {
+      "title": "Find us on Instagram",
+      "button": "View More"
+    },
+    "merchandise": {
+      "title": "Shop Our Merchandise",
+      "button": "View Product",
+      "description": "With the dedication and love of the Pulih team for our clients. We present Merchandise made with love that you can own."
+    }
+  },
+  "about": {
+    "title": "About Pulih@thePeak",
+    "description": "Pulih@thePeak is a social entrepreneurship founded on April 21 2014, which is dedicated as a continuation of the Pulih Foundation, a non-profit organization that has been active since 2002 in the recovery of psychological and psychosocial trauma.",
+    "together": "Various Activities with Pulih@thePeak",
+    "vision": {
+      "title": "Vision",
+      "description": "To become a leading support center for women, youth and family empowerment in Indonesia and International."
+    },
+    "mission": {
+      "title": "Mission",
+      "description": "Providing services and support for women, teenagers, families and the community through various empowerment programs that are curative, preventive and educational in nature to build healthy, prosperous and happy families."
+    }
+  },
+  "services": {
+    "title": "Pulih@thePeak Services",
+    "description": "We have helped various personal and family problems. With the services we provide, you can consult anywhere and anytime because we believe your mental health is our priority.",
+    "categories": {
+      "title": "Pulih@thePeak Service Categories",
+      "description": "With Pulih@thePeak, you can consult with a psychologist according to your needs",
+      "individual": {
+        "title": "Individual Counseling",
+        "description": "One on one psychological consultation (1 psychologist and 1 client). Examples: work stress, personal anxiety, problems at school, etc."
+      },
+      "couples": {
+        "title": "Couples Counseling",
+        "description": "Couples psychological consultation (1 psychologist with partner or 2 clients). Examples: communication with partners, communication with family members, etc."
+      },
+      "family": {
+        "title": "Family Counseling",
+        "description": "Family psychological consultation (1 psychologist with family such as father/mother/siblings/grandmother/grandfather). Examples: communication with partners, communication with family members, etc."
+      },
+      "psychological": {
+        "title": "Psychological Examination",
+        "description": "Providing psychological tests to clients for the purpose of assessing the client's psychological condition or for educational and employment purposes. Example: for clinical disorders, for educational aptitude test purposes."
+      },
+      "workshop": {
+        "title": "Examination/Workshop",
+        "description": "Learn and practice skills aimed at empowering women, youth development, strengthening families, mental health, and maintaining one's psychological condition."
+      },
+      "webinars": {
+        "title": "Seminars/Webinars",
+        "description": "Study various topics related to psychological theory and mental health."
+      }
+    },
+    "why": {
+      "title": "Why Pulih@thePeak?",
+      "first": "Experienced psychologist in their field",
+      "second": "Uphold the professional code of ethics",
+      "third": "Have a deep understanding of gender perspectives"
+    }
+  },
+  "psychological": {
+    "title": "Professional Psychologist",
+    "description": "Our professional psychologists are licensed and have helped thousands of personal and family problems. Your safety and comfort is our priority so that you get the best solution from experts."
+  },
+  "merchandise": "With the dedication and love of the Pulih team for our clients. We present Merchandise made with love that you can own."
+}

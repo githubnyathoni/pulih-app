@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import PropTypes from 'prop-types';
 import Images from '../images';
 import Button from './Button';
@@ -8,6 +9,15 @@ import Button from './Button';
 function Header({ page }) {
   const [isShow, setIsShow] = useState(false);
   const [isShowSlideMenu, setIsShowSlideMenu] = useState(false);
+  const [language, setLanguage] = useState('lang' in localStorage ? localStorage.getItem('lang') : 'en');
+  const { i18n } = useTranslation();
+
+  function changeLanguage(code) {
+    i18n.changeLanguage(code);
+    setLanguage(code);
+    localStorage.setItem('lang', code);
+    setIsShow(false);
+  }
 
   return (
     <div>
@@ -36,19 +46,33 @@ function Header({ page }) {
           <div className="hidden lg:flex items-center gap-4 text-primary">
             <div className="relative">
               <div
-                className="flex items-center cursor-pointer"
+                className="flex items-center cursor-pointer uppercase"
                 onClick={() => setIsShow(!isShow)}
                 role="button"
                 tabIndex={0}
               >
-                ID
+                { language }
                 <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M8 8L12 12L16 8" stroke="#C01A78" strokeLinecap="round" />
                 </svg>
               </div>
               <div className={`absolute bg-solid-lang p-4 rounded-xl w-40 top-8 right-0 ${isShow ? 'visible' : 'invisible'}`}>
-                <h2 className="text-white">Bahasa Indonesia</h2>
-                <h2 className="text-white mt-2">English</h2>
+                <div
+                  className="text-white cursor-pointer"
+                  onClick={() => changeLanguage('id')}
+                  role="button"
+                  tabIndex={0}
+                >
+                  Bahasa Indonesia
+                </div>
+                <div
+                  className="text-white cursor-pointer mt-2"
+                  onClick={() => changeLanguage('en')}
+                  role="button"
+                  tabIndex={0}
+                >
+                  English
+                </div>
               </div>
             </div>
             <Button className="bg-primary">

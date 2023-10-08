@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import PsychologistImages from '../images/psychologist';
 import Header from '../components/Header';
 import PsychologistCard from '../components/PsychologistCard';
@@ -9,6 +10,8 @@ import MainLayout from '../layout/MainLayout';
 import ButtonIcon from '../components/ButtonIcon';
 
 function AboutPsychologist() {
+  const { t } = useTranslation();
+
   return (
     <div className="flex items-center justify-center container mx-auto h-screen-header">
       <div className="flex flex-col lg:flex-row w-10/12 gap-12">
@@ -19,12 +22,10 @@ function AboutPsychologist() {
         />
         <div className="flex flex-col justify-center">
           <h1 className="text-primary text-3xl lg:text-5xl font-bold">
-            Psikolog Profesional
+            {t('psychological.title')}
           </h1>
           <p className="text-secondary lg:text-justify font-medium mt-8">
-            Psikolog profesional kami memiliki lisensi dan telah membantu ribuan permasalahan
-            pribadi maupun keluarga. Keamanan dan kenyamanan anda adalah prioritas kami agar
-            anda mendapatkan solusi terbaik dari yang ahli.
+            {t('psychological.description')}
           </p>
         </div>
       </div>

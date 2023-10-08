@@ -1,0 +1,104 @@
+{
+  "home": {
+    "subtagline": "Pulih@thePeak lebih mendukung tindakan pencegahan khususnya dalam kesehatan mental. Salah satu caranya dengan investasi kesehatan mental untuk diri sendiri dan keluarga. Dengan memelihara dan menjaga kesehatan mental diri sendiri sejak dini akan berdampak positif bagi kehidupan sehari-hari dalam keluarga, pendidikan, pekerjaan, dan hubungan sosial.",
+    "about": {
+      "title": "Tentang Pulih@thePeak",
+      "description": "Pulih@thePeak didirikan pada 21 April 2014, yang didedikasikan sebagai keberlanjutan dari Yayasan Pulih yaitu organisasi nirlaba yang berkiprah sejak tahun 2002 dalam pemulihan trauma psikologis dan psikososial.",
+      "more": "Ikuti Lebih Lanjut"
+    },
+    "service": {
+      "individual": "Konseling Individu",
+      "couples": "Konseling Pasangan",
+      "family": "Konseling Keluarga",
+      "psychological": "Pemeriksaan Psikologis",
+      "training": "Pelatihan/Workshop",
+      "webinars": "Seminar/Webinar"
+    },
+    "psychological": {
+      "title": "Psikolog Pulih@thePeak",
+      "description": "Psikolog profesional kami selalu siap mendengarkan cerita anda dimana saja dan kapan saja.",
+      "more": "Lihat Selengkapnya"
+    },
+    "quotes": {
+      "supeli": "“Orang tua adalah pihak yang sangat menentukan kesehatan fisik dan kesehatan jiwa (mental dan spiritual) anak-anaknya. Pola asuh yang diberikan dan hubungan orangtua dan anak akan membentuk kesehatan jiwa anak. Maka dari itu, penting untuk membentuk dasar kepribadian yang kuat agar tidak mudah terpengaruh oleh lingkungan sosialnya.”",
+      "soraya": "“Jangan lupa refleksi diri sebagai proses belajar lebih mengenal dan menerima diri apa adanya dengan semangat improvement. Tidak perlu menjadi orang yang sempurna, cukup mempertahankan konsistensi, berjuang dengan kekuatan dan kelemahannya.”",
+      "retno": "“Pertemanan yang sehat memiliki dampak besar pada kesehatan mental dan kebahagiaan. Pertemanan dapat menghilangkan stres, memberikan kenyamanan, kegembiraan, dan mencegah kesepian.”",
+      "consult": "Konsultasi dengan kami"
+    },
+    "faq": {
+      "title": "Apa yang bisa kami bantu?",
+      "question_1": "Bagaimana cara melakukan pendaftaran konseling di Pulih@thePeak?",
+      "answer_1": "Hallo, untuk pendaftaran konsultasi dapat dilakukan melalui Whatsapp ke nomor 083128769871",
+      "question_2": "Jenis konsultasi apa saja yang disediakan oleh Pulih@thePeak?",
+      "answer_2": "Jenis Konsultasi di Pulih@thePeak antara lain: Konseling psikologis dan psikoterapi (individual dan kelompok), Konseling pra-nikah, Konseling perkawinan Konseling keluarga, Konseling keuangan keluarga, Konsultasi karir",
+      "question_3": "Apakah konseling di Pulih@thePeak dapat dilakukan secara offline?",
+      "answer_3": "Tentu, kegiatan konseling dapat dilakukan secara online (Zoom/Chat) dan offline. Konseling “Offline” hanya dapat dilakukan jika sudah mendapat persetujuan dari psikolog melalui konseling online terlebih dahulu",
+      "question_4": "Berapa lama sesi konseling dilakukan?",
+      "answer_4": "Kegiatan konseling dilakukan selama 75 menit"
+    },
+    "instagram": {
+      "title": "Temukan kami di Instagram",
+      "button": "Lihat konten lainnya"
+    },
+    "merchandise": {
+      "title": "Belanja Merchandise Kami",
+      "button": "Lihat produk"
+    }
+  },
+  "about": {
+    "title": "Tentang Pulih@thePeak",
+    "description": "Pulih@thePeak merupakan kewirausahaan sosial yang didirikan pada 21 April 2014, yang didedikasikan sebagai keberlanjutan dari Yayasan Pulih yaitu organisasi nirlaba yang berkiprah sejak tahun 2002 dalam pemulihan trauma psikologis dan psikososial.",
+    "together": "Ragam Kegiatan bersama Pulih@thePeak",
+    "vision": {
+      "title": "Visi",
+      "description": "Menjadi pusat pemberdayaan perempuan, remaja dan keluarga yang terdepan di Indonesia dan diakui secara internasional."
+    },
+    "mission": {
+      "title": "Misi",
+      "description": "Memberikan layanan jasa serta dukungan bagi perempuan, remaja, keluarga, dan masyarakat melalui berbagai program pemberdayaan yang bersifat kuratif, preventif, dan edukatif untuk membangun keluarga yang sehat, sejahtera, dan bahagia."
+    }
+  },
+  "services": {
+    "title": "Layanan Pulih@thePeak",
+    "description": "Kami telah membantu mengatasi berbagai masalah pribadi maupun keluarga. Dengan layanan yang kami sediakan, Anda dapat berkonsultasi dimana saja dan kapan saja karena kami percaya kesehatan mental Anda adalah prioritas kami.",
+    "categories": {
+      "title": "Kategori Layanan Pulih@thePeak",
+      "description": "Bersama Pulih@thePeak, anda dapat berkonsultasi dengan Psikolog sesuai kebutuhan anda",
+      "individual": {
+        "title": "Konseling Individu",
+        "description": "Konsultasi psikologis one on one (1 psikolog dan 1 klien). Contoh: stress pekerjaan, kecemasan pribadi, masalah di sekolah, dll."
+      },
+      "couples": {
+        "title": "Konseling Pasangan",
+        "description": "Konsultasi psikologis pasangan (1 psikolog dengan pasangan maupun 2 klien). Contoh: komunikasi dengan pasangan, komunikasi dengan anggota keluarga, dll."
+      },
+      "family": {
+        "title": "Konseling Keluarga",
+        "description": "Konsultasi psikologis keluarga (1 psikolog dengan keluarga seperti ayah/ibu/saudara kandung/nenek/kakek). Contoh: komunikasi dengan pasangan, komunikasi dengan anggota keluarga, dll."
+      },
+      "psychological": {
+        "title": "Pemeriksaan Psikologis",
+        "description": "Pemberian tes psikologi pada klien untuk kepentingan asesmen kondisi psikologis klien atau untuk kepentingan pendidikan dan pekerjaan. Contoh: untuk gangguan klinis, untuk keperluan tes minat bakat pendidikan."
+      },
+      "workshop": {
+        "title": "Pemeriksaan/Workshop",
+        "description": "Belajar dan praktek suatu keterampilan yang bertujuan untuk pemberdayaan perempuan, pengembangan remaja, penguatan keluarga, kesehatan mental, dan menjaga kondisi psikologis seseorang."
+      },
+      "webinars": {
+        "title": "Seminar/Webinar",
+        "description": "Belajar berbagai topik yang berhubungan dengan teori psikologis dan kesehatan mental."
+      }
+    },
+    "why": {
+      "title": "Kenapa Pulih@thePeak?",
+      "first": "Psikolog berpengalaman sesuai dengan bidangnya",
+      "second": "Menjunjung tinggi kode etik profesi",
+      "third": "Memiliki pemahaman mendalam tentang perspektif gender"
+    }
+  },
+  "psychological": {
+    "title": "Psikolog Profesional",
+    "description": "Psikolog profesional kami memiliki lisensi dan telah membantu ribuan permasalahan pribadi maupun keluarga. Keamanan dan kenyamanan anda adalah prioritas kami agar anda mendapatkan solusi terbaik dari yang ahli."
+  },
+  "merchandise": "Dengan dedikasi dan rasa cinta tim Pulih kepada para klien kami. Kami persembahkan Merchandise yang dibuat dengan penuh kasih yang dapat anda miliki."
+}
