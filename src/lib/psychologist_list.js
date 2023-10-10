@@ -559,6 +559,43 @@ const psychologistList = [
 
     Rini Ariani memiliki pengalaman mengajar anak dan remaja selama 8 tahun di beberapa lembaga khususnya Perguruan Islam Al-Izhar Pondok Labu. Saat ini ia bekerja sebagai Psikolog Sekolah di Perguruan Islam Al-Izhar Pondok Labu. Ia juga aktif menjadi pengurus pusat dari Asosiasi Psikologi Pendidikan Indonesia periode 2020-2024 yang berada dalam naungan HIMPSI (Himpunan Psikologi Indonesia).`,
   },
+  {
+    name: 'Upik Nuri Budi Sulistyorini., S. Psi. Psikolog',
+    skills: [
+      'Youth (Scholl-related problems)',
+      'Carrier Counselling (related problems)',
+      '+2',
+    ],
+    skills_detail: [
+      'Youth (Scholl-related problems)',
+      'Carrier Counselling (related problems)',
+      'Personal Counseling (related problems)',
+      'Couple Counseling (Pre Marriage, Married)',
+    ],
+    photo: PsychologistImages.Upik,
+    alt: 'Ibu Upik',
+    slug: 'upik',
+    profile: 'Lulusan Fakultas Psikologi Universitas Surabaya (Ubaya) Surabaya, pada tahun 1993. Sempat bergabung menjadi professional SDM di salah satu perusahaan swasta Jakarta dan kemudian membuka Biro Psikologi. Hingga saat ini bergabung juga sebagai Counselor, Assessor dan Psychologist Associate di beberapa Biro Psikologi.',
+  },
+  {
+    name: 'Silvia Hanny Liestyani, M.Psi., Psikolog',
+    skills: [
+      'Remaja & Dewasa',
+      'Pasangan/Pra-Nikah',
+      'Pengembangan Diri',
+      'Karir & Performa',
+    ],
+    skills_detail: [
+      'Remaja & Dewasa',
+      'Pasangan/Pra-Nikah',
+      'Pengembangan Diri',
+      'Karir & Performa',
+    ],
+    photo: PsychologistImages.Agustina,
+    alt: 'Ibu Silvia',
+    slug: 'silvia-hanny',
+    profile: 'Lulusan Fakultas Psikologi, Universitas Maranatha Bandung, dan Magister Profesi Psikologi jurusan Klinis Dewasa, Universitas Atma Jaya Jakarta. Memiliki pengalaman diantaranya di bidang Psikologi Pendidikan, melakukan pemeriksaan terkait kecerdasan serta minat & bakat. Di bidang Industri & Organisasi, melakukan assessment dan feedback terkait pemenuhan kompetensi, rekrutmen, dan promosi. Di bidang Klinis, melakukan konseling individual. Saat ini menjabat sebagai dosen Fakultas Psikologi dan pembimbing kasus di Magister Profesi Psikologi jurusan Klinis Dewasa, Universitas Atma Jaya.',
+  },
 ];
 
 export default psychologistList;
