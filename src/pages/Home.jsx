@@ -417,7 +417,7 @@ function Home() {
       <AboutSection />
       <div className="container-xl mx-auto h-screen-header">
         <h1 className="text-center text-primary text-3xl lg:text-4xl font-bold mt-6">Layanan Pulih@thePeak</h1>
-        <div className="flex flex-col lg:flex-row lg:justify-between mt-16 px-12 gap-16">
+        <div className="flex flex-col lg:flex-row lg:justify-between mt-12 px-12 gap-16">
           <ServiceCard
             text={t('home.service.individual')}
             source={Images.IlustrasiIndividu}
@@ -434,7 +434,7 @@ function Home() {
             alt="ilustrasi konseling keluarga"
           />
         </div>
-        <div className="flex flex-col lg:flex-row lg:justify-between mt-16 px-12 gap-16">
+        <div className="flex flex-col lg:flex-row lg:justify-between mt-12 px-12 gap-16">
           <ServiceCard
             text={t('home.service.psychological')}
             source={Images.IlustrasiPsikologis}
