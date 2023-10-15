@@ -17,7 +17,7 @@ function MainHomeSection() {
 
   return (
     <div className="bg-pink bg-shape-1">
-      <div className="flex flex-col-reverse lg:flex-row justify-between items-center container mx-auto h-screen-header gap-16">
+      <div className="flex flex-col-reverse lg:flex-row justify-between items-center container mx-auto h-screen-header gap-16 lg:overflow-visible overflow-hidden">
         <div className="pt-12 w-9/12 lg:w-full">
           <h1 className="text-6xl lg:text-7xl text-primary font-bold">Invest In Your Mental Health</h1>
           <p className="text-secondary font-medium mt-6">
