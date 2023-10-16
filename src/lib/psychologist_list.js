@@ -27,7 +27,7 @@ const psychologistList = [
     slug: 'livia-istania',
     profile: `Lulusan Fakultas Psikologi Universitas Indonesia (1988-1994). Mendapatkan gelar Master of Science-nya dalam Psychological Counseling dari City University, London (1996-1997). Mendapatkan gelar Doctor of Public Health (DrPH) dari Universitas Hawaii di Manoa dengan beasiswa penuh dari East West Center (2009-2012).
 
-    Livia Iskandar memiliki pengalaman diantaranya sebagai Manajer Nasional untuk Program Kekerasan terhadap Perempuan UNFPA dan UNIFEM. Menjadi Koordinator Pengembangan Sistem Layanan bagi Penyintas Kekerasan di Komisi Nasional Anti Kekerasan terhadap Perempuan. Livia Iskandar juga sebagai salah satu founderYayasan Pulih dan pada tahun 2014 mendirikan Pulih@thePeak bersama dengan rekannya.`,
+    Livia Iskandar memiliki pengalaman diantaranya sebagai Manajer Nasional untuk Program Kekerasan terhadap Perempuan UNFPA dan UNIFEM. Menjadi Koordinator Pengembangan Sistem Layanan bagi Penyintas Kekerasan di Komisi Nasional Anti Kekerasan terhadap Perempuan. Livia Iskandar juga sebagai salah satu founder Yayasan Pulih dan pada tahun 2014 mendirikan Pulih@thePeak bersama dengan rekannya.`,
   },
   {
     name: 'Soraya Salim, S.Psi., Psikolog',
