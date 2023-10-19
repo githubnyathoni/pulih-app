@@ -40,10 +40,11 @@ function PsychologistSection() {
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentItems = psychologistList.slice(indexOfFirstItem, indexOfLastItem);
+  const { t } = useTranslation();
 
   return (
     <div className="w-10/12 lg:max-w-6xl mx-auto h-screen-header">
-      <h1 className="text-primary text-3xl font-bold mb-4">Psikolog</h1>
+      <h1 className="text-primary text-3xl font-bold mb-4">{t('psychological.subcategory')}</h1>
       <div className="flex flex-wrap gap-y-8 lg:justify-start lg:gap-x-8 lg:px-4 justify-between">
         {
           currentItems.map((item) => (

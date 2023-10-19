@@ -10,7 +10,7 @@ function Header({ page }) {
   const [isShow, setIsShow] = useState(false);
   const [isShowSlideMenu, setIsShowSlideMenu] = useState(false);
   const [language, setLanguage] = useState('lang' in localStorage ? localStorage.getItem('lang') : 'en');
-  const { i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
 
   function changeLanguage(code) {
     i18n.changeLanguage(code);
@@ -21,26 +21,26 @@ function Header({ page }) {
 
   return (
     <div>
-      <div className="bg-pink sticky top-0 z-10">
+      <div className="bg-pink fixed top-0 z-10 w-full">
         <div className="flex container mx-auto justify-between py-2 px-8 lg:px-0">
           <Link to="/">
             <img src={Images.Logo} alt="logo pulih at the peak" width="70px" />
           </Link>
           <div className="hidden lg:flex items-center gap-10 text-primary font-medium">
             <a href="/" className={page === 'Home' && 'border-b-primary'}>
-              Beranda
+              {t('header.home')}
             </a>
             <a href="/about" className={page === 'About' && 'border-b-primary'}>
-              Tentang Kami
+              {t('header.about')}
             </a>
             <a href="/service" className={page === 'Service' && 'border-b-primary'}>
-              Layanan
+              {t('header.services')}
             </a>
             <a href="/psychologist" className={page === 'Psychologist' && 'border-b-primary'}>
-              Psikolog
+              {t('header.psycholog')}
             </a>
             <a href="/merchandise" className={page === 'Merchandise' && 'border-b-primary'}>
-              Merchandise
+              {t('header.merchandise')}
             </a>
           </div>
           <div className="hidden lg:flex items-center gap-4 text-primary">
@@ -76,7 +76,7 @@ function Header({ page }) {
               </div>
             </div>
             <Button className="bg-primary">
-              Hubungi Kami
+              {t('header.contact')}
             </Button>
           </div>
           <div

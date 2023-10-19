@@ -1,4 +1,12 @@
 {
+  "header": {
+    "home": "Beranda",
+    "about": "Tentang Kami",
+    "services": "Layanan",
+    "psycholog": "Psikolog",
+    "merchandise": "Merchandise",
+    "contact": "Hubungi Kami"
+  },
   "home": {
     "subtagline": "Pulih@thePeak lebih mendukung tindakan pencegahan khususnya dalam kesehatan mental. Salah satu caranya dengan investasi kesehatan mental untuk diri sendiri dan keluarga. Dengan memelihara dan menjaga kesehatan mental diri sendiri sejak dini akan berdampak positif bagi kehidupan sehari-hari dalam keluarga, pendidikan, pekerjaan, dan hubungan sosial.",
     "about": {
@@ -7,6 +15,7 @@
       "more": "Ikuti Lebih Lanjut"
     },
     "service": {
+      "title": "Layanan Pulih@thePeak",
       "individual": "Konseling Individu",
       "couples": "Konseling Pasangan",
       "family": "Konseling Keluarga",
@@ -98,7 +107,11 @@
   },
   "psychological": {
     "title": "Psikolog Profesional",
-    "description": "Psikolog profesional kami memiliki lisensi dan telah membantu ribuan permasalahan pribadi maupun keluarga. Keamanan dan kenyamanan anda adalah prioritas kami agar anda mendapatkan solusi terbaik dari yang ahli."
+    "description": "Psikolog profesional kami memiliki lisensi dan telah membantu ribuan permasalahan pribadi maupun keluarga. Keamanan dan kenyamanan anda adalah prioritas kami agar anda mendapatkan solusi terbaik dari yang ahli.",
+    "subcategory": "Psikolog"
   },
-  "merchandise": "Dengan dedikasi dan rasa cinta tim Pulih kepada para klien kami. Kami persembahkan Merchandise yang dibuat dengan penuh kasih yang dapat anda miliki."
+  "merchandise": {
+    "description": "Dengan dedikasi dan rasa cinta tim Pulih kepada para klien kami. Kami persembahkan Merchandise yang dibuat dengan penuh kasih yang dapat anda miliki.",
+    "cap": "Topi"
+  }
 }

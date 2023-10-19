@@ -17,17 +17,18 @@ function MainHomeSection() {
 
   return (
     <div className="bg-pink bg-shape-1">
-      <div className="flex flex-col-reverse lg:flex-row justify-between items-center container mx-auto h-screen-header gap-16 lg:overflow-visible overflow-hidden">
+      <div className="flex flex-col-reverse lg:flex-row justify-between items-center container mx-auto lg:h-screen h-auto gap-16 lg:overflow-visible overflow-hidden">
         <div className="pt-12 w-9/12 lg:w-full">
-          <h1 className="text-6xl lg:text-7xl text-primary font-bold">Invest In Your Mental Health</h1>
-          <p className="text-secondary font-medium mt-6">
+          <h1 className="text-6xl lg:text-7xl text-primary font-bold">Invest In Your</h1>
+          <h1 className="text-6xl lg:text-7xl text-primary font-bold">Mental Health</h1>
+          <p className="text-secondary text-justify font-medium mt-6">
             {t('home.subtagline')}
           </p>
           <p className="text-secondary font-medium mt-2">
             #investinyourmentalhealth
           </p>
         </div>
-        <img src={Images.HomeImage1} alt="psychologist holding hand patient" className="w-full relative left-12 w-45-percent lg:block" />
+        <img src={Images.HomeImage1} alt="psychologist holding hand patient" className="w-full relative left-12 w-45-percent lg:block lg:mt-0 mt-24" />
       </div>
     </div>
   );
@@ -416,7 +417,7 @@ function Home() {
       <MainHomeSection />
       <AboutSection />
       <div className="container-xl mx-auto h-screen-header">
-        <h1 className="text-center text-primary text-3xl lg:text-4xl font-bold mt-6">Layanan Pulih@thePeak</h1>
+        <h1 className="text-center text-primary text-3xl lg:text-4xl font-bold mt-6">{t('home.service.title')}</h1>
         <div className="flex flex-col lg:flex-row lg:justify-between mt-12 px-12 gap-16">
           <ServiceCard
             text={t('home.service.individual')}

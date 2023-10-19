@@ -1,4 +1,12 @@
 {
+  "header": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "psycholog": "Psycholog",
+    "merchandise": "Merchandise",
+    "contact": "Contact Us"
+  },
   "home": {
     "subtagline": "Pulih@thePeak supports prevention efforts especially in the field of mental health for you and your family. Maintaining and taking care of the person's mental health from an early age will positively impact daily life in the family, education, work, and social relationships.",
     "about": {
@@ -7,6 +15,7 @@
       "more": "More Info"
     },
     "service": {
+      "title": "Pulih@thePeak Services",
       "individual": "Individual Counseling",
       "couples": "Couples Counseling",
       "family": "Family Counseling",
@@ -99,7 +108,11 @@
   },
   "psychological": {
     "title": "Professional Psychologist",
-    "description": "Our professional psychologists are licensed and have helped thousands of personal and family problems. Your safety and comfort is our priority so that you get the best solution from experts."
+    "description": "Our professional psychologists are licensed and have helped thousands of personal and family problems. Your safety and comfort is our priority so that you get the best solution from experts.",
+    "subcategory": "Psycholog"
   },
-  "merchandise": "With the dedication and love of the Pulih team for our clients. We present Merchandise made with love that you can own."
+  "merchandise": {
+    "description": "With the dedication and love of the Pulih team for our clients. We present Merchandise made with love that you can own.",
+    "cap": "Cap"
+  }
 }

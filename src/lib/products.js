@@ -2,7 +2,7 @@ import MerchandiseImages from '../images/merchandise';
 
 const products = [
   {
-    name: 'Totebag',
+    name: 'Tote Bag',
     link: '',
     image: MerchandiseImages.Product1,
   },

@@ -7,7 +7,6 @@ import MainLayout from '../layout/MainLayout';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Button from '../components/Button';
-import products from '../lib/products';
 
 function AboutMerchandise() {
   const { t } = useTranslation();
@@ -25,7 +24,7 @@ function AboutMerchandise() {
             Merchandise
           </h1>
           <p className="text-secondary lg:text-justify mt-8">
-            {t('merchandise')}
+            {t('merchandise.description')}
           </p>
         </div>
       </div>
@@ -56,6 +55,25 @@ ProductCard.propTypes = {
 };
 
 function Products() {
+  const { t } = useTranslation();
+  const products = [
+    {
+      name: 'Tote Bag',
+      link: '',
+      image: MerchandiseImages.Product1,
+    },
+    {
+      name: t('merchandise.cap'),
+      link: '',
+      image: MerchandiseImages.Product2,
+    },
+    {
+      name: 'Tumblr',
+      link: '',
+      image: MerchandiseImages.Product3,
+    },
+  ];
+
   return (
     <div className="w-10/12 lg:w-full max-w-5xl mx-auto flex flex-wrap lg:justify-between mt-12 pb-8 gap-y-8 gap-x-2">
       {
