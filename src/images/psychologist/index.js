@@ -14,6 +14,7 @@ import Diah from './diah.png';
 import Dyah from './dyah.png';
 import Hanina from './hanina.png';
 import Irene from './irene.png';
+import Ika from './ika.png';
 import Livia from './livia.jpg';
 import Mersedes from './mersedes.png';
 import Niken from './niken.png';
@@ -23,6 +24,7 @@ import Raymond from './raymond.png';
 import Rika from './rika.png';
 import Shanen from './shanen.png';
 import Shinta from './shinta.png';
+import Silvia from './silvia.png';
 import Upik from './upik.png';
 import Viera from './viera.jpg';
 import Widaningrum from './widaningrum.png';
@@ -47,6 +49,7 @@ const PsychologistImages = {
   Dyah,
   Hanina,
   Irene,
+  Ika,
   Livia,
   Mersedes,
   Niken,
@@ -56,6 +59,7 @@ const PsychologistImages = {
   Rika,
   Shanen,
   Shinta,
+  Silvia,
   Upik,
   Viera,
   Widaningrum,

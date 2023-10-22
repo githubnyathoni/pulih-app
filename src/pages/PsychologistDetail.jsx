@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+// import { useTranslation } from 'react-i18next';
 import psychologistList from '../lib/psychologist_list';
 import MainLayout from '../layout/MainLayout';
 import Header from '../components/Header';
@@ -9,7 +9,7 @@ import ButtonIcon from '../components/ButtonIcon';
 
 function PsychologistSection() {
   const { slug } = useParams();
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
   const psychologistIndex = psychologistList.findIndex((val) => val.slug === slug);
   const psychologist = psychologistList[psychologistIndex];
   const nextPsychologist = psychologistList[psychologistIndex + 1];
@@ -23,7 +23,7 @@ function PsychologistSection() {
         </div>
         <div className="w-2/3 ml-12">
           <h1 className="text-primary text-3xl font-bold">
-            { t(`psychologs.${psychologist.slug}.name`) }
+            {psychologist.name}
           </h1>
           <h2 className="text-primary text-xl font-bold mt-6">Profil</h2>
           <p className="text-secondary leading-loose whitespace-pre-line text-justify font-medium mt-2">
