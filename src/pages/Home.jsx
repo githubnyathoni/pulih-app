@@ -223,9 +223,11 @@ function QuoteCard() {
           <span className="text-primary text-sm lg:text-base font-medium mt-6">
             { quoteActive.speaker }
           </span>
-          <Button className="mt-6 w-max">
-            {t('home.quotes.consult')}
-          </Button>
+          <Link to="https://api.whatsapp.com/send/?phone=6283128769871" target="_blank">
+            <Button className="mt-6 w-max">
+              {t('home.quotes.consult')}
+            </Button>
+          </Link>
         </div>
         {
           currentIndex === 2

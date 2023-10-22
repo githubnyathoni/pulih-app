@@ -75,9 +75,11 @@ function Header({ page }) {
                 </div>
               </div>
             </div>
-            <Button className="bg-primary">
-              {t('header.contact')}
-            </Button>
+            <Link to="https://api.whatsapp.com/send/?phone=6283128769871" target="_blank">
+              <Button className="bg-primary">
+                {t('header.contact')}
+              </Button>
+            </Link>
           </div>
           <div
             className="lg:hidden flex items-center cursor-pointer"
@@ -121,9 +123,11 @@ function Header({ page }) {
                 <div className="bg-primary py-0.5 px-4 rounded-full text-white cursor-pointer">ID</div>
                 <span className="py-0.5 px-4 rounded-full text-primary cursor-pointer">ENG</span>
               </div>
-              <Button className="bg-primary mt-4">
-                Hubungi Kami
-              </Button>
+              <Link to="https://api.whatsapp.com/send/?phone=6283128769871" target="_blank">
+                <Button className="bg-primary mt-4">
+                  Hubungi Kami
+                </Button>
+              </Link>
             </div>
           </div>
         </nav>

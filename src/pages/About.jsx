@@ -57,7 +57,7 @@ function Mission() {
 
 function VisionMission() {
   return (
-    <div className="container mx-auto flex flex-col h-screen-header w-10/12 lg:w-8/12 justify-center gap-12">
+    <div className="container mx-auto flex flex-col h-screen-header w-10/12 lg:w-8/12 justify-center gap-12 max-w-screen-lg">
       <Vision />
       <Mission />
     </div>
