@@ -76,7 +76,7 @@ const psychologistList = [
     profile: 'Psikolog lulusan Universitas Indonesia, berlisensi serta memiliki pengalaman lebih dari 12 tahun menangani konseling bagi dewasa dan dewasa muda, secara individu, berpasangan, keluarga, serta kelompok.',
   },
   {
-    name: 'Wulan Ayu Ramadhani, M.Psi., Psikolog CHt',
+    name: 'Wulan Ayu Ramadhani, M.Psi, Psikolog, CHt',
     skills: [
       'Anxiety',
       'Couple Counseling',
@@ -121,7 +121,7 @@ const psychologistList = [
     Agustina Indrawati juga terlibat dalam aktivitas Employee Wellness Program bagi klien di lingkup organisasi yang bertujuan menjaga kesehatan mental dan memelihara kesejahteraan (wellbeing) karyawan maupun anggota keluarganya. Memili pengalaman kerja sebagai Praktisi SDM di beberapa perusahaan multinasional dan organisasi internasional, seperti World Bank Group dan United Nations.`,
   },
   {
-    name: 'Dra. Ammy Kadarharutami MD, M.P',
+    name: 'Dra. Ammy Kadarharutami MD, M.Psi. Psikolog',
     skills: [
       'Performance Problem',
       'Marital Case',
@@ -138,7 +138,7 @@ const psychologistList = [
     profile: 'Lulusan Fakultas Psikologi Universitas Padjadjaran jurusan Klinis Dewasa dan Magister Profesional Psikologi Universitas Padjadjaran jurusan Klinis Anak. Berpengalaman sebagai praktisi dan konsultan di beberapa perusahaan. Saat ini mengelola sebuah perusahaan konsultan yang bergerak dalam bidang pengelolaan SDM. Terbiasa menjalankan peran sebagai trainer, fasilitator dan asesor dalam dunia industry serta konselor dan professional coach untuk individu.',
   },
   {
-    name: 'Dra. Psi. Viera Adella, M.Psi., Psikolog',
+    name: 'Dra. Viera Adella, M.Psi., Psikolog',
     skills: [
       'School-related Problems',
       'Special-need Problems (autism etc.)',
@@ -155,7 +155,7 @@ const psychologistList = [
     Memiliki pengalaman workshop pada berbagai institusi sebagai ‘coach’ untuk refreshment penggunaaan perangkat diagnostik di dunia industri dan organisasi khususnya bagi para assessor.`,
   },
   {
-    name: 'Astarini Retno Y. (Ajeng Raviando), S.Psi',
+    name: 'Astarini Retno Y (Ajeng Raviando), S.Psi., Psikolog',
     skills: [
       'Youth and Adult Psychologist',
       'Family Counseling',
@@ -216,7 +216,7 @@ const psychologistList = [
     profile: 'Lulusan Fakultas Psikologi jurusan Perkembangan, Universitas Surabaya. Memiliki pengalaman diantaranya di bidang Psikologi Perkembangan : melakukan pemeriksaan dan konsultasi terkait tumbuh kembang, dan kematangan anak. Di bidang Psikologi Pendidikan : melakukan pemeriksaan dan konsultasi terkait  pengukuran kecerdasan serta minat & bakat siswa. Di bidang Psikologi Industri : melakukan assessment dan feedback terkait pemenuhan kompetensi, rekrutmen, dan promosi.',
   },
   {
-    name: 'Yeny Duriana Wijaya',
+    name: 'Yeni Duriana Wijaya',
     skills: [
       'Youth & Adult',
       'Konseling individu',
@@ -283,7 +283,7 @@ const psychologistList = [
     Mendapatkan beasiswa program Master melalui StuNed (Studeren In Nederland) dimana dia mendalami “Health Psychology” yang dapat diimplementasikan di Indonesia sebagai kombinasi antara Psikologi Klinis dan Psikologi Industri dan Organisasi. Abbas Supeli mengambil gelar doctoral di Universitas Griffith Australia dan menjadi anggota MAREAA (Marriage and Relationship Educators Association of Australia).`,
   },
   {
-    name: 'Mersedes Tanok, S. Psi., Psikolog',
+    name: 'Mersedes Tanok, M.Psi., Psikolog',
     skills: [
       'Job Profile',
       'Talent Acquisition',
@@ -340,7 +340,7 @@ const psychologistList = [
     profile: 'Danny Irawan Yatim adalah psikolog lulusan Universitas Gadjah Mada,  Connecticut College dan Harvard University. Banyak berkecimpung di bidang kesehatan masyarakat. Berpengalaman di bidang konseling narkoba, HIV dan seksualitas, khususnya bagi remaja.',
   },
   {
-    name: 'Rika Ermasari',
+    name: 'Rika Ermasari, Psikolog',
     skills: [
       'Stres dan Kesehatan',
       'Depresi',
@@ -467,7 +467,7 @@ const psychologistList = [
     profile: 'Hanina Maulidha merupakan Psikolog Pendidikan yang merupakan lulusan dari Magister Profesi Psikologi UNTAR (Universitas Tarumanegara). Selain itu menjadi Founder @speakupnow.id yang merupakan Social Enterprise bergerak di bidang Pendidikan Public Speaking dan Psikologi untuk Anak dan Remaja. Hanina juga aktif sebagai Konselor Kekerasan pada Perempuan dan Anak di P2TP2A Provinsi DKI Jakarta dan menjadi Psikolog Sekolah di salah satu SMP Swasta di Jakarta.',
   },
   {
-    name: 'Angellia Lestari Christiani',
+    name: 'Angellia Lestari Christiani, M.Psi., Psikolog',
     skills: [
       'Romantic Relationship with Partner',
       'Sexual Orientation',
@@ -495,12 +495,12 @@ const psychologistList = [
     ],
     skills_detail: [
       'A clinical adult psychologist',
-      'interests in the field of healthy mind-body',
-      'chronic illness',
-      'personal empowerment',
-      'work related stress',
-      'trauma',
-      'pre marital & marital counselling',
+      'Interests in the field of healthy mind-body',
+      'Chronic illness',
+      'Personal empowerment',
+      'Work related stress',
+      'Trauma',
+      'Pre marital & marital counselling',
       'Family issues',
     ],
     photo: PsychologistImages.Rami,

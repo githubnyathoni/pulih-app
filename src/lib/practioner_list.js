@@ -29,7 +29,7 @@ const practionerList = [
     slug: 'irene-sirait',
     profile: `Lulusan Fakultas Psikologi Universitas Indonesia yang mendapat kesempatan memperdalam mengenai permasalahan HIV/AIDS di Melbourne University, Melbourne, Australia dan Sistem Manajemen Kesehatan di Galillee College, Israel.
 
-    Memiliki pengalaman berkarir selama 30 tahun ++ di berbagai negara Asia-Afrika dengan berbagai lembaga kemanusiaan internasional dan PBB sebagai penanggung jawab program kemanusiaan baik program tanggap darurat psikososial paska bencana maupun program kesehatan mental. Di Indonesia, Irene Sirait terlibat memimpin respon tanggap darurat psikososial di berbagai paska bencana seperti gempa dan tsunami Aceh hingga Sulawesi Tengah.`,
+    Memiliki pengalaman berkarir selama 30 tahun++ di berbagai negara Asia-Afrika dengan berbagai lembaga kemanusiaan internasional dan PBB sebagai penanggung jawab program kemanusiaan baik program tanggap darurat psikososial paska bencana maupun program kesehatan mental. Di Indonesia, Irene Sirait terlibat memimpin respon tanggap darurat psikososial di berbagai paska bencana seperti gempa dan tsunami Aceh hingga Sulawesi Tengah.`,
   },
 ];
 
