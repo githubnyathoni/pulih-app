@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import psychologistList from '../lib/psychologist_list';
 import MainLayout from '../layout/MainLayout';
 import Header from '../components/Header';
@@ -8,20 +9,21 @@ import ButtonIcon from '../components/ButtonIcon';
 
 function PsychologistSection() {
   const { slug } = useParams();
+  const { t } = useTranslation();
   const psychologistIndex = psychologistList.findIndex((val) => val.slug === slug);
   const psychologist = psychologistList[psychologistIndex];
   const nextPsychologist = psychologistList[psychologistIndex + 1];
   const previousPsychologist = psychologistList[psychologistIndex - 1];
 
   return (
-    <div className="container mx-auto my-20">
-      <div className="flex">
-        <div className="w-1/3">
+    <div className="container mx-auto my-20 mt-36">
+      <div className="flex flex-col lg:flex-row lg:items-start items-center gap-8">
+        <div className="lg:w-1/3 w-1/2">
           <img src={psychologist.photo} alt={psychologist.alt} className="rounded-2xl" />
         </div>
         <div className="w-2/3 ml-12">
           <h1 className="text-primary text-3xl font-bold">
-            {psychologist.name}
+            { t(`psychologs.${psychologist.slug}.name`) }
           </h1>
           <h2 className="text-primary text-xl font-bold mt-6">Profil</h2>
           <p className="text-secondary leading-loose whitespace-pre-line text-justify font-medium mt-2">

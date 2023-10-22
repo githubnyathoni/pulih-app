@@ -2,7 +2,7 @@ import PsychologistImages from '../images/psychologist';
 
 const psychologistList = [
   {
-    name: 'Livia Istania D.F. Iskandar, S.Psi., Psikolog',
+    name: 'Dr. Livia Istania DF Iskandar, M.Sc., Psikolog',
     skills: [
       'Bipolar',
       'Derpresi',

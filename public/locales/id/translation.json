@@ -107,11 +107,26 @@
   },
   "psychological": {
     "title": "Psikolog Profesional",
-    "description": "Psikolog profesional kami memiliki lisensi dan telah membantu ribuan permasalahan pribadi maupun keluarga. Keamanan dan kenyamanan anda adalah prioritas kami agar anda mendapatkan solusi terbaik dari yang ahli.",
+    "description": "Psikolog profesional kami memiliki lisensi dan telah berpengalaman dalam membantu memulihkan permasalahan pribadi maupun keluarga. Keamanan dan kenyamanan anda adalah prioritas kami agar anda mendapatkan solusi terbaik dari yang ahli.",
     "subcategory": "Psikolog"
   },
   "merchandise": {
     "description": "Dengan dedikasi dan rasa cinta tim Pulih kepada para klien kami. Kami persembahkan Merchandise yang dibuat dengan penuh kasih yang dapat anda miliki.",
     "cap": "Topi"
+  },
+  "psychologs": {
+    "livia-istania": {
+      "name": "HuHumbaala"
+    }
+  },
+  "practioners": {
+    "wrenges": {
+      "skills": 
+        "Expert Practioner"
+      ,
+      "skills_detail": [
+        "Expert Practioner"
+      ]
+    }
   }
 }

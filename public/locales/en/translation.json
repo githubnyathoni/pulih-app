@@ -114,5 +114,20 @@
   "merchandise": {
     "description": "With the dedication and love of the Pulih team for our clients. We present Merchandise made with love that you can own.",
     "cap": "Cap"
+  },
+  "psychologs": {
+    "livia-istania": {
+      "name": "Huala"
+    }
+  },
+  "practioners": {
+    "wrenges": {
+      "skills": 
+        "Praktisi Ahli"
+      ,
+      "skills_detail": [
+        "Praktisi Ahli"
+      ]
+    }
   }
 }

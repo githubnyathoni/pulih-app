@@ -9,7 +9,7 @@ function AboutSection() {
   const { t } = useTranslation();
 
   return (
-    <div className="lg:h-screen-header">
+    <div className="h-screen mt-20">
       <img src={AboutImages.Squad} alt="pulih at the peak squad" />
       <div className="flex flex-col items-start px-8 lg:items-center bg-pink bg-about py-12">
         <h1 className="text-primary text-3xl lg:text-5xl font-bold">

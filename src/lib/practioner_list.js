@@ -2,7 +2,7 @@ import PsychologistImages from '../images/psychologist';
 
 const practionerList = [
   {
-    name: 'Wrenges Widiastuti, MDM',
+    name: 'Wrenges Widiastuti',
     skills: [
       'Praktisi Ahli',
     ],

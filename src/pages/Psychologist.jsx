@@ -13,18 +13,18 @@ function AboutPsychologist() {
   const { t } = useTranslation();
 
   return (
-    <div className="flex items-center justify-center container mx-auto h-screen-header">
-      <div className="flex flex-col lg:flex-row w-10/12 gap-12">
+    <div className="flex items-center justify-center container mx-auto h-screen lg:mt-8 mt-24">
+      <div className="flex flex-col lg:flex-row w-10/12 gap-12 items-center">
         <img
           src={PsychologistImages.Psychologist}
           alt="ilustrasi psikolog terbaik"
-          className="lg:w-1/2"
+          className="w-4/5 lg:w-1/2"
         />
         <div className="flex flex-col justify-center">
           <h1 className="text-primary text-3xl lg:text-5xl font-bold">
             {t('psychological.title')}
           </h1>
-          <p className="text-secondary lg:text-justify font-medium mt-8">
+          <p className="text-secondary text-justify font-medium mt-8">
             {t('psychological.description')}
           </p>
         </div>

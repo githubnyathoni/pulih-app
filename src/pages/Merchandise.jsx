@@ -12,7 +12,7 @@ function AboutMerchandise() {
   const { t } = useTranslation();
 
   return (
-    <div className="flex items-center justify-center container mx-auto h-screen-header">
+    <div className="flex items-center justify-center container mx-auto h-screen lg:mt-8 mt-24">
       <div className="flex flex-col lg:flex-row w-10/12 gap-12">
         <img
           src={MerchandiseImages.Merchandise}
