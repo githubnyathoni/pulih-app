@@ -23,7 +23,7 @@ function AboutMerchandise() {
           <h1 className="text-primary text-3xl lg:text-5xl font-bold">
             Merchandise
           </h1>
-          <p className="text-secondary lg:text-justify mt-8">
+          <p className="text-secondary lg:text-justify mt-8 font-medium">
             {t('merchandise.description')}
           </p>
         </div>
