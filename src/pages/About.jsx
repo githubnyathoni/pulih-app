@@ -9,13 +9,13 @@ function AboutSection() {
   const { t } = useTranslation();
 
   return (
-    <div className="h-screen mt-20">
+    <div className="lg:h-screen mt-20">
       <img src={AboutImages.Squad} alt="pulih at the peak squad" />
       <div className="flex flex-col items-start px-8 lg:items-center bg-pink bg-about py-12">
         <h1 className="text-primary text-3xl lg:text-5xl font-bold">
           {t('about.title')}
         </h1>
-        <p className="text-secondary text-left lg:text-center lg:w-6/12 py-6 font-medium">
+        <p className="text-secondary text-justify lg:text-center lg:w-6/12 py-6 font-medium">
           {t('about.description')}
         </p>
       </div>
@@ -31,7 +31,7 @@ function Vision() {
       <img src={AboutImages.Vision} alt="ilustrasi visi" className="w-3/5 lg:w-1/3" />
       <div className="flex flex-col justify-center lg:pl-8 mt-8">
         <h1 className="text-primary text-2xl font-bold">{t('about.vision.title')}</h1>
-        <p className="text-secondary font-medium">
+        <p className="text-secondary text-justify font-medium mt-2">
           {t('about.vision.description')}
         </p>
       </div>
@@ -46,7 +46,7 @@ function Mission() {
     <div className="flex flex-col-reverse items-center lg:py-12 lg:flex-row">
       <div className="flex flex-col justify-center pr-8 py-8 lg:py-0">
         <h1 className="text-primary text-2xl font-bold">{t('about.mission.title')}</h1>
-        <p className="text-secondary font-medium">
+        <p className="text-secondary text-justify font-medium mt-2">
           {t('about.mission.description')}
         </p>
       </div>
@@ -69,7 +69,7 @@ function TogetherSection() {
 
   return (
     <div className="container mx-auto w-10/12">
-      <h1 className="text-primary lg:text-center text-3xl lg:text-5xl font-bold">
+      <h1 className="text-primary lg:text-center text-2xl lg:text-5xl font-bold">
         {t('about.together')}
       </h1>
       <div id="first-row" className="flex flex-col lg:flex-row justify-center gap-8 my-10">

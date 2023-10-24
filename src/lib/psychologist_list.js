@@ -230,8 +230,8 @@ const psychologistList = [
       'Konseling kelompok: isu gender, atau traumatis',
     ],
     photo: PsychologistImages.Yenny,
-    alt: 'Ibu Yeny',
-    slug: 'yeny-duriana',
+    alt: 'Ibu Yeni',
+    slug: 'yeni-duriana',
     profile: `Menempuh Pendidikan di Magister Psikologi Profesi Klinis di Universitas Gadjah Mada. Saat ini aktif menjalankan praktek konseling dan psikoterapi di Unit Pelayanan Psikologi, Fak Psikologi Universitas Esa Unggul. Selain itu juga bekerja sebagai dosen tetap Fak Psikologi, di Universitas Esa Unggul  yang mengajar mata kuliah bidang psikologi klinis, psikopatologi, psikoterapi. 
 
     Ketertarikan terkait masalah depresi, kecemasan, relasi antara pasangan (suami istri, atau keluarga), masalah remaja dan isu2 terkait masalah kekerasan terhadap perempuan dan anak.`,
@@ -361,7 +361,7 @@ const psychologistList = [
     photo: PsychologistImages.Rika,
     alt: 'Ibu Rika',
     slug: 'rika-ermasari',
-    profile: 'Memiliki pengalaman 20 tahun sebagai HR Executive. Rika menekuni passionnya sebagai psikolog hingga saat ini dan mendapatkan sertifikasi sebagai coach dari ICF serta memiliki banyak sertifikasi di bidang Psikoterapi dan terus mengupdate skillnya sebagai terapis. ',
+    profile: 'Memiliki pengalaman 20 tahun sebagai HR Executive. Rika menekuni passionnya sebagai psikolog hingga saat ini dan mendapatkan sertifikasi sebagai coach dari ICF serta memiliki banyak sertifikasi di bidang Psikoterapi dan terus mengupdate skillnya sebagai terapis.',
   },
   {
     name: 'Ariesti Pritawati, M. Psi., Psikolog',

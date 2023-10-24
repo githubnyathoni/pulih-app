@@ -10,7 +10,7 @@ const practionerList = [
       'Praktisi Ahli',
     ],
     photo: PsychologistImages.Wrenges,
-    alt: 'Ibu Ika',
+    alt: 'Ibu Wrenges',
     slug: 'wrenges-widiastuti',
     profile: `Wrenges Widiastuti adalah seorang akuntan yang juga melanjutkan Pendidikan S2 Manajemen Pembangunan di Asian Institute of Management, Manila, hingga memperoleh gelar Master in Development Management (MDM). Mengawali karir sebagai auditor di Kemenkeu Republik Indonesia tahun 1987. Berpengalaman bekerja ke beberapa perusahaan swasta yaitu Nestle, Natra Raya, dan Price Waterhouse, sebelum akhirnya fokus berupaya menguatkan manajemen keuangan di berbagai LSM mulai tahun 2005.
     
@@ -25,7 +25,7 @@ const practionerList = [
       'Praktisi Ahli',
     ],
     photo: PsychologistImages.Irene,
-    alt: 'Ibu Ika',
+    alt: 'Ibu Irene',
     slug: 'irene-sirait',
     profile: `Lulusan Fakultas Psikologi Universitas Indonesia yang mendapat kesempatan memperdalam mengenai permasalahan HIV/AIDS di Melbourne University, Melbourne, Australia dan Sistem Manajemen Kesehatan di Galillee College, Israel.
 

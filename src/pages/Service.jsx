@@ -11,7 +11,7 @@ function ServiceSection() {
   const { t } = useTranslation();
 
   return (
-    <div className="flex items-center justify-center container mx-auto h-screen lg:mt-8 mt-24">
+    <div className="flex items-center justify-center container mx-auto lg:h-screen lg:mt-8 mt-32">
       <div className="flex flex-col lg:flex-row items-center w-10/12 gap-12">
         <img src={ServiceImages.Service} alt="layanan pulih@thepeak" className="w-4/5 lg:w-1/2" />
         <div className="flex flex-col justify-center">

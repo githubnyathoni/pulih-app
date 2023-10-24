@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import practionerList from '../lib/practioner_list';
 import MainLayout from '../layout/MainLayout';
 import Header from '../components/Header';
@@ -8,11 +9,12 @@ import ButtonIcon from '../components/ButtonIcon';
 
 function PractionerSection() {
   const { slug } = useParams();
-
+  const { t } = useTranslation();
   const practionerIndex = practionerList.findIndex((val) => val.slug === slug);
   const practioner = practionerList[practionerIndex];
   const nextPractioner = practionerList[practionerIndex + 1];
   const previousPractioner = practionerList[practionerIndex - 1];
+  const translatedPractioner = t(`practioners.${practioner.slug}`, { returnObjects: true });
 
   return (
     <div className="container mx-auto my-20 mt-36">
@@ -26,12 +28,12 @@ function PractionerSection() {
           </h1>
           <h2 className="text-primary text-xl font-bold mt-6">Profil</h2>
           <p className="text-secondary leading-loose whitespace-pre-line text-justify font-medium mt-2">
-            {practioner.profile}
+            {translatedPractioner.profile}
           </p>
           <h2 className="text-primary text-xl font-bold mt-6">Spesialisasi</h2>
           <div className="mt-2">
             {
-              practioner.skills_detail.map((skill) => (
+              translatedPractioner.skills.map((skill) => (
                 <div
                   key={skill}
                   className="inline-block m-1 rounded-full border border-rose-700 text-sm px-2 py-0.5"

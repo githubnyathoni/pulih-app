@@ -19,8 +19,8 @@ function MainHomeSection() {
     <div className="bg-pink bg-shape-1">
       <div className="flex flex-col-reverse lg:flex-row justify-between items-center container mx-auto lg:h-screen h-auto gap-16 lg:overflow-visible overflow-hidden">
         <div className="pt-12 w-9/12 lg:w-full">
-          <h1 className="text-6xl lg:text-7xl text-primary font-bold">Invest In Your</h1>
-          <h1 className="text-6xl lg:text-7xl text-primary font-bold">Mental Health</h1>
+          <h1 className="text-4xl lg:text-7xl text-primary font-bold">Invest In Your</h1>
+          <h1 className="text-4xl lg:text-7xl text-primary font-bold">Mental Health</h1>
           <p className="text-secondary text-justify font-medium mt-6">
             {t('home.subtagline')}
           </p>
@@ -43,7 +43,7 @@ function AboutSection() {
         <img src={Images.HomeImage2} alt="pulih at the psychologists" className="lg:w-2/5 w-9/12" />
         <div className="mt-20 w-9/12 lg:w-full">
           <h1 className="text-4xl text-primary font-bold">{t('home.about.title')}</h1>
-          <p className="text-secondary font-medium mt-6">
+          <p className="text-secondary text-justify font-medium mt-6">
             {t('home.about.description')}
           </p>
           <Link to="/about">
@@ -79,7 +79,7 @@ function PsychologistSection() {
           <div />
           <div className="">
             <h1 className="text-primary text-lg lg:text-3xl font-bold">{t('home.psychological.title')}</h1>
-            <h6 className="text-secondary font-medium my-4">
+            <h6 className="text-secondary text-justify font-medium my-4">
               {t('home.psychological.description')}
             </h6>
             <Link to="/psychologist" className="hidden lg:block">
