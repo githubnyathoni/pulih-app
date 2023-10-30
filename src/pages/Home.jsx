@@ -17,14 +17,14 @@ function MainHomeSection() {
 
   return (
     <div className="bg-pink bg-shape-1">
-      <div className="flex flex-col-reverse lg:flex-row justify-between items-center container mx-auto lg:h-screen h-auto gap-16 lg:overflow-visible overflow-hidden">
+      <div className="flex flex-col-reverse lg:flex-row justify-between items-center container mx-auto lg:h-screen h-auto lg:gap-16 lg:overflow-visible overflow-hidden">
         <div className="pt-12 w-9/12 lg:w-full">
           <h1 className="text-4xl lg:text-7xl text-primary font-bold">Invest In Your</h1>
           <h1 className="text-4xl lg:text-7xl text-primary font-bold">Mental Health</h1>
           <p className="text-secondary text-justify font-medium mt-6">
             {t('home.subtagline')}
           </p>
-          <p className="text-secondary font-medium mt-2">
+          <p className="text-secondary font-medium mt-2 mb-8">
             #investinyourmentalhealth
           </p>
         </div>
@@ -39,9 +39,10 @@ function AboutSection() {
 
   return (
     <div className="bg-shape-2">
-      <div className="container mx-auto flex flex-col lg:flex-row items-center lg:items-start justify-between gap-12 lg:pt-36 lg:pb-20 py-24">
-        <img src={Images.HomeImage2} alt="pulih at the psychologists" className="lg:w-2/5 w-9/12" />
-        <div className="mt-20 w-9/12 lg:w-full">
+      <div className="container mx-auto flex flex-col lg:flex-row items-center lg:items-start justify-between lg:gap-12 lg:pt-36 lg:pb-20 py-16">
+        <img src={Images.HomeImage2} alt="pulih at the psychologists" className="lg:block hidden lg:w-2/5 w-9/12" />
+        <img src={Images.About} alt="pulih at the psychologists" className="lg:hidden rounded-3xl w-9/12" />
+        <div className="lg:mt-20 mt-10 w-9/12 lg:w-full">
           <h1 className="text-4xl text-primary font-bold">{t('home.about.title')}</h1>
           <p className="text-secondary text-justify font-medium mt-6">
             {t('home.about.description')}
@@ -78,7 +79,7 @@ function PsychologistSection() {
         <div className="flex lg:flex-col justify-between lg:mr-8 w-9/12 mx-auto lg:w-4/12">
           <div />
           <div className="">
-            <h1 className="text-primary text-lg lg:text-3xl font-bold">{t('home.psychological.title')}</h1>
+            <h1 className="text-primary text-3xl font-bold">{t('home.psychological.title')}</h1>
             <h6 className="text-secondary text-justify font-medium my-4">
               {t('home.psychological.description')}
             </h6>
@@ -193,7 +194,7 @@ function QuoteCard() {
   }, [currentIndex]);
 
   return (
-    <div className="container flex justify-center items-center mx-auto h-screen-header">
+    <div className="container flex justify-center items-center mx-auto lg:h-screen-header my-8">
       <div className="flex bg-pink w-full lg:w-10/12 py-16 px-12 lg:rounded-3xl gap-4 bg-shape-quote">
         {
           currentIndex === 0
@@ -260,7 +261,7 @@ function FaqCard() {
   const { t } = useTranslation();
 
   return (
-    <div className="container flex flex-col justify-center items-center mx-auto h-screen-header">
+    <div className="container flex flex-col justify-center items-center mx-auto lg:h-screen-header lg:my-0 my-20">
       <h1 className="text-3xl text-primary font-bold mb-8">{t('home.faq.title')}</h1>
       <div className="w-full lg:w-9/12">
         <div>
@@ -281,7 +282,7 @@ function FaqCard() {
               />
             </ButtonIcon>
           </div>
-          <div className={`bg-slate-50 px-8 text-secondary font-medium border-b-third transition-all duration-300 ${selectedQuestion === 0 ? 'visible h-18 py-6' : 'invisible h-0'}`}>
+          <div className={`bg-slate-50 px-8 text-secondary font-medium border-b-third transition-all duration-300 ${selectedQuestion === 0 ? 'visible py-6' : 'invisible h-0'}`}>
             {t('home.faq.answer_1')}
           </div>
         </div>
@@ -303,7 +304,7 @@ function FaqCard() {
               />
             </ButtonIcon>
           </div>
-          <div className={`bg-slate-50 pl-8 pr-16 text-secondary font-medium border-b-third transition-all duration-300 ${selectedQuestion === 1 ? 'visible h-22 py-4' : 'invisible h-0'}`}>
+          <div className={`bg-slate-50 pl-8 pr-16 text-secondary font-medium border-b-third transition-all duration-300 ${selectedQuestion === 1 ? 'visible py-4' : 'invisible h-0'}`}>
             {t('home.faq.answer_2')}
           </div>
         </div>
@@ -325,7 +326,7 @@ function FaqCard() {
               />
             </ButtonIcon>
           </div>
-          <div className={`bg-slate-50 pl-8 pr-16 text-secondary font-medium border-b-third transition-all duration-300 ${selectedQuestion === 2 ? 'visible h-20 py-4' : 'invisible h-0'}`}>
+          <div className={`bg-slate-50 pl-8 pr-16 text-secondary font-medium border-b-third transition-all duration-300 ${selectedQuestion === 2 ? 'visible py-4' : 'invisible h-0'}`}>
             {t('home.faq.answer_3')}
           </div>
         </div>
@@ -347,7 +348,7 @@ function FaqCard() {
               />
             </ButtonIcon>
           </div>
-          <div className={`lg:rounded-b-3xl bg-slate-50 px-8 text-secondary font-medium border-b-third transition-all duration-300 ${selectedQuestion === 3 ? 'visible h-14 py-4' : 'invisible h-0'}`}>
+          <div className={`lg:rounded-b-3xl bg-slate-50 px-8 text-secondary font-medium border-b-third transition-all duration-300 ${selectedQuestion === 3 ? 'visible py-4' : 'invisible h-0'}`}>
             {t('home.faq.answer_4')}
           </div>
         </div>
@@ -358,6 +359,18 @@ function FaqCard() {
 
 function InstagramCard() {
   const { t } = useTranslation();
+  const token = process.env.REACT_APP_INSTAGRAM_TOKEN;
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    fetch(`https://graph.instagram.com/v18.0/me/media?fields=id,caption,media_url&access_token=${token}`)
+      .then((response) => response.json())
+      .then((data) => {
+        setPosts(data.data);
+      })
+      .catch(() => {
+      });
+  }, []);
 
   return (
     <div className="lg:w-1/3 mx-auto lg:m-0">
@@ -365,9 +378,14 @@ function InstagramCard() {
         {t('home.instagram.title')}
       </h1>
       <div className="flex my-4 gap-4">
-        <img src={Images.Instagram1} alt="post of instagram" className="w-20 lg:w-32" />
+        {
+          posts.slice(0, 3).map((post) => (
+            <img src={post.media_url} alt="post of instagram" className="w-20 lg:w-32" />
+          ))
+        }
+        {/* <img src={Images.Instagram1} alt="post of instagram" className="w-20 lg:w-32" />
         <img src={Images.Instagram2} alt="post of instagram" className="w-20 lg:w-32" />
-        <img src={Images.Instagram3} alt="post of instagram" className="w-20 lg:w-32" />
+        <img src={Images.Instagram3} alt="post of instagram" className="w-20 lg:w-32" /> */}
       </div>
       <Link to="https://www.instagram.com/pulihatp/" target="_blank">
         <Button>
@@ -400,7 +418,7 @@ function MerchandiseCard() {
 function CloserSection() {
   return (
     <div className="bg-shape-closer">
-      <div className="lg:container flex justify-center items-center lg:mx-auto h-screen-header">
+      <div className="lg:container flex justify-center items-center lg:mx-auto lg:h-screen-header">
         <div className="flex flex-col lg:flex-row justify-around w-full gap-12">
           <InstagramCard />
           <MerchandiseCard />
@@ -420,7 +438,7 @@ function Home() {
       <AboutSection />
       <div className="container-xl mx-auto h-screen-header">
         <h1 className="text-center text-primary text-3xl lg:text-4xl font-bold mt-6">{t('home.service.title')}</h1>
-        <div className="flex flex-col lg:flex-row lg:justify-between mt-12 px-12 gap-16">
+        <div className="flex flex-col lg:flex-row lg:justify-between lg:mt-12 px-12 lg:gap-16">
           <ServiceCard
             text={t('home.service.individual')}
             source={Images.IlustrasiIndividu}
@@ -437,7 +455,7 @@ function Home() {
             alt="ilustrasi konseling keluarga"
           />
         </div>
-        <div className="flex flex-col lg:flex-row lg:justify-between mt-12 px-12 gap-16">
+        <div className="flex flex-col lg:flex-row lg:justify-between lg:mt-12 px-12 lg:gap-16">
           <ServiceCard
             text={t('home.service.psychological')}
             source={Images.IlustrasiPsikologis}

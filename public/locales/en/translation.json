@@ -73,6 +73,7 @@
     "description": "We have helped various personal and family problems. With the services we provide, you can consult anywhere and anytime because we believe your mental health is our priority.",
     "categories": {
       "title": "Pulih@thePeak Service Categories",
+      
       "description": "With Pulih@thePeak, you can consult with a psychologist according to your needs",
       "individual": {
         "title": "Individual Counseling",
@@ -109,7 +110,9 @@
   "psychological": {
     "title": "Professional Psychologist",
     "description": "Our professional psychologists are licensed and have helped thousands of personal and family problems. Your safety and comfort is our priority so that you get the best solution from experts.",
-    "subcategory": "Psycholog"
+    "subcategory": "Psycholog",
+    "profile": "Profile",
+    "specialization": "Specialization"
   },
   "merchandise": {
     "description": "With the dedication and love of the Pulih team for our clients. We present Merchandise made with love that you can own.",

@@ -12,18 +12,18 @@ function AboutMerchandise() {
   const { t } = useTranslation();
 
   return (
-    <div className="flex items-center justify-center container mx-auto h-screen lg:mt-8 mt-24">
-      <div className="flex flex-col lg:flex-row w-10/12 gap-12">
+    <div className="flex items-center justify-center container mx-auto lg:h-screen lg:mt-8 mt-32">
+      <div className="flex flex-col lg:flex-row w-9/12 gap-12 items-center">
         <img
           src={MerchandiseImages.Merchandise}
           alt="ilustrasi merchandise"
-          className="my-12 lg:my-0 lg:w-1/2"
+          className="lg:my-0 lg:w-1/2 w-4/5"
         />
         <div className="flex flex-col justify-center">
           <h1 className="text-primary text-3xl lg:text-5xl font-bold">
             Merchandise
           </h1>
-          <p className="text-secondary lg:text-justify mt-8 font-medium">
+          <p className="text-secondary text-justify mt-8 font-medium">
             {t('merchandise.description')}
           </p>
         </div>

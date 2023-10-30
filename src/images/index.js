@@ -1,3 +1,4 @@
+import About from './home/about.png';
 import Logo from './default/logo.png';
 import HomeImage1 from './home/image1.png';
 import HomeImage2 from './home/image2.png';
@@ -24,6 +25,7 @@ import Instagram2 from './home/instagram2.jpg';
 import Instagram3 from './home/instagram3.jpg';
 
 const Images = {
+  About,
   Logo,
   HomeImage1,
   HomeImage2,

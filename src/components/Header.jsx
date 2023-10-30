@@ -103,25 +103,39 @@ function Header({ page }) {
             </svg>
             <div className="flex flex-col gap-6 text-primary">
               <a href="/" className={page === 'Home' && 'border-b-primary'}>
-                Beranda
+                {t('header.home')}
               </a>
               <a href="/about" className={page === 'About' && 'border-b-primary'}>
-                Tentang Kami
+                {t('header.about')}
               </a>
               <a href="/service" className={page === 'Service' && 'border-b-primary'}>
-                Layanan
+                {t('header.services')}
               </a>
               <a href="/psychologist" className={page === 'Psychologist' && 'border-b-primary'}>
-                Psikolog
+                {t('header.psycholog')}
               </a>
               <a href="/merchandise" className={page === 'Merchandise' && 'border-b-primary'}>
-                Merchandise
+                {t('header.merchandise')}
               </a>
             </div>
             <div>
               <div className="flex items-center border-primary rounded-full text-sm">
-                <div className="bg-primary py-0.5 px-4 rounded-full text-white cursor-pointer">ID</div>
-                <span className="py-0.5 px-4 rounded-full text-primary cursor-pointer">ENG</span>
+                <div
+                  className={`${language === 'id' ? 'bg-primary text-white px-6' : 'text-primary px-5'} py-0.5 rounded-full cursor-pointer`}
+                  onClick={() => changeLanguage('id')}
+                  role="button"
+                  tabIndex={0}
+                >
+                  ID
+                </div>
+                <div
+                  className={`${language === 'en' ? 'bg-primary text-white px-6' : 'text-primary px-5'} py-0.5 rounded-full  cursor-pointer`}
+                  onClick={() => changeLanguage('en')}
+                  role="button"
+                  tabIndex={0}
+                >
+                  ENG
+                </div>
               </div>
               <Link to="https://api.whatsapp.com/send/?phone=6283128769871" target="_blank">
                 <Button className="bg-primary mt-4">

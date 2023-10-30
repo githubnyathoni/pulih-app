@@ -13,7 +13,7 @@ function AboutPsychologist() {
   const { t } = useTranslation();
 
   return (
-    <div className="flex items-center justify-center container mx-auto h-screen lg:mt-8 mt-24">
+    <div className="flex items-center justify-center container mx-auto lg:h-screen lg:mt-8 mt-32">
       <div className="flex flex-col lg:flex-row w-9/12 gap-12 items-center">
         <img
           src={PsychologistImages.Psychologist}
@@ -43,7 +43,7 @@ function PsychologistSection() {
   const { t } = useTranslation();
 
   return (
-    <div className="w-10/12 lg:max-w-6xl mx-auto h-screen-header">
+    <div className="w-10/12 lg:max-w-6xl mx-auto h-screen-header lg:mt-0 mt-8">
       <h1 className="text-primary text-3xl font-bold mb-4">{t('psychological.subcategory')}</h1>
       <div className="flex flex-wrap gap-y-8 lg:justify-start lg:gap-x-8 lg:px-4 justify-between">
         {

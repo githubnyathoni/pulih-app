@@ -149,4 +149,8 @@ code {
   .border-right-category {
     border-radius: 0px 9999px 9999px 0px;
   }
+
+  .lg\:h-screen-header {
+    min-height: calc(100vh - 80px);
+  }
 }

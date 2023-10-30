@@ -4,14 +4,9 @@ const psychologistList = [
   {
     name: 'Dr. Livia Istania DF Iskandar, M.Sc., Psikolog',
     skills: [
-      'Bipolar',
-      'Derpresi',
-      'Borderline',
       'Anxiety',
       'Youth',
-      'Work-family Balance',
-      'Gender-based Violence',
-      '+1',
+      '+5',
     ],
     skills_detail: [
       'Gender-based Violence',
@@ -32,11 +27,9 @@ const psychologistList = [
   {
     name: 'Soraya Salim, S.Psi., Psikolog',
     skills: [
-      'Youth (School-related problems)',
-      'Couples Counseling',
       'Alzheimer',
       'Caregiver',
-      '+2',
+      '+3',
     ],
     skills_detail: [
       'Youth (School-related problems)',
@@ -56,10 +49,8 @@ const psychologistList = [
     name: 'Dyah Paramita Turner, S.Psi., CH., CHt.',
     skills: [
       'Meditation',
-      'Couple and family issues',
-      'Career Counseling',
-      'Experience in training',
-      '+2',
+      'Hypnotherapy',
+      '+5',
     ],
     skills_detail: [
       'Meditation',
@@ -79,10 +70,8 @@ const psychologistList = [
     name: 'Wulan Ayu Ramadhani, M.Psi, Psikolog, CHt',
     skills: [
       'Anxiety',
-      'Couple Counseling',
       'Depression',
-      'Gender-based violence',
-      '+2',
+      '+4',
     ],
     skills_detail: [
       'A Licensed Clinical Psychologist providing Psychotherapy',
@@ -123,9 +112,9 @@ const psychologistList = [
   {
     name: 'Dra. Ammy Kadarharutami MD, M.Psi. Psikolog',
     skills: [
-      'Performance Problem',
       'Marital Case',
       'Parenting issues',
+      '+1',
     ],
     skills_detail: [
       'Performance Problem',
@@ -157,10 +146,8 @@ const psychologistList = [
   {
     name: 'Astarini Retno Y (Ajeng Raviando), S.Psi., Psikolog',
     skills: [
-      'Youth and Adult Psychologist',
       'Family Counseling',
-      'Pre-marital and Marital Counseling',
-      '+1',
+      '+3',
     ],
     skills_detail: [
       'Youth and Adult Psychologist',
@@ -178,10 +165,8 @@ const psychologistList = [
   {
     name: 'Raymond Tambunan, Psi., MSos.',
     skills: [
-      'Family Counseling',
       'Hypnotherapist',
-      'Self-Transformation Strategist',
-      '+2',
+      '+4',
     ],
     skills_detail: [
       'Family Counseling',
@@ -200,9 +185,8 @@ const psychologistList = [
   {
     name: 'Andi Miriam Amiruddin, S.Psi., Psikolog',
     skills: [
-      'Stres dan Kesehatan',
       'Depresi',
-      'Pengembangan Diri',
+      '+3',
     ],
     skills_detail: [
       'Psikolog anak terkait dengan tumbuh kembang dan kematangan anak.',
@@ -219,9 +203,7 @@ const psychologistList = [
     name: 'Yeni Duriana Wijaya',
     skills: [
       'Youth & Adult',
-      'Konseling individu',
-      'Konseling pasangan',
-      'Konseling kelompok',
+      '+3',
     ],
     skills_detail: [
       'Remaja dan Dewasa',
@@ -239,9 +221,8 @@ const psychologistList = [
   {
     name: 'Ika Putri Dewi, S.Psi., Psikolog',
     skills: [
-      'Educational of Child and Teenager',
-      'School-related problems',
       'Interest and talent',
+      '+2',
     ],
     skills_detail: [
       'Trauma (peristiwa yang sangat tidak menyenangkan, berbagai jenis kekerasan, bencana, kehilangan, dll)',
@@ -287,10 +268,7 @@ const psychologistList = [
     skills: [
       'Job Profile',
       'Talent Acquisition',
-      'Assessment Center',
-      'Konseling Keluarga',
-      'Kesiapan Masuk Sekolah',
-      '+3',
+      '+6',
     ],
     skills_detail: [
       'Menangani Kesulitan Belajar Pada Anak',
@@ -344,7 +322,7 @@ const psychologistList = [
     skills: [
       'Stres dan Kesehatan',
       'Depresi',
-      'Pengembangan Diri',
+      '+1',
     ],
     skills_detail: [
       'Hypnotherapy',
@@ -383,11 +361,9 @@ const psychologistList = [
   {
     name: 'Shanen Emily, M.Psi., Psikolog',
     skills: [
-      'Stres dan Kesehatan',
       'Depresi',
-      'Pengembangan Diri',
       'Kecemasan',
-      'Relasi dengan Pasangan',
+      '+2',
     ],
     skills_detail: [
       'Depresi, Kecemasan, dan Trauma',
@@ -405,11 +381,9 @@ const psychologistList = [
   {
     name: 'Prita Pradipta, M.Psi., Psikolog',
     skills: [
-      'Depresi dan kecemasan',
       'Pengampunan',
       'Manajemen stress',
-      'Pertumbuhan diri',
-      '+1',
+      '+3',
     ],
     skills_detail: [
       'Depresi dan kecemasan',
@@ -427,8 +401,8 @@ const psychologistList = [
     name: 'Bella Amanda Maharani, M.Psi., Psikolog',
     skills: [
       'Klinis',
-      'Konseling Orang Tua',
       'Minat Bakat',
+      '+1',
     ],
     skills_detail: [
       'Klinis',
@@ -443,13 +417,10 @@ const psychologistList = [
   {
     name: 'Hanina Maulidha, M.Psi., Psikolog',
     skills: [
-      'Anak dan Remaja',
       'Bullying',
-      'Counseling Career',
       'Minat Bakat',
       'Emosi',
-      'Kesiapan Sekolah',
-      '+2',
+      '+5',
     ],
     skills_detail: [
       'Anak dan Remaja',
@@ -469,9 +440,9 @@ const psychologistList = [
   {
     name: 'Angellia Lestari Christiani, M.Psi., Psikolog',
     skills: [
-      'Romantic Relationship with Partner',
       'Sexual Orientation',
       'Self Development',
+      '+1',
     ],
     skills_detail: [
       'Romantic Relationship with Partner',
@@ -486,12 +457,9 @@ const psychologistList = [
   {
     name: 'Rami Busyra Ikram, M.Psi., Psikolog',
     skills: [
-      'Personal Empowerment',
-      'Chronic Illness',
       'Family Issues',
-      'Work Related Stress',
       'Trauma',
-      '+3',
+      '+6',
     ],
     skills_detail: [
       'A clinical adult psychologist',
@@ -529,10 +497,8 @@ const psychologistList = [
     name: 'Shinta Utami, S.Psi., M.Psi., Psikolog',
     skills: [
       'Minat Bakat',
-      'Couple and Family',
       'Youth & Adult',
-      'Depression/Anxiety/Trauma',
-      'Couple/Pre-marital',
+      '+3',
     ],
     skills_detail: [
       'Remaja dan Dewasa (Youth & Adult)',
@@ -549,9 +515,8 @@ const psychologistList = [
   {
     name: 'Rini Ariani, M. Psi., Psikolog',
     skills: [
-      'Educational of Child and Teenager',
-      'School-related problems',
       'Interest and talent',
+      '+2',
     ],
     skills_detail: [
       'Educational of Child and Teenager',

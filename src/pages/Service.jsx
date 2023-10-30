@@ -18,7 +18,7 @@ function ServiceSection() {
           <h1 className="text-primary text-3xl lg:text-5xl font-bold">
             {t('services.title')}
           </h1>
-          <p className="text-secondary lg:text-justify font-medium mt-8">
+          <p className="text-secondary text-justify font-medium mt-8">
             {t('services.description')}
           </p>
         </div>
@@ -60,7 +60,7 @@ function ServiceCategories() {
 
   return (
     <div className="bg-shape-service">
-      <div className="flex flex-col items-center justify-center container mx-auto py-24 w-10/12 lg:w-full">
+      <div className="flex flex-col items-center justify-center container mx-auto lg:py-24 py-10 w-10/12 lg:w-full">
         <h1 className="text-primary text-3xl lg:text-5xl font-bold">
           {t('services.categories.title')}
         </h1>
@@ -123,7 +123,7 @@ function ServiceCategories() {
             {t('services.categories.webinars.title')}
           </div>
         </div>
-        <div className="flex lg:justify-between justify-center max-w-screen-lg w-full mt-24">
+        <div className="flex lg:justify-between justify-center max-w-screen-lg w-full lg:mt-24">
           {
             selectedCategories > 0
               ? (
@@ -166,7 +166,7 @@ function ServiceCategories() {
                   )
               }
             </div>
-            <p className="lg:text-left text-center text-secondary mr-12 ease-in-out transition-all duration-100 w-2/3 font-medium lg:mt-0 mt-8">
+            <p className="lg:text-left text-center text-secondary lg:mr-12 ease-in-out transition-all duration-100 w-2/3 font-medium lg:mt-0 my-6">
               { currentCategory.description }
             </p>
             <img src={currentCategory.image} alt="ilustrasi konseling individu" width="200px" />
@@ -195,7 +195,7 @@ function WhySection() {
   const { t } = useTranslation();
 
   return (
-    <div className="container mx-auto my-24 w-3/4 lg:w-full pb-20">
+    <div className="container mx-auto lg:my-24 w-3/4 lg:w-full lg:pb-20">
       <h1 className="text-center text-primary text-2xl lg:text-5xl font-bold">
         {t('services.why.title')}
       </h1>
