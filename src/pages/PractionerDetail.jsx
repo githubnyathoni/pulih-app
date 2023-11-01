@@ -36,7 +36,7 @@ function PractionerSection() {
               translatedPractioner.skills.map((skill) => (
                 <li
                   key={skill}
-                  className="lg:inline-block m-1 rounded-full border border-rose-700 text-sm lg:px-2 py-0.5"
+                  className="lg:inline-block m-1 rounded-full lg:border lg:border-rose-700 text-sm lg:px-2 py-0.5"
                 >
                   {skill}
                 </li>
