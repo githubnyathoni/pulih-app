@@ -22,15 +22,15 @@ function PractionerSection() {
         <div className="lg:w-1/3 w-1/2">
           <img src={practioner.photo} alt={practioner.alt} className="rounded-2xl" />
         </div>
-        <div className="w-2/3 ml-12">
-          <h1 className="text-primary text-3xl font-bold">
+        <div className="w-2/3 lg:ml-12">
+          <h1 className="text-primary lg:text-3xl text-2xl font-bold">
             {practioner.name}
           </h1>
-          <h2 className="text-primary text-xl font-bold mt-6">Profil</h2>
+          <h2 className="text-primary text-xl font-bold mt-6">{t('psychological.profile')}</h2>
           <p className="text-secondary leading-loose whitespace-pre-line text-justify font-medium mt-2">
             {translatedPractioner.profile}
           </p>
-          <h2 className="text-primary text-xl font-bold mt-6">Spesialisasi</h2>
+          <h2 className="text-primary text-xl font-bold mt-6">{t('psychological.specialization')}</h2>
           <ul className="mt-2 lg:ml-0 ml-2 list-disc">
             {
               translatedPractioner.skills.map((skill) => (
