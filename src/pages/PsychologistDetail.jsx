@@ -31,18 +31,18 @@ function PsychologistSection() {
             {psycholog.profile}
           </p>
           <h2 className="text-primary text-xl font-bold mt-6">{t('psychological.specialization')}</h2>
-          <div className="mt-2">
+          <ul className="mt-2 lg:ml-0 ml-2 list-disc">
             {
               psycholog.skills.map((skill) => (
-                <div
+                <li
                   key={skill}
-                  className="inline-block m-1 rounded-full lg:border lg:border-rose-700 text-sm px-2 py-0.5"
+                  className="lg:inline-block m-1 rounded-full lg:border lg:border-rose-700 text-sm lg:px-2 py-0.5"
                 >
                   {skill}
-                </div>
+                </li>
               ))
             }
-          </div>
+          </ul>
         </div>
       </div>
       <div className="flex justify-center gap-12 items-center lg:mt-20 mt-10">

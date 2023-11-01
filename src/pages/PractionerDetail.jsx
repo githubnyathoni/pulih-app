@@ -31,18 +31,18 @@ function PractionerSection() {
             {translatedPractioner.profile}
           </p>
           <h2 className="text-primary text-xl font-bold mt-6">Spesialisasi</h2>
-          <div className="mt-2">
+          <ul className="mt-2 lg:ml-0 ml-2 list-disc">
             {
               translatedPractioner.skills.map((skill) => (
-                <div
+                <li
                   key={skill}
-                  className="inline-block m-1 rounded-full border border-rose-700 text-sm px-2 py-0.5"
+                  className="lg:inline-block m-1 rounded-full border border-rose-700 text-sm lg:px-2 py-0.5"
                 >
                   {skill}
-                </div>
+                </li>
               ))
             }
-          </div>
+          </ul>
         </div>
       </div>
       <div className="flex justify-center gap-4 items-center mt-20">
