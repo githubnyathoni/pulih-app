@@ -74,7 +74,7 @@ function PsychologistSection() {
   };
 
   return (
-    <div className="container-xl mx-auto h-screen-header mt-20 w-full">
+    <div className="container-xl mx-auto my-24 w-full">
       <div className="flex flex-col lg:flex-row justify-between">
         <div className="flex lg:flex-col justify-between lg:mr-8 w-9/12 mx-auto lg:w-4/12">
           <div />
@@ -194,7 +194,7 @@ function QuoteCard() {
   }, [currentIndex]);
 
   return (
-    <div className="container flex justify-center items-center mx-auto lg:h-screen-header my-8">
+    <div className="container flex justify-center items-center mx-auto my-24">
       <div className="flex bg-pink w-full lg:w-10/12 py-16 px-12 lg:rounded-3xl gap-4 bg-shape-quote">
         {
           currentIndex === 0
@@ -261,7 +261,7 @@ function FaqCard() {
   const { t } = useTranslation();
 
   return (
-    <div className="container flex flex-col justify-center items-center mx-auto lg:h-screen-header lg:my-0 my-20">
+    <div className="container flex flex-col justify-center items-center mx-auto my-24">
       <h1 className="text-3xl text-primary font-bold mb-8">{t('home.faq.title')}</h1>
       <div className="w-full lg:w-9/12">
         <div>
@@ -363,7 +363,7 @@ function InstagramCard() {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    fetch(`https://graph.instagram.com/v18.0/me/media?fields=id,caption,media_url&access_token=${token}`)
+    fetch(`https://graph.instagram.com/v18.0/me/media?fields=id,caption,media_url,permalink,thumbnail_url,media_type&access_token=${token}`)
       .then((response) => response.json())
       .then((data) => {
         setPosts(data.data);
@@ -380,7 +380,9 @@ function InstagramCard() {
       <div className="flex my-4 gap-4">
         {
           posts.slice(0, 3).map((post) => (
-            <img src={post.media_url} alt="post of instagram" className="w-20 lg:w-32" />
+            <Link target="_blank" to={post.permalink}>
+              <img src={post.media_type === 'VIDEO' ? post.thumbnail_url : post.media_url} alt="post of instagram" className="w-24 h-24 lg:h-32 lg:w-32" />
+            </Link>
           ))
         }
         {/* <img src={Images.Instagram1} alt="post of instagram" className="w-20 lg:w-32" />
@@ -418,7 +420,7 @@ function MerchandiseCard() {
 function CloserSection() {
   return (
     <div className="bg-shape-closer">
-      <div className="lg:container flex justify-center items-center lg:mx-auto lg:h-screen-header">
+      <div className="lg:container flex justify-center items-center lg:mx-auto lg:my-24">
         <div className="flex flex-col lg:flex-row justify-around w-full gap-12">
           <InstagramCard />
           <MerchandiseCard />
@@ -436,7 +438,7 @@ function Home() {
       <Header page="Home" />
       <MainHomeSection />
       <AboutSection />
-      <div className="container-xl mx-auto h-screen-header">
+      <div className="container-xl mx-auto">
         <h1 className="text-center text-primary text-3xl lg:text-4xl font-bold mt-6">{t('home.service.title')}</h1>
         <div className="flex flex-col lg:flex-row lg:justify-between lg:mt-12 px-12 lg:gap-16">
           <ServiceCard
