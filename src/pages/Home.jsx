@@ -113,7 +113,7 @@ function PsychologistSection() {
                 )
             }
             {
-              currentIndex < 8
+              currentIndex < 2
                 ? (
                   <ButtonIcon className="w-12" onClick={nextSlide}>
                     <img src={Images.RightArrowActive} alt="right arrow" />
@@ -130,11 +130,11 @@ function PsychologistSection() {
         <div className="w-full lg:w-8/12 pl-8 lg:ml-0 overflow-auto lg:overflow-hidden">
           <div
             className="flex transition ease-out duration-40"
-            style={{ transform: `translateX(-${(currentIndex * 100) - (currentIndex / 2)}%)` }}
+            style={{ transform: `translateX(-${(currentIndex * (108.5 - currentIndex)) - (currentIndex / 2)}%)` }}
           >
             <div className="flex p-4 gap-5">
               {
-                psychologistList.map((item) => (
+                psychologistList.slice(0, 9).map((item) => (
                   <PsychologistCard
                     photo={item.photo}
                     alt={item.alt}

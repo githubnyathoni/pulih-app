@@ -46,25 +46,40 @@ const psychologistList = [
     Pada tahun 2014, Soraya Salim mendirikan Pulih@thePeak bersama dengan rekannya, Livia Iskandar, yang juga adalah seorang psikolog senior. Soraya Salim memiliki pengalaman kerja diantaranya sebagai konsultan pada Daya Dimensi Indonesia terkait bidang assessment dan sebagai researcher pada Asia Market Intelligence.`,
   },
   {
-    name: 'Dyah Paramita Turner, S.Psi., CH., CHt.',
+    name: 'Abas Supeli, S.Psi., M.Sc., Ph.D., Psikolog',
     skills: [
-      'Meditation',
-      'Hypnotherapy',
-      '+5',
+      'Psikologi Klinis terutama Couple Relationship',
     ],
     skills_detail: [
-      'Meditation',
-      'Hypnotherapy',
-      'Couple and family issues',
-      'Hand writing analyst',
-      'Personal development advisor',
-      'Career counseling',
-      'Experience in training',
+      'Psikologi Klinis terutama Couple Relationship',
     ],
-    photo: PsychologistImages.Dyah,
-    alt: 'Ibu Dyah',
-    slug: 'dyah-paramita',
-    profile: 'Psikolog lulusan Universitas Indonesia, berlisensi serta memiliki pengalaman lebih dari 12 tahun menangani konseling bagi dewasa dan dewasa muda, secara individu, berpasangan, keluarga, serta kelompok.',
+    photo: PsychologistImages.Abas,
+    alt: 'Bapak Abas',
+    slug: 'abas-supeli',
+    profile: `Lulusan Fakultas Psikologi Universitas Padjajaran dan Program Master of Science dari Leiden University. Memulai karirnya sebagai psikolog klinis dengan menjadi asisten dosen pada bidangnya. Berpengalaman pada bidang sumber daya manusia di berbagai perusahaan bertaraf makro-nasional dan menjadi assessor bagi perusahaan multi-nasional.
+    
+    Mendapatkan beasiswa program Master melalui StuNed (Studeren In Nederland) dimana dia mendalami “Health Psychology” yang dapat diimplementasikan di Indonesia sebagai kombinasi antara Psikologi Klinis dan Psikologi Industri dan Organisasi. Abbas Supeli mengambil gelar doctoral di Universitas Griffith Australia dan menjadi anggota MAREAA (Marriage and Relationship Educators Association of Australia).`,
+  },
+  {
+    name: 'Agustina Indrawati, M.Psi., Psikolog',
+    skills: [
+      'Stres dan Kesehatan',
+      'Depresi',
+      'Pengembangan Diri',
+    ],
+    skills_detail: [
+      'Stres, gangguan kecemasan, depresi dan trauma',
+      'Pengembangan diri, relasi interpersonal, relasi pranikah/pasangan/keluarga',
+      'Pengembangan karir, performa dan relasi di dunia kerja',
+    ],
+    photo: PsychologistImages.Agustina,
+    alt: 'Ibu Agustina',
+    slug: 'agustina-indrawati',
+    profile: `Lulusan Fakultas Psikologi serta Program Studi Magister Psikologi Profesi bidang Psikologi Industri dan Organisasi dari Universitas Indonesia. Menyelesaikan program Loop Certified Professional Coach dan Hogan Assessment Certification. Anggota himpunan Psikologi Indonesia dan Ikatan Psikolog Klinis Indonesia.
+
+    Saat ini melakukan pelayanan/praktik Psikologi Klinis serta Konseling terkait peningkatan kesehatan mental pada klien remaja dan dewasa. Selain itu, menjalankan aktivitas coaching untuk menemukan kehidupan yang lebih bermakna (life coaching) maupun coaching karir. Menjadi contributor lepas serial psikoedukasi “Anak Muda Keren Paham KesMen (Kesehatan Mental)” di situs web Kompasiana.
+
+    Agustina Indrawati juga terlibat dalam aktivitas Employee Wellness Program bagi klien di lingkup organisasi yang bertujuan menjaga kesehatan mental dan memelihara kesejahteraan (wellbeing) karyawan maupun anggota keluarganya. Memili pengalaman kerja sebagai Praktisi SDM di beberapa perusahaan multinasional dan organisasi internasional, seperti World Bank Group dan United Nations.`,
   },
   {
     name: 'Wulan Ayu Ramadhani, M.Psi, Psikolog, CHt',
@@ -89,42 +104,25 @@ const psychologistList = [
     Wulan juga saat ini menjadi Psikolog di Rumah Perlindungan Trauma Center milik Kementerian Sosial yang memberikan perlindungan dan pemulihan psikososial pada korban tindak kekerasan (kekerasan berbagis gender, kekerasan dalam rumah tangga, serta human trafficking).`,
   },
   {
-    name: 'Agustina Indrawati, M.Psi., Psikolog',
+    name: 'Dyah Paramita Turner, S.Psi., CH., CHt.',
     skills: [
-      'Stres dan Kesehatan',
-      'Depresi',
-      'Pengembangan Diri',
+      'Meditation',
+      'Hypnotherapy',
+      '+5',
     ],
     skills_detail: [
-      'Stres, gangguan kecemasan, depresi dan trauma',
-      'Pengembangan diri, relasi interpersonal, relasi pranikah/pasangan/keluarga',
-      'Pengembangan karir, performa dan relasi di dunia kerja',
+      'Meditation',
+      'Hypnotherapy',
+      'Couple and family issues',
+      'Hand writing analyst',
+      'Personal development advisor',
+      'Career counseling',
+      'Experience in training',
     ],
-    photo: PsychologistImages.Agustina,
-    alt: 'Ibu Agustina',
-    slug: 'agustina-indrawati',
-    profile: `Lulusan Fakultas Psikologi serta Program Studi Magister Psikologi Profesi bidang Psikologi Industri dan Organisasi dari Universitas Indonesia. Menyelesaikan program Loop Certified Professional Coach dan Hogan Assessment Certification. Anggota himpunan Psikologi Indonesia dan Ikatan Psikolog Klinis Indonesia.
-
-    Saat ini melakukan pelayanan/praktik Psikologi Klinis serta Konseling terkait peningkatan kesehatan mental pada klien remaja dan dewasa. Selain itu, menjalankan aktivitas coaching untuk menemukan kehidupan yang lebih bermakna (life coaching) maupun coaching karir. Menjadi contributor lepas serial psikoedukasi “Anak Muda Keren Paham KesMen (Kesehatan Mental)” di situs web Kompasiana.
-
-    Agustina Indrawati juga terlibat dalam aktivitas Employee Wellness Program bagi klien di lingkup organisasi yang bertujuan menjaga kesehatan mental dan memelihara kesejahteraan (wellbeing) karyawan maupun anggota keluarganya. Memili pengalaman kerja sebagai Praktisi SDM di beberapa perusahaan multinasional dan organisasi internasional, seperti World Bank Group dan United Nations.`,
-  },
-  {
-    name: 'Dra. Ammy Kadarharutami MD, M.Psi. Psikolog',
-    skills: [
-      'Marital Case',
-      'Parenting issues',
-      '+1',
-    ],
-    skills_detail: [
-      'Performance Problem',
-      'Marital Case',
-      'Parenting issues',
-    ],
-    photo: PsychologistImages.Ammy,
-    alt: 'Ibu Ammy',
-    slug: 'ammy-kadarharutami',
-    profile: 'Lulusan Fakultas Psikologi Universitas Padjadjaran jurusan Klinis Dewasa dan Magister Profesional Psikologi Universitas Padjadjaran jurusan Klinis Anak. Berpengalaman sebagai praktisi dan konsultan di beberapa perusahaan. Saat ini mengelola sebuah perusahaan konsultan yang bergerak dalam bidang pengelolaan SDM. Terbiasa menjalankan peran sebagai trainer, fasilitator dan asesor dalam dunia industry serta konselor dan professional coach untuk individu.',
+    photo: PsychologistImages.Dyah,
+    alt: 'Ibu Dyah',
+    slug: 'dyah-paramita',
+    profile: 'Psikolog lulusan Universitas Indonesia, berlisensi serta memiliki pengalaman lebih dari 12 tahun menangani konseling bagi dewasa dan dewasa muda, secara individu, berpasangan, keluarga, serta kelompok.',
   },
   {
     name: 'Dra. Viera Adella, M.Psi., Psikolog',
@@ -142,25 +140,6 @@ const psychologistList = [
     profile: `Lulusan Fakultas Psikologi Universitas Padjadjaran jurusan Klinis Dewasa dan Magister Profesional Psikologi Universitas Padjadjaran jurusan Klinis Anak. Berpengalaman sebagai konsultan pada beberapa perusahaan. Saat ini menjabat sebagai dosen Fakultas Psikologi dan dosen Program Pendidikan S2 Magister Profesional Psikologi jurusan Klinis Universitas Atma Jaya serta sebagai Psychologist in Charge (Project Leader) Politeknik Sriwijaya, Palembang.
 
     Memiliki pengalaman workshop pada berbagai institusi sebagai ‘coach’ untuk refreshment penggunaaan perangkat diagnostik di dunia industri dan organisasi khususnya bagi para assessor.`,
-  },
-  {
-    name: 'Astarini Retno Y (Ajeng Raviando), S.Psi., Psikolog',
-    skills: [
-      'Family Counseling',
-      '+3',
-    ],
-    skills_detail: [
-      'Youth and Adult Psychologist',
-      'Family Counseling',
-      'Pre-marital and Marital Counseling',
-      'Self-transformation Strategist',
-    ],
-    photo: PsychologistImages.Astarini,
-    alt: 'Ibu Astarini',
-    slug: 'astarini-retno',
-    profile: `Ibu dari dua orang putri ini adalah lulusan Fakultas Psikologi Universitas Indonesia. Memiliki pengalaman lebih dari 20 tahun di bidang konseling, pelatihan, assessment, dan pengembangan diri.
-
-    Astarini Retno atau lebih dikenal juga dengan nama Ajeng Raviando aktif sebagai Psikolog di Taman Hati Konseling dan Pulih@thePeak. Selain itu juga sebagai Fasilitator di Talk inc Jakarta dan di Look Modeling School Jakarta. Beliau juga aktif sebagai pembicara seminar, narasumber televisi, dan penulis untuk berbagai media di Indonesia.`,
   },
   {
     name: 'Raymond Tambunan, Psi., MSos.',
@@ -181,6 +160,57 @@ const psychologistList = [
     profile: `Lulusan Fakultas Psikologi Universitas Indonesia dan mendapatkan gelar Master of Anthropology dari Fakultas Ilmu Sosial dan Ilmu Politik Universitas Indonesia. Selain memiliki pengalaman mengajar lebih dari dua belas tahun di universitas, Raymond Tambunan juga adalah hipnoterapis bersertifikat.
 
     Kegiatannya ketika menjabat sebagai dosen membuatnya lekat dengan riset. Topik-topik risetnya melingkupi social intervention to self-development.Pada tahun 2008 hingga 2010 menjabat sebagai Director of AIDS Research Center pada Universitas Atma Jaya, Jakarta. Pernah menjadi Koordinator untuk Indonesian Research Capacity Building pada University of Illinois, Chicago, pada tahun 2011-2013.`,
+  },
+  {
+    name: 'Ika Putri Dewi, S.Psi., Psikolog',
+    skills: [
+      'Interest and talent',
+      '+2',
+    ],
+    skills_detail: [
+      'Trauma (peristiwa yang sangat tidak menyenangkan, berbagai jenis kekerasan, bencana, kehilangan, dll)',
+      'Klinis anak / anak dan remaja dengan berbagai gangguan emosinya.',
+    ],
+    photo: PsychologistImages.Ika,
+    alt: 'Ibu Ika',
+    slug: 'ika-putri-dewi',
+    profile: 'Ika Putri Dewi, psikolog anak dan remaja, yang sudah bergabung di Yayasan PULIH sejak tahun 2011 ; dan sekarang (per 2022) bergabung dalam keluarga Pulih@thePeak. Ika merupakan lulusan Atmajaya S1 pada tahun 1993, dan profesi psikologi pada tahun 2000.',
+  },
+  {
+    name: 'Dra. Ammy Kadarharutami MD, M.Psi. Psikolog',
+    skills: [
+      'Marital Case',
+      'Parenting issues',
+      '+1',
+    ],
+    skills_detail: [
+      'Performance Problem',
+      'Marital Case',
+      'Parenting issues',
+    ],
+    photo: PsychologistImages.Ammy,
+    alt: 'Ibu Ammy',
+    slug: 'ammy-kadarharutami',
+    profile: 'Lulusan Fakultas Psikologi Universitas Padjadjaran jurusan Klinis Dewasa dan Magister Profesional Psikologi Universitas Padjadjaran jurusan Klinis Anak. Berpengalaman sebagai praktisi dan konsultan di beberapa perusahaan. Saat ini mengelola sebuah perusahaan konsultan yang bergerak dalam bidang pengelolaan SDM. Terbiasa menjalankan peran sebagai trainer, fasilitator dan asesor dalam dunia industry serta konselor dan professional coach untuk individu.',
+  },
+  {
+    name: 'Astarini Retno Y (Ajeng Raviando), S.Psi., Psikolog',
+    skills: [
+      'Family Counseling',
+      '+3',
+    ],
+    skills_detail: [
+      'Youth and Adult Psychologist',
+      'Family Counseling',
+      'Pre-marital and Marital Counseling',
+      'Self-transformation Strategist',
+    ],
+    photo: PsychologistImages.Astarini,
+    alt: 'Ibu Astarini',
+    slug: 'astarini-retno',
+    profile: `Ibu dari dua orang putri ini adalah lulusan Fakultas Psikologi Universitas Indonesia. Memiliki pengalaman lebih dari 20 tahun di bidang konseling, pelatihan, assessment, dan pengembangan diri.
+
+    Astarini Retno atau lebih dikenal juga dengan nama Ajeng Raviando aktif sebagai Psikolog di Taman Hati Konseling dan Pulih@thePeak. Selain itu juga sebagai Fasilitator di Talk inc Jakarta dan di Look Modeling School Jakarta. Beliau juga aktif sebagai pembicara seminar, narasumber televisi, dan penulis untuk berbagai media di Indonesia.`,
   },
   {
     name: 'Andi Miriam Amiruddin, S.Psi., Psikolog',
@@ -219,21 +249,6 @@ const psychologistList = [
     Ketertarikan terkait masalah depresi, kecemasan, relasi antara pasangan (suami istri, atau keluarga), masalah remaja dan isu2 terkait masalah kekerasan terhadap perempuan dan anak.`,
   },
   {
-    name: 'Ika Putri Dewi, S.Psi., Psikolog',
-    skills: [
-      'Interest and talent',
-      '+2',
-    ],
-    skills_detail: [
-      'Trauma (peristiwa yang sangat tidak menyenangkan, berbagai jenis kekerasan, bencana, kehilangan, dll)',
-      'Klinis anak / anak dan remaja dengan berbagai gangguan emosinya.',
-    ],
-    photo: PsychologistImages.Ika,
-    alt: 'Ibu Ika',
-    slug: 'ika-putri-dewi',
-    profile: 'Ika Putri Dewi, psikolog anak dan remaja, yang sudah bergabung di Yayasan PULIH sejak tahun 2011 ; dan sekarang (per 2022) bergabung dalam keluarga Pulih@thePeak. Ika merupakan lulusan Atmajaya S1 pada tahun 1993, dan profesi psikologi pada tahun 2000.',
-  },
-  {
     name: 'Widaningrum, S.Psi., Psikolog',
     skills: [
       'Youth and Adult Psychologist',
@@ -247,21 +262,6 @@ const psychologistList = [
     alt: 'Ibu Widaningrum',
     slug: 'widaningrum',
     profile: 'Lulusan Fakultas Psikologi Universitas Padjadjaran. Memiliki pengalaman lebih dari 20 tahun di bidang pengembangan Sumber Daya Manusia (Human Resources), pengembangan organisasi, assessment, konseling (individual/karyawan). Widaningrum juga menangani proyek terkait dengan pengembangan SDM di organisasi baik BUMN maupun Swasta. Selain itu juga adalah seorang praktisi HR di korporasi dan konsultan pada lembaga konsultan.',
-  },
-  {
-    name: 'Abas Supeli, S.Psi., M.Sc., Ph.D., Psikolog',
-    skills: [
-      'Psikologi Klinis terutama Couple Relationship',
-    ],
-    skills_detail: [
-      'Psikologi Klinis terutama Couple Relationship',
-    ],
-    photo: PsychologistImages.Abas,
-    alt: 'Bapak Abas',
-    slug: 'abas-supeli',
-    profile: `Lulusan Fakultas Psikologi Universitas Padjajaran dan Program Master of Science dari Leiden University. Memulai karirnya sebagai psikolog klinis dengan menjadi asisten dosen pada bidangnya. Berpengalaman pada bidang sumber daya manusia di berbagai perusahaan bertaraf makro-nasional dan menjadi assessor bagi perusahaan multi-nasional.
-    
-    Mendapatkan beasiswa program Master melalui StuNed (Studeren In Nederland) dimana dia mendalami “Health Psychology” yang dapat diimplementasikan di Indonesia sebagai kombinasi antara Psikologi Klinis dan Psikologi Industri dan Organisasi. Abbas Supeli mengambil gelar doctoral di Universitas Griffith Australia dan menjadi anggota MAREAA (Marriage and Relationship Educators Association of Australia).`,
   },
   {
     name: 'Mersedes Tanok, M.Psi., Psikolog',
