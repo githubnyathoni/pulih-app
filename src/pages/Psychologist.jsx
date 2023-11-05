@@ -44,8 +44,8 @@ function PsychologistSection() {
 
   return (
     <div className="w-10/12 lg:max-w-6xl mx-auto h-screen-header lg:mt-0 mt-8">
-      <h1 className="text-primary text-3xl font-bold mb-4">{t('psychological.subcategory')}</h1>
-      <div className="flex flex-wrap gap-y-8 lg:justify-start lg:gap-x-8 lg:px-4 justify-between">
+      <h1 className="text-primary text-2xl font-bold mb-4">{t('psychological.subcategory')}</h1>
+      <div className="flex flex-wrap gap-y-8 lg:justify-start lg:gap-x-8 justify-between">
         {
           currentItems.map((item) => (
             <PsychologistCard
@@ -92,9 +92,11 @@ function PsychologistSection() {
 }
 
 function PractionerSection() {
+  const { t } = useTranslation();
+
   return (
     <div className="w-10/12 lg:max-w-6xl mx-auto mt-16 pb-16">
-      <h1 className="text-primary text-3xl font-bold mb-4">Praktisi Ahli</h1>
+      <h1 className="text-primary text-2xl font-bold mb-4">{t('practioners.title')}</h1>
       <div className="flex flex-wrap justify-between lg:justify-start lg:gap-8">
         {
           practionerList.map((item) => (

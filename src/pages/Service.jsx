@@ -61,8 +61,14 @@ function ServiceCategories() {
   return (
     <div className="bg-shape-service">
       <div className="flex flex-col items-center justify-center container mx-auto lg:py-24 py-10 w-10/12 lg:w-full">
-        <h1 className="text-primary text-3xl lg:text-5xl font-bold">
+        <h1 className="text-primary hidden lg:block lg:text-5xl font-bold">
           {t('services.categories.title')}
+        </h1>
+        <h1 className="text-primary block lg:hidden text-2xl font-bold">
+          {t('services.categories.title-mobile-1')}
+        </h1>
+        <h1 className="text-primary block lg:hidden text-2xl font-bold">
+          {t('services.categories.title-mobile-2')}
         </h1>
         <p className="text-secondary font-medium mt-6">
           {t('services.categories.description')}

@@ -74,6 +74,8 @@
     "description": "Kami telah membantu mengatasi berbagai masalah pribadi maupun keluarga. Dengan layanan yang kami sediakan, Anda dapat berkonsultasi dimana saja dan kapan saja karena kami percaya kesehatan mental Anda adalah prioritas kami.",
     "categories": {
       "title": "Kategori Layanan Pulih@thePeak",
+      "title-mobile-1": "Kategori Layanan",
+      "title-mobile-2": "Pulih@thePeak",
       "description": "Bersama Pulih@thePeak, anda dapat berkonsultasi dengan Psikolog sesuai kebutuhan anda",
       "individual": {
         "title": "Konseling Individu",
@@ -165,9 +167,9 @@
     "agustina-indrawati": {
       "profile": "Lulusan Fakultas Psikologi serta Program Studi Magister Psikologi Profesi bidang Psikologi Industri dan Organisasi dari Universitas Indonesia. Menyelesaikan program Loop Certified Professional Coach dan Hogan Assessment Certification. Anggota himpunan Psikologi Indonesia dan Ikatan Psikolog Klinis Indonesia.\n\nSaat ini melakukan pelayanan/praktik Psikologi Klinis serta Konseling terkait peningkatan kesehatan mental pada klien remaja dan dewasa. Selain itu, menjalankan aktivitas coaching untuk menemukan kehidupan yang lebih bermakna (life coaching) maupun coaching karir. Menjadi contributor lepas serial psikoedukasi “Anak Muda Keren Paham KesMen (Kesehatan Mental)” di situs web Kompasiana.\n\nAgustina Indrawati juga terlibat dalam aktivitas Employee Wellness Program bagi klien di lingkup organisasi yang bertujuan menjaga kesehatan mental dan memelihara kesejahteraan (wellbeing) karyawan maupun anggota keluarganya. Memili pengalaman kerja sebagai Praktisi SDM di beberapa perusahaan multinasional dan organisasi internasional, seperti World Bank Group dan United Nations.",
       "skills": [
-        "Stress, anxiety disorders, depression and trauma",
-        "Self-development, interpersonal relationships, premarital/couple/family relationships",
-        "Career development, performance and relationships in the world of work"
+        "Stres, gangguan kecemasan, depresi dan trauma",
+        "Pengembangan diri, relasi interpersonal, relasi pranikah/pasangan/keluarga",
+        "Pengembangan karir, performa dan relasi di dunia kerja"
       ]
     },
     "ammy-kadarharutami": {
@@ -396,6 +398,7 @@
     }
   },
   "practioners": {
+    "title": "Praktisi Ahli",
     "wrenges-widiastuti": {
       "profile": "Wrenges Widiastuti adalah seorang akuntan yang juga melanjutkan Pendidikan S2 Manajemen Pembangunan di Asian Institute of Management, Manila, hingga memperoleh gelar Master in Development Management (MDM). Mengawali karir sebagai auditor di Kemenkeu Republik Indonesia tahun 1987. Berpengalaman bekerja ke beberapa perusahaan swasta yaitu Nestle, Natra Raya, dan Price Waterhouse, sebelum akhirnya fokus berupaya menguatkan manajemen keuangan di berbagai LSM mulai tahun 2005.\n\nPerhatiannya terhadap isu keuangan pribadi menjadi alasannya bergabung dengan Pulih@thePeak. Wrenges Widiastuti melakukan berbagai pelatihan literasi keuangan. Selain itu juga memberikan konsultasi keuangan pribadi kepada klien yang membutuhkan. Perhatiannya pada isu literasi keuangan mendorongnya untuk lebih fokus meneliti isu tersebut, karenanya saat ini ia tengah menempuh pendidikan doktoral di FEB Universitas Gadjahmada.",
       "skills": [

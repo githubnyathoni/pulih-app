@@ -73,7 +73,8 @@
     "description": "We have helped various personal and family problems. With the services we provide, you can consult anywhere and anytime because we believe your mental health is our priority.",
     "categories": {
       "title": "Pulih@thePeak Service Categories",
-      
+      "title-mobile-1": "Pulih@thePeak",
+      "title-mobile-2": "Service Categories",
       "description": "With Pulih@thePeak, you can consult with a psychologist according to your needs",
       "individual": {
         "title": "Individual Counseling",
@@ -167,9 +168,9 @@
     "agustina-indrawati": {
       "profile": "Graduate of the Faculty of Psychology and the Master of Professional Psychology Study Program in Industrial and Organizational Psychology from the University of Indonesia. Completed the Loop Certified Professional Coach and Hogan Assessment Certification programs. Member of the Indonesian Psychology Association and the Indonesian Association of Clinical Psychologists. \n\nCurrently providing Clinical Psychology and Counseling services/practice related to improving mental health in teenager and adult clients. Apart from that, carrying out coaching activities to find a more meaningful life (life coaching) and career coaching. Become a freelance contributor to the psychoeducation series “Cool Young People Understand Men's Health (Mental Health)” on the Kompasiana website.\n\nAgustina Indrawati is also involved in Employee Wellness Program activities for clients within the organization which aims to maintain mental health and maintain the well-being of employees and their family members. Has work experience as an HR Practitioner in several multinational companies and international organizations, such as the World Bank Group and the United Nations.",
       "skills": [
-        "Stres, gangguan kecemasan, depresi dan trauma",
-        "Pengembangan diri, relasi interpersonal, relasi pranikah/pasangan/keluarga",
-        "Pengembangan karir, performa dan relasi di dunia kerja"
+        "Stress, anxiety disorders, depression and trauma",
+        "Self-development, interpersonal relationships, premarital/couple/family relationships",
+        "Career development, performance and relationships in the world of work"
       ]
     },
     "ammy-kadarharutami": {
@@ -227,8 +228,8 @@
     "ika-putri-dewi": {
       "profile": "Ika Putri Dewi, child and teenager psychologist, who has joined the PULIH Foundation since 2011 and now (as of 2022) joining the Pulih@thePeak family. Ika graduated from Atmajaya Bachelor's degree in 1993, and graduated from psychology in 2000.",
       "skills": [
-        "Trauma (peristiwa yang sangat tidak menyenangkan, berbagai jenis kekerasan, bencana, kehilangan, dll)",
-        "Klinis anak / anak dan remaja dengan berbagai gangguan emosinya."
+        "Trauma (very unpleasant events, various types of violence, disasters, losses, etc.)",
+        "Clinical care for children/children and adolescents with various emotional disorders"
       ]
     },
     "widaningrum": {
@@ -398,6 +399,7 @@
     }
   },
   "practioners": {
+    "title": "Expert Practitioner",
     "wrenges-widiastuti": {
       "profile": "Wrenges Widiastuti is an accountant who also continued her Masters in Development Management at the Asian Institute of Management, Manila, until he obtained a Master in Development Management (MDM). Started her career as an auditor at the Ministry of Finance of the Republic of Indonesia in 1987. Experienced working in several private companies, namely Nestle, Natra Raya, and Price Waterhouse, before finally focusing on strengthening financial management in various NGOs starting in 2005.\n\nHer interest to personal financial issues means her preference is stuck at Pulih@thePeak. Wrenges Widiastuti conducts various financial literacy training. Apart from that, we also provide personal financial consultations to clients who need them. Her interest to financial literacy issues encouraged her to focus more on researching these issues, so she is currently pursuing doctoral studies at FEB Gadjahmada University.",
       "skills": [

@@ -43,7 +43,7 @@ function AboutSection() {
         <img src={Images.HomeImage2} alt="pulih at the psychologists" className="lg:block hidden lg:w-2/5 w-9/12" />
         <img src={Images.About} alt="pulih at the psychologists" className="lg:hidden rounded-3xl w-9/12" />
         <div className="lg:mt-20 mt-10 w-9/12 lg:w-full">
-          <h1 className="text-4xl text-primary font-bold">{t('home.about.title')}</h1>
+          <h1 className="lg:text-4xl text-2xl text-primary font-bold">{t('home.about.title')}</h1>
           <p className="text-secondary text-justify font-medium mt-6">
             {t('home.about.description')}
           </p>
@@ -79,7 +79,7 @@ function PsychologistSection() {
         <div className="flex lg:flex-col justify-between lg:mr-8 w-9/12 mx-auto lg:w-4/12">
           <div />
           <div className="">
-            <h1 className="text-primary text-3xl font-bold">{t('home.psychological.title')}</h1>
+            <h1 className="text-primary lg:text-3xl text-2xl font-bold">{t('home.psychological.title')}</h1>
             <h6 className="text-secondary text-justify font-medium my-4">
               {t('home.psychological.description')}
             </h6>
@@ -262,7 +262,7 @@ function FaqCard() {
 
   return (
     <div className="container flex flex-col justify-center items-center mx-auto my-24">
-      <h1 className="text-3xl text-primary font-bold mb-8">{t('home.faq.title')}</h1>
+      <h1 className="text-2xl lg:text-3xl text-primary font-bold mb-8">{t('home.faq.title')}</h1>
       <div className="w-full lg:w-9/12">
         <div>
           <div
@@ -439,7 +439,7 @@ function Home() {
       <MainHomeSection />
       <AboutSection />
       <div className="container-xl mx-auto">
-        <h1 className="text-center text-primary text-3xl lg:text-4xl font-bold mt-6">{t('home.service.title')}</h1>
+        <h1 className="text-center text-primary text-2xl lg:text-4xl font-bold mt-6">{t('home.service.title')}</h1>
         <div className="flex flex-col lg:flex-row lg:justify-between lg:mt-12 px-12 lg:gap-16">
           <ServiceCard
             text={t('home.service.individual')}
