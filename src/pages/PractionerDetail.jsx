@@ -33,7 +33,7 @@ function PractionerSection() {
           <h2 className="text-primary text-xl font-bold mt-6">{t('psychological.specialization')}</h2>
           <ul className="mt-2 lg:ml-0 ml-2 list-disc">
             {
-              translatedPractioner.skills.map((skill) => (
+              translatedPractioner.skills_detail.map((skill) => (
                 <li
                   key={skill}
                   className="lg:inline-block m-1 rounded-full lg:border lg:border-rose-700 text-sm lg:px-2 py-0.5"
