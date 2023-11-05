@@ -139,9 +139,8 @@ function PsychologistSection() {
                     photo={item.photo}
                     alt={item.alt}
                     name={item.name}
-                    skills={item.skills}
                     slug={item.slug}
-                    link="psychologist"
+                    link="psychologs"
                     className="w-64"
                   />
                 ))

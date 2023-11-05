@@ -36,7 +36,7 @@ function Header({ page }) {
             <a href="/service" className={page === 'Service' && 'border-b-primary'}>
               {t('header.services')}
             </a>
-            <a href="/psychologist" className={page === 'Psychologist' && 'border-b-primary'}>
+            <a href="/psychologs" className={page === 'Psychologist' && 'border-b-primary'}>
               {t('header.psycholog')}
             </a>
             <a href="/merchandise" className={page === 'Merchandise' && 'border-b-primary'}>
@@ -111,7 +111,7 @@ function Header({ page }) {
               <a href="/service" className={page === 'Service' && 'border-b-primary'}>
                 {t('header.services')}
               </a>
-              <a href="/psychologist" className={page === 'Psychologist' && 'border-b-primary'}>
+              <a href="/psychologs" className={page === 'Psychologist' && 'border-b-primary'}>
                 {t('header.psycholog')}
               </a>
               <a href="/merchandise" className={page === 'Merchandise' && 'border-b-primary'}>

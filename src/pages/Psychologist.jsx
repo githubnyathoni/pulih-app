@@ -14,7 +14,7 @@ function AboutPsychologist() {
 
   return (
     <div className="flex items-center justify-center container mx-auto lg:h-screen lg:mt-8 mt-32">
-      <div className="flex flex-col lg:flex-row w-9/12 gap-12 items-center">
+      <div className="flex flex-col lg:flex-row w-10/12 gap-12 items-center">
         <img
           src={PsychologistImages.Psychologist}
           alt="ilustrasi psikolog terbaik"
@@ -54,7 +54,7 @@ function PsychologistSection() {
               name={item.name}
               skills={item.skills}
               slug={item.slug}
-              link="psychologist"
+              link="psychologs"
               className="w-48-percent lg:w-64"
             />
           ))
@@ -104,9 +104,8 @@ function PractionerSection() {
               photo={item.photo}
               alt={item.alt}
               name={item.name}
-              skills={item.skills}
               slug={item.slug}
-              link="practioner"
+              link="practioners"
               className="w-48-percent lg:w-64"
             />
           ))

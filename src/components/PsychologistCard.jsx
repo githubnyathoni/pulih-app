@@ -1,10 +1,14 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 function PsychologistCard({
-  photo, alt, name, skills, slug, link, className,
+  photo, alt, name, slug, link, className,
 }) {
+  const { t } = useTranslation();
+  const psycholog = t(`${link}.${slug}`, { returnObjects: true });
+
   return (
     <Link to={`/${link}/${slug}`} className={`${className} rounded-xl shadow-lg cursor-pointer`}>
       <div>
@@ -15,7 +19,7 @@ function PsychologistCard({
           </h6>
           <div className="mt-2">
             {
-              skills.map((skill) => (
+              psycholog.skills.map((skill) => (
                 <div key={skill} className="inline-block m-1 rounded-full border border-rose-700 text-xs px-2 py-0.5">
                   {skill}
                 </div>
@@ -32,7 +36,6 @@ PsychologistCard.propTypes = {
   photo: PropTypes.string.isRequired,
   alt: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  skills: PropTypes.arrayOf.isRequired,
   slug: PropTypes.string.isRequired,
   link: PropTypes.string.isRequired,
   className: PropTypes.string.isRequired,

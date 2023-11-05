@@ -13,7 +13,7 @@ function AboutMerchandise() {
 
   return (
     <div className="flex items-center justify-center container mx-auto lg:h-screen lg:mt-8 mt-32">
-      <div className="flex flex-col lg:flex-row w-9/12 gap-12 items-center">
+      <div className="flex flex-col lg:flex-row w-10/12 gap-12 items-center">
         <img
           src={MerchandiseImages.Merchandise}
           alt="ilustrasi merchandise"

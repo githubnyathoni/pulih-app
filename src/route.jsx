@@ -22,15 +22,15 @@ const router = createBrowserRouter([
     element: <Service />,
   },
   {
-    path: '/psychologist',
+    path: '/psychologs',
     element: <Psychologist />,
   },
   {
-    path: '/psychologist/:slug',
+    path: '/psychologs/:slug',
     element: <PsychologistDetail />,
   },
   {
-    path: '/practioner/:slug',
+    path: '/practioners/:slug',
     element: <PractionerDetail />,
   },
   {
