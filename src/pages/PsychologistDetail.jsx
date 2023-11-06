@@ -49,7 +49,7 @@ function PsychologistSection() {
         {
           psychologistIndex > 0
             ? (
-              <Link to={`/psychologist/${previousPsychologist.slug}`} className="w-1/2">
+              <Link to={`/psychologs/${previousPsychologist.slug}`} className="w-1/2">
                 <div className="flex items-center justify-end">
                   <ButtonIcon>
                     <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -70,7 +70,7 @@ function PsychologistSection() {
         {
           psychologistIndex < 27
             ? (
-              <Link to={`/psychologist/${nextPsychologist.slug}`} className="w-1/2">
+              <Link to={`/psychologs/${nextPsychologist.slug}`} className="w-1/2">
                 <div className="flex items-center">
                   <ButtonIcon>
                     <span className="text-primary font-bold text-lg mr-1">Next</span>

@@ -49,7 +49,7 @@ function PractionerSection() {
         {
           practionerIndex > 0
             ? (
-              <Link to={`/practioner/${previousPractioner.slug}`} className="w-1/2">
+              <Link to={`/practioners/${previousPractioner.slug}`} className="w-1/2">
                 <div className="flex items-center justify-end">
                   <ButtonIcon>
                     <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -70,7 +70,7 @@ function PractionerSection() {
         {
           practionerIndex < 1
             ? (
-              <Link to={`/practioner/${nextPractioner.slug}`} className="w-1/2">
+              <Link to={`/practioners/${nextPractioner.slug}`} className="w-1/2">
                 <div className="flex items-center">
                   <ButtonIcon>
                     <span className="text-primary font-bold text-lg mr-1">Next</span>
