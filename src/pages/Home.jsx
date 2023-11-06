@@ -129,7 +129,7 @@ function PsychologistSection() {
         </div>
         <div className="w-full lg:w-8/12 pl-8 lg:ml-0 overflow-auto lg:overflow-hidden">
           <div
-            className="flex transition ease-out duration-40"
+            className="flex transition ease-out duration-1000"
             style={{ transform: `translateX(-${(currentIndex * (108.5 - currentIndex)) - (currentIndex / 2)}%)` }}
           >
             <div className="flex p-4 gap-5">
