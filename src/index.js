@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import { RouterProvider } from 'react-router-dom';
@@ -10,9 +10,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // eslint-disable-next-line react/jsx-filename-extension
   <React.StrictMode>
-    <Suspense fallback={<h1>Loading...</h1>}>
-      <RouterProvider router={router} />
-    </Suspense>
+    {/* <Suspense fallback={<h1>Loading...</h1>}> */}
+    <RouterProvider router={router} />
+    {/* </Suspense> */}
   </React.StrictMode>,
 );
 

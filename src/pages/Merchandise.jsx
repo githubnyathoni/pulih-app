@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
@@ -17,13 +17,13 @@ function AboutMerchandise() {
         <img
           src={MerchandiseImages.Merchandise}
           alt="ilustrasi merchandise"
-          className="lg:my-0 lg:w-1/2 w-4/5"
+          className="lg:my-0 lg:w-1/2 w-4/5 duration-700 relative transform opacity-0 transition-all translate-y-12 ease-out animation-slide-up"
         />
         <div className="flex flex-col justify-center">
-          <h1 className="text-primary text-3xl lg:text-5xl font-bold">
+          <h1 className="text-primary text-3xl lg:text-5xl font-bold duration-700 relative transform opacity-0 transition-all translate-y-12 ease-out animation-slide-up">
             Merchandise
           </h1>
-          <p className="text-secondary text-justify mt-8 font-medium">
+          <p className="text-secondary text-justify mt-8 font-medium duration-700 relative transform opacity-0 transition-all translate-y-12 ease-out animation-slide-up">
             {t('merchandise.description')}
           </p>
         </div>
@@ -95,6 +95,24 @@ function Products() {
 }
 
 function Merchandise() {
+  function callback(entries) {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('translate-y-0', 'opacity-100');
+        entry.target.classList.remove('translate-y-12', 'opacity-0');
+      }
+    });
+  }
+
+  const observer = new IntersectionObserver(callback);
+
+  useEffect(() => {
+    const replacers = document.querySelectorAll('.animation-slide-up');
+    for (let i = 0; i < replacers.length; i += 1) {
+      observer.observe(replacers[i]);
+    }
+  }, []);
+
   return (
     <MainLayout>
       <Header page="Merchandise" />

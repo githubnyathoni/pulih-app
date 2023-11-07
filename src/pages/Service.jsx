@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import MainLayout from '../layout/MainLayout';
 import Header from '../components/Header';
@@ -13,12 +13,12 @@ function ServiceSection() {
   return (
     <div className="flex items-center justify-center container mx-auto lg:h-screen lg:mt-8 mt-32">
       <div className="flex flex-col lg:flex-row items-center w-10/12 gap-12">
-        <img src={ServiceImages.Service} alt="layanan pulih@thepeak" className="w-4/5 lg:w-1/2" />
+        <img src={ServiceImages.Service} alt="layanan pulih@thepeak" className="w-4/5 lg:w-1/2 duration-700 relative transform opacity-0 transition-all translate-y-12 ease-out animation-slide-up" />
         <div className="flex flex-col justify-center">
-          <h1 className="text-primary text-3xl lg:text-5xl font-bold">
+          <h1 className="text-primary text-3xl lg:text-5xl font-bold duration-700 relative transform opacity-0 transition-all translate-y-12 ease-out animation-slide-up">
             {t('services.title')}
           </h1>
-          <p className="text-secondary text-justify font-medium mt-8">
+          <p className="text-secondary text-justify font-medium mt-8 duration-700 relative transform opacity-0 transition-all translate-y-12 ease-out animation-slide-up">
             {t('services.description')}
           </p>
         </div>
@@ -29,34 +29,18 @@ function ServiceSection() {
 
 function ServiceCategories() {
   const { t } = useTranslation();
-  const categories = [
-    {
-      description: t('services.categories.individual.description'),
-      image: Images.IlustrasiIndividu,
-    },
-    {
-      description: t('services.categories.couples.description'),
-      image: Images.IlustrasiPasangan,
-    },
-    {
-      description: t('services.categories.family.description'),
-      image: Images.IlustrasiKeluarga,
-    },
-    {
-      description: t('services.categories.psychological.description'),
-      image: Images.IlustrasiPsikologis,
-    },
-    {
-      description: t('services.categories.workshop.description'),
-      image: Images.IlustrasiWorkshop,
-    },
-    {
-      description: t('services.categories.webinars.description'),
-      image: Images.IlustrasiWebinar,
-    },
-  ];
   const [selectedCategories, setSelectedCategories] = useState(0);
-  const currentCategory = categories[selectedCategories];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (selectedCategories === 5) {
+        setSelectedCategories(0);
+      } else {
+        setSelectedCategories(selectedCategories + 1);
+      }
+    }, 5000);
+    return () => clearInterval(interval);
+  }, [selectedCategories]);
 
   return (
     <div className="bg-shape-service">
@@ -143,7 +127,7 @@ function ServiceCategories() {
                 </ButtonIcon>
               )
           }
-          <div className="flex lg:flex-row flex-col-reverse items-center lg:w-2/3 w-full">
+          <div className="flex lg:flex-row flex-col-reverse items-center w-250 sm:w-500 md:w-600 lg:w-750 w-full">
             <div className="flex lg:hidden mt-4">
               {
                 selectedCategories > 0
@@ -172,10 +156,51 @@ function ServiceCategories() {
                   )
               }
             </div>
-            <p className="lg:text-left text-center text-secondary lg:mr-12 ease-in-out transition-all duration-100 w-2/3 font-medium lg:mt-0 my-6">
-              { currentCategory.description }
-            </p>
-            <img src={currentCategory.image} alt="ilustrasi konseling individu" width="200px" />
+            <div className="w-full overflow-hidden">
+              <div
+                className="flex transition-all ease-in-out duration-1000"
+                style={{ transform: `translateX(-${selectedCategories * 100}%)` }}
+              >
+                <div className="flex">
+                  <div className="flex flex-col-reverse lg:flex-row items-center w-250 sm:w-500 md:w-600 lg:w-750">
+                    <p>
+                      { t('services.categories.individual.description') }
+                    </p>
+                    <img src={Images.IlustrasiIndividu} alt="ilustrasi konseling individu" width="200px" />
+                  </div>
+                  <div className="flex flex-col-reverse lg:flex-row items-center w-250 sm:w-500 md:w-600 lg:w-750">
+                    <p>
+                      { t('services.categories.couples.description') }
+                    </p>
+                    <img src={Images.IlustrasiPasangan} alt="ilustrasi konseling pasangan" width="200px" />
+                  </div>
+                  <div className="flex flex-col-reverse lg:flex-row items-center w-250 sm:w-500 md:w-600 lg:w-750">
+                    <p>
+                      { t('services.categories.family.description') }
+                    </p>
+                    <img src={Images.IlustrasiKeluarga} alt="ilustrasi konseling keluarga" width="200px" />
+                  </div>
+                  <div className="flex flex-col-reverse lg:flex-row items-center w-250 sm:w-500 md:w-600 lg:w-750">
+                    <p>
+                      { t('services.categories.psychological.description') }
+                    </p>
+                    <img src={Images.IlustrasiPsikologis} alt="ilustrasi konseling psikologis" width="200px" />
+                  </div>
+                  <div className="flex flex-col-reverse lg:flex-row items-center w-250 sm:w-500 md:w-600 lg:w-750">
+                    <p>
+                      { t('services.categories.workshop.description') }
+                    </p>
+                    <img src={Images.IlustrasiWorkshop} alt="ilustrasi konseling workshop" width="200px" />
+                  </div>
+                  <div className="flex flex-col-reverse lg:flex-row items-center w-250 sm:w-500 md:w-600 lg:w-750">
+                    <p>
+                      { t('services.categories.webinars.description') }
+                    </p>
+                    <img src={Images.IlustrasiWebinar} alt="ilustrasi konseling webinar" width="200px" />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           {
             selectedCategories < 5
@@ -205,7 +230,7 @@ function WhySection() {
       <h1 className="text-center text-primary text-2xl lg:text-5xl font-bold">
         {t('services.why.title')}
       </h1>
-      <div className="flex flex-col lg:flex-row justify-around mt-16 gap-12">
+      <div className="flex flex-col lg:flex-row justify-around lg:mt-16 mt-12 gap-12">
         <div className="flex flex-col items-center gap-6">
           <img src={ServiceImages.WhyFirst} alt="kenapa pulih@thepeak" width="150px" />
           <p className="text-primary text-center font-medium">
@@ -230,6 +255,24 @@ function WhySection() {
 }
 
 function Service() {
+  function callback(entries) {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('translate-y-0', 'opacity-100');
+        entry.target.classList.remove('translate-y-12', 'opacity-0');
+      }
+    });
+  }
+
+  const observer = new IntersectionObserver(callback);
+
+  useEffect(() => {
+    const replacers = document.querySelectorAll('.animation-slide-up');
+    for (let i = 0; i < replacers.length; i += 1) {
+      observer.observe(replacers[i]);
+    }
+  }, []);
+
   return (
     <MainLayout>
       <Header page="Service" />

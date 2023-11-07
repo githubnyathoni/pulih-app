@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import PsychologistImages from '../images/psychologist';
 import Header from '../components/Header';
@@ -18,13 +18,13 @@ function AboutPsychologist() {
         <img
           src={PsychologistImages.Psychologist}
           alt="ilustrasi psikolog terbaik"
-          className="w-4/5 lg:w-1/2"
+          className="w-4/5 lg:w-1/2 duration-700 relative transform opacity-0 transition-all translate-y-12 ease-out animation-slide-up"
         />
         <div className="flex flex-col justify-center">
-          <h1 className="text-primary text-3xl lg:text-5xl font-bold">
+          <h1 className="text-primary text-3xl lg:text-5xl font-bold duration-700 relative transform opacity-0 transition-all translate-y-12 ease-out animation-slide-up">
             {t('psychological.title')}
           </h1>
-          <p className="text-secondary text-justify font-medium mt-8">
+          <p className="text-secondary text-justify font-medium mt-8 duration-700 relative transform opacity-0 transition-all translate-y-12 ease-out animation-slide-up">
             {t('psychological.description')}
           </p>
         </div>
@@ -67,17 +67,17 @@ function PsychologistSection() {
           </svg>
         </ButtonIcon>
         <ButtonIcon onClick={() => setIndex(0)}>
-          <div className={`w-7 rounded-lg border-primary text-primary ${index === 0 && 'bg-pink'}`}>
+          <div className={`w-7 rounded-lg border-primary text-primary hover:bg-pink transition-all duration-700 ${index === 0 && 'bg-pink'}`}>
             <h1>1</h1>
           </div>
         </ButtonIcon>
         <ButtonIcon onClick={() => setIndex(1)}>
-          <div className={`w-7 rounded-lg border-primary text-primary ${index === 1 && 'bg-pink'}`}>
+          <div className={`w-7 rounded-lg border-primary text-primary hover:bg-pink transition-all duration-700 ${index === 1 && 'bg-pink'}`}>
             <h1>2</h1>
           </div>
         </ButtonIcon>
         <ButtonIcon onClick={() => setIndex(2)}>
-          <div className={`w-7 rounded-lg border-primary text-primary ${index === 2 && 'bg-pink'}`}>
+          <div className={`w-7 rounded-lg border-primary text-primary hover:bg-pink transition-all duration-700 ${index === 2 && 'bg-pink'}`}>
             <h1>3</h1>
           </div>
         </ButtonIcon>
@@ -116,6 +116,24 @@ function PractionerSection() {
 }
 
 function Psychologist() {
+  function callback(entries) {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('translate-y-0', 'opacity-100');
+        entry.target.classList.remove('translate-y-12', 'opacity-0');
+      }
+    });
+  }
+
+  const observer = new IntersectionObserver(callback);
+
+  useEffect(() => {
+    const replacers = document.querySelectorAll('.animation-slide-up');
+    for (let i = 0; i < replacers.length; i += 1) {
+      observer.observe(replacers[i]);
+    }
+  }, []);
+
   return (
     <div>
       <MainLayout>

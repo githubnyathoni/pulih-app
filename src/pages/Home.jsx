@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/control-has-associated-label */
+/* eslint-disable react/jsx-no-comment-textnodes */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
@@ -17,18 +19,34 @@ function MainHomeSection() {
 
   return (
     <div className="bg-pink bg-shape-1">
-      <div className="flex flex-col-reverse lg:flex-row justify-between items-center container mx-auto lg:h-screen h-auto lg:gap-16 lg:overflow-visible overflow-hidden">
-        <div className="pt-12 w-9/12 lg:w-full">
-          <h1 className="text-4xl lg:text-7xl text-primary font-bold">Invest In Your</h1>
-          <h1 className="text-4xl lg:text-7xl text-primary font-bold">Mental Health</h1>
-          <p className="text-secondary text-justify font-medium mt-6">
+      <div className="flex flex-col-reverse lg:flex-row justify-between items-center container lg:max-w-4xl xl:max-w-7xl mx-auto lg:h-screen h-auto lg:gap-16 lg:overflow-visible overflow-hidden">
+        <div className="lg:pt-12 pt-8 w-9/12 lg:w-full">
+          <h1
+            className="text-4xl lg:text-5xl xl:text-7xl text-primary block font-bold duration-700 relative transform opacity-0 transition-all translate-y-12 ease-out animation-slide-up"
+          >
+            Invest In Your
+          </h1>
+          <h1
+            className="text-4xl lg:text-5xl xl:text-7xl text-primary font-bold duration-700 relative transform opacity-0 transition-all translate-y-12 ease-out animation-slide-up"
+          >
+            Mental Health
+          </h1>
+          <p
+            className="text-secondary text-justify font-medium mt-6 duration-700 relative transform opacity-0 transition-all translate-y-12 ease-out animation-slide-up"
+          >
             {t('home.subtagline')}
           </p>
-          <p className="text-secondary font-medium mt-2 mb-8">
+          <p
+            className="text-secondary font-medium mt-2 mb-12 duration-700 relative transform opacity-0 transition-all translate-y-12 ease-out animation-slide-up"
+          >
             #investinyourmentalhealth
           </p>
         </div>
-        <img src={Images.HomeImage1} alt="psychologist holding hand patient" className="w-full relative left-12 w-45-percent lg:block lg:mt-0 mt-24" />
+        <img
+          src={Images.HomeImage1}
+          alt="psychologist holding hand patient"
+          className="w-full left-12 w-45-percent lg:mt-0 mt-24 relative duration-700 transform opacity-0 transition-all translate-y-12 ease-out animation-slide-up"
+        />
       </div>
     </div>
   );
@@ -39,7 +57,7 @@ function AboutSection() {
 
   return (
     <div className="bg-shape-2">
-      <div className="container mx-auto flex flex-col lg:flex-row items-center lg:items-start justify-between lg:gap-12 lg:pt-36 lg:pb-20 py-16">
+      <div className="container lg:max-w-4xl xl:max-w-7xl mx-auto flex flex-col lg:flex-row items-center lg:items-start justify-between lg:gap-12 lg:pt-36 lg:pb-20 py-16">
         <img src={Images.HomeImage2} alt="pulih at the psychologists" className="lg:block hidden lg:w-2/5 w-9/12" />
         <img src={Images.About} alt="pulih at the psychologists" className="lg:hidden rounded-3xl w-9/12" />
         <div className="lg:mt-20 mt-10 w-9/12 lg:w-full">
@@ -74,7 +92,7 @@ function PsychologistSection() {
   };
 
   return (
-    <div className="container-xl mx-auto my-24 w-full">
+    <div className="container-xl mx-auto my-24 w-full lg:max-w-4xl xl:max-w-7xl">
       <div className="flex flex-col lg:flex-row justify-between">
         <div className="flex lg:flex-col justify-between lg:mr-8 w-9/12 mx-auto lg:w-4/12">
           <div />
@@ -162,39 +180,24 @@ function PsychologistSection() {
 }
 function QuoteCard() {
   const { t } = useTranslation();
-  const quotes = [
-    {
-      quote: t('home.quotes.supeli'),
-      speaker: 'Abas Supeli, S.Psi, M.Sc, Ph.D, Psikolog',
-    },
-    {
-      quote: t('home.quotes.soraya'),
-      speaker: 'Soraya Salim, S.Psi., Psikolog',
-    },
-    {
-      quote: t('home.quotes.retno'),
-      speaker: 'Astarini Retno (Ajeng Raviando), Psikolog',
-    },
-  ];
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [quoteActive, setQuoteActive] = useState(quotes[currentIndex]);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      if (currentIndex === 2) {
-        setQuoteActive(quotes[0]);
-        setCurrentIndex(0);
-      } else {
-        setQuoteActive(quotes[currentIndex + 1]);
-        setCurrentIndex(currentIndex + 1);
-      }
-    }, 5000);
-    return () => clearInterval(interval);
-  }, [currentIndex]);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     if (currentIndex === 2) {
+  //       setQuoteActive(quotes[0]);
+  //       setCurrentIndex(0);
+  //     } else {
+  //       setQuoteActive(quotes[currentIndex + 1]);
+  //       setCurrentIndex(currentIndex + 1);
+  //     }
+  //   }, 5000);
+  //   return () => clearInterval(interval);
+  // }, [currentIndex]);
 
   return (
     <div className="container flex justify-center items-center mx-auto my-24">
-      <div className="flex bg-pink w-full lg:w-10/12 py-16 px-12 lg:rounded-3xl gap-4 bg-shape-quote">
+      <div className="flex bg-pink w-full lg:w-10/12 py-16 px-12 lg:rounded-3xl gap-4 bg-shape-quote justify-center">
         {
           currentIndex === 0
             ? (
@@ -208,7 +211,6 @@ function QuoteCard() {
               <ButtonIcon
                 className="w-12 hidden lg:block"
                 onClick={() => {
-                  setQuoteActive(quotes[currentIndex - 1]);
                   setCurrentIndex(currentIndex - 1);
                 }}
               >
@@ -216,13 +218,60 @@ function QuoteCard() {
               </ButtonIcon>
             )
         }
-        <div className="flex flex-col h-72 w-full lg:w-10/12 justify-center">
-          <p className="text-primary lg:text-justify text-sm lg:text-2xl lg:font-bold">
-            { quoteActive.quote }
-          </p>
-          <span className="text-primary text-sm lg:text-base font-medium mt-6">
-            { quoteActive.speaker }
-          </span>
+        <div className="flex flex-col h-72 md:h-60 lg:h-96 xl:h-80 w-250 sm:w-500 md:w-600 xl:w-800 justify-center">
+          <div className="w-full overflow-hidden">
+            <div
+              className="flex transition-all ease-in-out duration-1000"
+              style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+            >
+              <div className="flex">
+                <div className="flex flex-col w-250 sm:w-500 md:w-600 xl:w-800">
+                  <p className="text-primary lg:text-justify text-sm lg:text-2xl lg:font-bold">
+                    { t('home.quotes.supeli') }
+                  </p>
+                  <span className="text-primary text-sm lg:text-base font-medium mt-6">
+                    Abas Supeli, S.Psi, M.Sc, Ph.D, Psikolog
+                  </span>
+                </div>
+                <div className="flex flex-col w-250 sm:w-500 md:w-600 xl:w-800">
+                  <p className="text-primary lg:text-justify text-sm lg:text-2xl lg:font-bold">
+                    { t('home.quotes.soraya') }
+                  </p>
+                  <span className="text-primary text-sm lg:text-base font-medium mt-6">
+                    Soraya Salim, S.Psi., Psikolog
+                  </span>
+                </div>
+                <div className="flex flex-col w-250 sm:w-500 md:w-600 xl:w-800">
+                  <p className="text-primary lg:text-justify text-sm lg:text-2xl lg:font-bold">
+                    { t('home.quotes.retno') }
+                  </p>
+                  <span className="text-primary text-sm lg:text-base font-medium mt-6">
+                    Astarini Retno (Ajeng Raviando), Psikolog
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex justify-center gap-2 lg:hidden mt-4">
+            <div
+              className={`rounded-full w-2 h-2 ${currentIndex === 0 ? 'bg-primary' : 'border-sm-primary'}`}
+              onClick={() => { setCurrentIndex(0); }}
+              role="button"
+              tabIndex={0}
+            />
+            <div
+              className={`rounded-full w-2 h-2 ${currentIndex === 1 ? 'bg-primary' : 'border-sm-primary'}`}
+              onClick={() => { setCurrentIndex(1); }}
+              role="button"
+              tabIndex={0}
+            />
+            <div
+              className={`rounded-full w-2 h-2 ${currentIndex === 2 ? 'bg-primary' : 'border-sm-primary'}`}
+              onClick={() => { setCurrentIndex(2); }}
+              role="button"
+              tabIndex={0}
+            />
+          </div>
           <Link to="https://api.whatsapp.com/send/?phone=6283128769871" target="_blank">
             <Button className="mt-6 w-max">
               {t('home.quotes.consult')}
@@ -242,7 +291,6 @@ function QuoteCard() {
               <ButtonIcon
                 className="w-12 hidden lg:block"
                 onClick={() => {
-                  setQuoteActive(quotes[currentIndex + 1]);
                   setCurrentIndex(currentIndex + 1);
                 }}
               >
@@ -277,11 +325,11 @@ function FaqCard() {
               <img
                 src={Images.DownArrow}
                 alt="down arrow"
-                className={`img-md ${selectedQuestion === 0 && 'rotate-180'}`}
+                className={`img-md transition-all duration-700 ${selectedQuestion === 0 && 'rotate-180'}`}
               />
             </ButtonIcon>
           </div>
-          <div className={`bg-slate-50 px-8 text-secondary font-medium border-b-third transition-all duration-300 ${selectedQuestion === 0 ? 'visible py-6' : 'invisible h-0'}`}>
+          <div className={`bg-slate-50 px-8 text-secondary font-medium border-b-third overflow-hidden transition-all duration-700 ${selectedQuestion === 0 ? 'p-4 sm:h-20 lg:h-14' : 'p-0 h-0'}`}>
             {t('home.faq.answer_1')}
           </div>
         </div>
@@ -299,11 +347,11 @@ function FaqCard() {
               <img
                 src={Images.DownArrow}
                 alt="down arrow"
-                className={`img-md ${selectedQuestion === 1 && 'rotate-180'}`}
+                className={`img-md transition-all duration-700 ${selectedQuestion === 1 && 'rotate-180'}`}
               />
             </ButtonIcon>
           </div>
-          <div className={`bg-slate-50 pl-8 pr-16 text-secondary font-medium border-b-third transition-all duration-300 ${selectedQuestion === 1 ? 'visible py-4' : 'invisible h-0'}`}>
+          <div className={`bg-slate-50 pl-8 pr-16 text-secondary font-medium border-b-third overflow-hidden  transition-all duration-700 ${selectedQuestion === 1 ? 'p-4 sm:h-32 md:h-28' : 'p-0 h-0'}`}>
             {t('home.faq.answer_2')}
           </div>
         </div>
@@ -321,11 +369,11 @@ function FaqCard() {
               <img
                 src={Images.DownArrow}
                 alt="down arrow"
-                className={`img-md ${selectedQuestion === 2 && 'rotate-180'}`}
+                className={`img-md transition-all duration-700 ${selectedQuestion === 2 && 'rotate-180'}`}
               />
             </ButtonIcon>
           </div>
-          <div className={`bg-slate-50 pl-8 pr-16 text-secondary font-medium border-b-third transition-all duration-300 ${selectedQuestion === 2 ? 'visible py-4' : 'invisible h-0'}`}>
+          <div className={`bg-slate-50 pl-8 pr-16 text-secondary font-medium border-b-third overflow-hidden transition-all duration-700 ${selectedQuestion === 2 ? 'p-4 sm:h-28 lg:h-20' : 'h-0'}`}>
             {t('home.faq.answer_3')}
           </div>
         </div>
@@ -343,11 +391,11 @@ function FaqCard() {
               <img
                 src={Images.DownArrow}
                 alt="down arrow"
-                className={`img-md ${selectedQuestion === 3 && 'rotate-180'}`}
+                className={`img-md transition-all duration-700 ${selectedQuestion === 3 && 'rotate-180'}`}
               />
             </ButtonIcon>
           </div>
-          <div className={`lg:rounded-b-3xl bg-slate-50 px-8 text-secondary font-medium border-b-third transition-all duration-300 ${selectedQuestion === 3 ? 'visible py-4' : 'invisible h-0'}`}>
+          <div className={`lg:rounded-b-3xl bg-slate-50 px-8 text-secondary font-medium overflow-hidden transition-all duration-700 ${selectedQuestion === 3 ? 'p-4 h-18 sm:h-14 border-b-third' : 'h-0'}`}>
             {t('home.faq.answer_4')}
           </div>
         </div>
@@ -431,6 +479,24 @@ function CloserSection() {
 
 function Home() {
   const { t } = useTranslation();
+
+  function callback(entries) {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('translate-y-0', 'opacity-100');
+        entry.target.classList.remove('translate-y-12', 'opacity-0');
+      }
+    });
+  }
+
+  const observer = new IntersectionObserver(callback);
+
+  useEffect(() => {
+    const replacers = document.querySelectorAll('.animation-slide-up');
+    for (let i = 0; i < replacers.length; i += 1) {
+      observer.observe(replacers[i]);
+    }
+  }, []);
 
   return (
     <MainLayout>

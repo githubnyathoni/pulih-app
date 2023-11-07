@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import MainLayout from '../layout/MainLayout';
 import Header from '../components/Header';
@@ -12,10 +12,14 @@ function AboutSection() {
     <div className="lg:h-screen mt-20">
       <img src={AboutImages.Squad} alt="pulih at the peak squad" />
       <div className="flex flex-col items-start px-8 lg:items-center bg-pink bg-about py-12">
-        <h1 className="text-primary text-3xl lg:text-5xl font-bold">
+        <h1
+          className="text-primary text-3xl lg:text-5xl font-bold duration-700 relative transform opacity-0 transition-all translate-y-12 ease-out animation-slide-up"
+        >
           {t('about.title')}
         </h1>
-        <p className="text-secondary text-justify lg:text-center lg:w-6/12 py-6 font-medium">
+        <p
+          className="text-secondary text-justify lg:text-center lg:w-6/12 py-6 font-medium duration-700 relative transform opacity-0 transition-all translate-y-12 ease-out animation-slide-up"
+        >
           {t('about.description')}
         </p>
       </div>
@@ -101,6 +105,24 @@ function TogetherSection() {
 }
 
 function About() {
+  function callback(entries) {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('translate-y-0', 'opacity-100');
+        entry.target.classList.remove('translate-y-12', 'opacity-0');
+      }
+    });
+  }
+
+  const observer = new IntersectionObserver(callback);
+
+  useEffect(() => {
+    const replacers = document.querySelectorAll('.animation-slide-up');
+    for (let i = 0; i < replacers.length; i += 1) {
+      observer.observe(replacers[i]);
+    }
+  }, []);
+
   return (
     <MainLayout>
       <Header page="About" />

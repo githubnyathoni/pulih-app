@@ -12,7 +12,7 @@ function MainLayout({ children }) {
   }, [pathname]);
 
   return (
-    <div className="w-full">
+    <div className="w-full scroll-smooth">
       {/* Header */}
       {children}
       {/* Footer */}

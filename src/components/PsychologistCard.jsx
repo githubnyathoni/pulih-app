@@ -10,9 +10,9 @@ function PsychologistCard({
   const psycholog = t(`${link}.${slug}`, { returnObjects: true });
 
   return (
-    <Link to={`/${link}/${slug}`} className={`${className} rounded-xl shadow-lg cursor-pointer`}>
+    <Link to={`/${link}/${slug}`} className={`${className} rounded-xl border-1-pink hover:shadow-lg transition-shadow duration-700 cursor-pointer`}>
       <div>
-        <img src={photo} alt={alt} className="rounded-t-xl" />
+        <img src={photo} alt={alt} className="rounded-t-lg" />
         <div className="p-4">
           <h6 className="text-primary font-bold">
             {name}
@@ -20,7 +20,7 @@ function PsychologistCard({
           <div className="mt-2">
             {
               psycholog.skills.map((skill) => (
-                <div key={skill} className="inline-block m-1 rounded-full border border-rose-700 text-xs px-2 py-0.5">
+                <div key={skill} className="inline-block m-1 rounded-md border-1-pink text-xs px-2 py-0.5">
                   {skill}
                 </div>
               ))

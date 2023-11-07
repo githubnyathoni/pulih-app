@@ -27,20 +27,25 @@ function Header({ page }) {
             <img src={Images.Logo} alt="logo pulih at the peak" width="70px" />
           </Link>
           <div className="hidden lg:flex items-center gap-10 text-primary font-medium">
-            <a href="/" className={page === 'Home' && 'border-b-primary'}>
+            <a href="/" className={`header-menu ${page === 'Home' ? 'border-b-primary' : 'text-primary-disabled hover:text-primary transition-colors duration-700'}`}>
               {t('header.home')}
+              <div className={page === 'Home' && 'hidden'} />
             </a>
-            <a href="/about" className={page === 'About' && 'border-b-primary'}>
+            <a href="/about" className={`header-menu ${page === 'About' ? 'border-b-primary' : 'text-primary-disabled hover:text-primary transition-colors duration-700'}`}>
               {t('header.about')}
+              <div className={page === 'About' && 'hidden'} />
             </a>
-            <a href="/service" className={page === 'Service' && 'border-b-primary'}>
+            <a href="/service" className={`header-menu ${page === 'Service' ? 'border-b-primary' : 'text-primary-disabled hover:text-primary transition-colors duration-700'}`}>
               {t('header.services')}
+              <div className={page === 'Service' && 'hidden'} />
             </a>
-            <a href="/psychologs" className={page === 'Psychologist' && 'border-b-primary'}>
+            <a href="/psychologs" className={`header-menu ${page === 'Psychologist' ? 'border-b-primary' : 'text-primary-disabled hover:text-primary transition-colors duration-700'}`}>
               {t('header.psycholog')}
+              <div className={page === 'Psychologist' && 'hidden'} />
             </a>
-            <a href="/merchandise" className={page === 'Merchandise' && 'border-b-primary'}>
+            <a href="/merchandise" className={`header-menu ${page === 'Merchandise' ? 'border-b-primary' : 'text-primary-disabled hover:text-primary transition-colors duration-700'}`}>
               {t('header.merchandise')}
+              <div className={page === 'Merchandise' && 'hidden'} />
             </a>
           </div>
           <div className="hidden lg:flex items-center gap-4 text-primary">
@@ -52,13 +57,13 @@ function Header({ page }) {
                 tabIndex={0}
               >
                 { language }
-                <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg className={`transition-all duration-500 ${isShow ? 'rotate-180' : 'rotate-0'}`} width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M8 8L12 12L16 8" stroke="#C01A78" strokeLinecap="round" />
                 </svg>
               </div>
-              <div className={`absolute bg-solid-lang p-4 rounded-xl w-40 top-8 right-0 ${isShow ? 'visible' : 'invisible'}`}>
+              <div className={`absolute shadow-lg bg-solid-lang rounded-lg w-40 top-8 right-0 transition-all duration-500 ${isShow ? 'opacity-100' : 'opacity-0'}`}>
                 <div
-                  className="text-white cursor-pointer"
+                  className="text-white cursor-pointer px-3 py-2 rounded-t-lg hover:bg-pink hover:text-primary"
                   onClick={() => changeLanguage('id')}
                   role="button"
                   tabIndex={0}
@@ -66,7 +71,7 @@ function Header({ page }) {
                   Bahasa Indonesia
                 </div>
                 <div
-                  className="text-white cursor-pointer mt-2"
+                  className="text-white cursor-pointer rounded-b-lg px-3 py-2 hover:bg-pink hover:text-primary"
                   onClick={() => changeLanguage('en')}
                   role="button"
                   tabIndex={0}
