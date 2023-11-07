@@ -182,18 +182,16 @@ function QuoteCard() {
   const { t } = useTranslation();
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     if (currentIndex === 2) {
-  //       setQuoteActive(quotes[0]);
-  //       setCurrentIndex(0);
-  //     } else {
-  //       setQuoteActive(quotes[currentIndex + 1]);
-  //       setCurrentIndex(currentIndex + 1);
-  //     }
-  //   }, 5000);
-  //   return () => clearInterval(interval);
-  // }, [currentIndex]);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (currentIndex === 2) {
+        setCurrentIndex(0);
+      } else {
+        setCurrentIndex(currentIndex + 1);
+      }
+    }, 5000);
+    return () => clearInterval(interval);
+  }, [currentIndex]);
 
   return (
     <div className="container flex justify-center items-center mx-auto my-24">
