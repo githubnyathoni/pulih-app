@@ -10,7 +10,7 @@ function AboutSection() {
 
   return (
     <div className="lg:h-screen mt-20">
-      <img src={AboutImages.Squad} alt="pulih at the peak squad" />
+      <img src={AboutImages.Squad} alt="pulih at the peak squad" className="duration-700 relative transform opacity-0 transition-all translate-y-12 ease-out animation-slide-up" />
       <div className="flex flex-col items-start px-8 lg:items-center bg-pink bg-about py-12">
         <h1
           className="text-primary text-3xl lg:text-5xl font-bold duration-700 relative transform opacity-0 transition-all translate-y-12 ease-out animation-slide-up"
