@@ -80,7 +80,7 @@ function Header({ page }) {
                 </div>
               </div>
             </div>
-            <Link to="https://api.whatsapp.com/send/?phone=6283128769871" target="_blank">
+            <Link to="https://api.whatsapp.com/send/?phone=6285103209515" target="_blank">
               <Button className="bg-primary">
                 {t('header.contact')}
               </Button>
@@ -142,7 +142,7 @@ function Header({ page }) {
                   ENG
                 </div>
               </div>
-              <Link to="https://api.whatsapp.com/send/?phone=6283128769871" target="_blank">
+              <Link to="https://api.whatsapp.com/send/?phone=6285103209515" target="_blank">
                 <Button className="bg-primary mt-4">
                   Hubungi Kami
                 </Button>
