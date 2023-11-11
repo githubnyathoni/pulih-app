@@ -17,7 +17,7 @@ function PsychologistSection() {
   const psycholog = t(`psychologs.${psychologist.slug}`, { returnObjects: true });
 
   return (
-    <div className="container mx-auto my-20 mt-36">
+    <div className="container lg:max-w-4xl xl:max-w-6xl mx-auto my-20 mt-36">
       <div className="flex flex-col lg:flex-row lg:items-start items-center gap-8">
         <div className="lg:w-1/3 w-1/2">
           <img src={psychologist.photo} alt={psychologist.alt} className="rounded-2xl" />

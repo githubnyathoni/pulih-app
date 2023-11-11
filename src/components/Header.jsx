@@ -22,7 +22,7 @@ function Header({ page }) {
   return (
     <div>
       <div className="bg-pink fixed top-0 z-10 w-full">
-        <div className="flex container mx-auto justify-between py-2 px-8 lg:px-0">
+        <div className="flex container mx-auto lg:max-w-4xl xl:max-w-6xl xl-2:max-w-7xl justify-between py-2 px-8 lg:px-0">
           <Link to="/">
             <img src={Images.Logo} alt="logo pulih at the peak" width="70px" />
           </Link>

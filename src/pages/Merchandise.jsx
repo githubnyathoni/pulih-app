@@ -75,7 +75,7 @@ function Products() {
   ];
 
   return (
-    <div className="w-10/12 lg:w-full max-w-5xl mx-auto flex flex-wrap lg:justify-between mt-12 pb-8 gap-y-8 gap-x-2">
+    <div className="w-10/12 lg:w-880 xl:w-full xl:max-w-5xl mx-auto flex flex-wrap xl:justify-between mt-12 pb-8 gap-y-8 gap-x-2">
       {
         products.map((item) => (
           <ProductCard name={item.name} link={item.link} image={item.image} />

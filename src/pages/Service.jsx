@@ -161,38 +161,38 @@ function ServiceCategories() {
                 className="flex transition-all ease-in-out duration-1000"
                 style={{ transform: `translateX(-${selectedCategories * 100}%)` }}
               >
-                <div className="flex">
-                  <div className="flex flex-col-reverse text-secondary lg:flex-row items-center w-250 sm:w-500 md:w-600 lg:w-750">
+                <div className="flex mt-4 lg:mt-0">
+                  <div className="flex flex-col-reverse text-secondary lg:flex-row items-center w-250 sm:w-500 md:w-600 lg:w-750 gap-4">
                     <p>
                       { t('services.categories.individual.description') }
                     </p>
                     <img src={ServiceImages.Individu} alt="ilustrasi konseling individu" width="200px" />
                   </div>
-                  <div className="flex flex-col-reverse text-secondary lg:flex-row items-center w-250 sm:w-500 md:w-600 lg:w-750">
+                  <div className="flex flex-col-reverse text-secondary lg:flex-row items-center w-250 sm:w-500 md:w-600 lg:w-750 gap-4">
                     <p>
                       { t('services.categories.couples.description') }
                     </p>
                     <img src={ServiceImages.Pasangan} alt="ilustrasi konseling pasangan" width="200px" />
                   </div>
-                  <div className="flex flex-col-reverse text-secondary lg:flex-row items-center w-250 sm:w-500 md:w-600 lg:w-750">
+                  <div className="flex flex-col-reverse text-secondary lg:flex-row items-center w-250 sm:w-500 md:w-600 lg:w-750 gap-4">
                     <p>
                       { t('services.categories.family.description') }
                     </p>
                     <img src={ServiceImages.Keluarga} alt="ilustrasi konseling keluarga" width="200px" />
                   </div>
-                  <div className="flex flex-col-reverse text-secondary lg:flex-row items-center w-250 sm:w-500 md:w-600 lg:w-750">
+                  <div className="flex flex-col-reverse text-secondary lg:flex-row items-center w-250 sm:w-500 md:w-600 lg:w-750 gap-4">
                     <p>
                       { t('services.categories.psychological.description') }
                     </p>
                     <img src={ServiceImages.Psikologis} alt="ilustrasi konseling psikologis" width="200px" />
                   </div>
-                  <div className="flex flex-col-reverse text-secondary lg:flex-row items-center w-250 sm:w-500 md:w-600 lg:w-750">
+                  <div className="flex flex-col-reverse text-secondary lg:flex-row items-center w-250 sm:w-500 md:w-600 lg:w-750 gap-4">
                     <p>
                       { t('services.categories.workshop.description') }
                     </p>
                     <img src={ServiceImages.Workshop} alt="ilustrasi konseling workshop" width="200px" />
                   </div>
-                  <div className="flex flex-col-reverse text-secondary lg:flex-row items-center w-250 sm:w-500 md:w-600 lg:w-750">
+                  <div className="flex flex-col-reverse text-secondary lg:flex-row items-center w-250 sm:w-500 md:w-600 lg:w-750 gap-4">
                     <p>
                       { t('services.categories.webinars.description') }
                     </p>

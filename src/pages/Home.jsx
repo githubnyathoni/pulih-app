@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/control-has-associated-label */
 /* eslint-disable react/jsx-no-comment-textnodes */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import MainLayout from '../layout/MainLayout';
@@ -19,7 +19,7 @@ function MainHomeSection() {
 
   return (
     <div className="bg-pink bg-shape-1">
-      <div className="flex flex-col-reverse lg:flex-row justify-between items-center container lg:max-w-4xl xl:max-w-7xl mx-auto lg:h-screen h-auto lg:gap-16 lg:overflow-visible overflow-hidden">
+      <div className="flex flex-col-reverse lg:flex-row justify-between items-center container lg:max-w-4xl xl:max-w-6xl xl-2:max-w-7xl mx-auto lg:h-screen h-auto lg:gap-16 lg:overflow-visible overflow-hidden">
         <div className="lg:pt-12 pt-8 w-9/12 lg:w-full">
           <h1
             className="text-4xl lg:text-5xl xl:text-7xl text-primary block font-bold duration-700 relative transform opacity-0 transition-all translate-y-12 ease-out animation-slide-up"
@@ -57,7 +57,7 @@ function AboutSection() {
 
   return (
     <div className="bg-shape-2">
-      <div className="container lg:max-w-4xl xl:max-w-7xl mx-auto flex flex-col lg:flex-row items-center lg:items-start justify-between lg:gap-12 lg:pt-36 lg:pb-20 py-16">
+      <div className="container lg:max-w-4xl xl:max-w-6xl xl-2:max-w-7xl mx-auto flex flex-col lg:flex-row items-center lg:items-start justify-between lg:gap-12 lg:pt-36 lg:pb-20 py-16">
         <img src={Images.HomeImage2} alt="pulih at the psychologists" className="lg:block hidden lg:w-2/5 w-9/12" />
         <img src={Images.About} alt="pulih at the psychologists" className="lg:hidden rounded-3xl w-9/12" />
         <div className="lg:mt-20 mt-10 w-9/12 lg:w-full">
@@ -82,6 +82,8 @@ function AboutSection() {
 function PsychologistSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const { t } = useTranslation();
+  const windowWidth = useRef(window.innerWidth);
+  const [indexLimit, setIndexLimit] = useState(2);
 
   const previousSlide = () => {
     setCurrentIndex(currentIndex - 1);
@@ -91,8 +93,25 @@ function PsychologistSection() {
     setCurrentIndex(currentIndex + 1);
   };
 
+  useEffect(() => {
+    if (windowWidth.current <= 1350) {
+      setIndexLimit(4);
+    }
+  }, []);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (currentIndex === indexLimit) {
+        setCurrentIndex(0);
+      } else {
+        setCurrentIndex(currentIndex + 1);
+      }
+    }, 5000);
+    return () => clearInterval(interval);
+  }, [currentIndex]);
+
   return (
-    <div className="container-xl mx-auto my-24 w-full lg:max-w-4xl xl:max-w-7xl">
+    <div className="container-xl mx-auto my-24 w-full lg:max-w-4xl xl-2:max-w-7xl">
       <div className="flex flex-col lg:flex-row justify-between">
         <div className="flex lg:flex-col justify-between lg:mr-8 w-9/12 mx-auto lg:w-4/12">
           <div />
@@ -131,7 +150,7 @@ function PsychologistSection() {
                 )
             }
             {
-              currentIndex < 2
+              currentIndex < indexLimit
                 ? (
                   <ButtonIcon className="w-12" onClick={nextSlide}>
                     <img src={Images.RightArrowActive} alt="right arrow" />
@@ -145,12 +164,12 @@ function PsychologistSection() {
             }
           </div>
         </div>
-        <div className="w-full lg:w-8/12 pl-8 lg:ml-0 overflow-auto lg:overflow-hidden">
+        <div className="w-full lg:w-8/12 pl-8 lg:ml-0 overflow-hidden">
           <div
-            className="flex transition ease-out duration-1000"
-            style={{ transform: `translateX(-${(currentIndex * (108.5 - currentIndex)) - (currentIndex / 2)}%)` }}
+            className="flex transition ease-out duration-1000 scroll-animation"
+            style={{ transform: `translateX(-${(currentIndex * (107 - currentIndex)) - (currentIndex / 2)}%)` }}
           >
-            <div className="flex p-4 gap-5">
+            <div className="flex py-4 gap-5">
               {
                 psychologistList.slice(0, 9).map((item) => (
                   <PsychologistCard
@@ -168,7 +187,7 @@ function PsychologistSection() {
         </div>
         <Link to="/psychologist" className="ml-12 mt-2 lg:hidden">
           <Button className="w-max">
-            Lihat Selengkapnya
+            {t('home.psychological.more')}
             <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8.21443 15.2405C8.0311 15.0571 7.9351 14.8238 7.92643 14.5405C7.91777 14.2571 8.00543 14.0238 8.18943 13.8405L13.0894 8.94048H1.91443C1.6311 8.94048 1.39343 8.84448 1.20143 8.65248C1.00943 8.46048 0.913766 8.22315 0.914432 7.94048C0.914432 7.65715 1.01043 7.41948 1.20243 7.22748C1.39443 7.03548 1.63177 6.93981 1.91443 6.94048H13.0894L8.18943 2.04048C8.0061 1.85714 7.91843 1.62381 7.92643 1.34048C7.93443 1.05715 8.03043 0.823811 8.21443 0.640478C8.39777 0.457145 8.6311 0.365479 8.91443 0.365479C9.19777 0.365479 9.4311 0.457145 9.61443 0.640478L16.2144 7.24048C16.3144 7.32381 16.3854 7.42814 16.4274 7.55348C16.4694 7.67881 16.4901 7.80781 16.4894 7.94048C16.4894 8.07381 16.4688 8.19881 16.4274 8.31548C16.3861 8.43215 16.3151 8.54048 16.2144 8.64048L9.61443 15.2405C9.4311 15.4238 9.19777 15.5155 8.91443 15.5155C8.6311 15.5155 8.39777 15.4238 8.21443 15.2405Z" fill="#FFE7F9" />
             </svg>

@@ -43,7 +43,7 @@ function PsychologistSection() {
   const { t } = useTranslation();
 
   return (
-    <div className="w-10/12 lg:max-w-6xl mx-auto h-screen-header lg:mt-0 mt-8">
+    <div className="w-10/12 lg:w-840 xl:w-full xl:max-w-6xl mx-auto h-screen-header lg:mt-0 mt-8">
       <h1 className="text-primary text-2xl font-bold mb-4">{t('psychological.subcategory')}</h1>
       <div className="flex flex-wrap gap-y-8 lg:justify-start lg:gap-x-8 justify-between">
         {
@@ -95,7 +95,7 @@ function PractionerSection() {
   const { t } = useTranslation();
 
   return (
-    <div className="w-10/12 lg:max-w-6xl mx-auto mt-16 pb-16">
+    <div className="w-10/12 lg:w-840 xl:w-full xl:max-w-6xl mx-auto mt-16 pb-16">
       <h1 className="text-primary text-2xl font-bold mb-4">{t('practioners.title')}</h1>
       <div className="flex flex-wrap justify-between lg:justify-start lg:gap-8">
         {

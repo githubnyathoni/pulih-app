@@ -145,6 +145,12 @@ code {
   width: 250px;
 }
 
+@media (min-width: 200px) and (max-width: 1023px) {
+  .scroll-animation {
+    animation: scroll 30s linear infinite;
+  }
+}
+
 @media (min-width: 640px) {
   .sm\:w-500 {
     width: 500px;
@@ -185,11 +191,25 @@ code {
   .lg\:w-750 {
     width: 750px;
   }
+
+  .lg\:w-840 {
+    width: 840px;
+  }
+
+  .lg\:w-880 {
+    width: 880px;
+  }
 }
 
 @media (min-width: 1280px) {
   .xl\:w-800 {
     width: 800px;
+  }
+}
+
+@media (min-width: 1350px) {
+  .xl-2\:max-w-7xl {
+    max-width: 1280px !important;
   }
 }
 
@@ -211,3 +231,12 @@ code {
 .header-menu:hover div {
   width: 100%;
 } 
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0)
+  }
+  to {
+    transform: translateX(-1900px)
+  } 
+}
