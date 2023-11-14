@@ -230,20 +230,20 @@ function WhySection() {
       <h1 className="text-center text-primary text-2xl lg:text-5xl font-bold">
         {t('services.why.title')}
       </h1>
-      <div className="flex flex-col lg:flex-row justify-around lg:mt-16 mt-12 gap-12">
-        <div className="flex flex-col items-center gap-6">
+      <div className="flex flex-col lg:flex-row justify-around items-center lg:mt-16 mt-12 gap-12">
+        <div className="flex flex-col items-center gap-6 w-80">
           <img src={ServiceImages.WhyFirst} alt="kenapa pulih@thepeak" width="150px" />
           <p className="text-primary text-center font-medium">
             {t('services.why.first')}
           </p>
         </div>
-        <div className="flex flex-col items-center gap-6">
+        <div className="flex flex-col items-center gap-6 w-80">
           <img src={ServiceImages.WhySecond} alt="kenapa pulih@thepeak" width="150px" />
-          <p className="text-primary font-medium">
+          <p className="text-primary text-center font-medium">
             {t('services.why.second')}
           </p>
         </div>
-        <div className="flex flex-col items-center gap-6">
+        <div className="flex flex-col items-center gap-6 w-80">
           <img src={ServiceImages.WhyThird} alt="kenapa pulih@thepeak" width="150px" />
           <p className="text-primary text-center font-medium">
             {t('services.why.third')}
