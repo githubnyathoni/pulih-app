@@ -59,7 +59,7 @@ function SocialMedia() {
 function Footer() {
   return (
     <div className="bg-pink mt-12">
-      <div className="container mx-auto flex flex-col lg:flex-row justify-between items-center py-6 px-8 gap-8">
+      <div className="container mx-auto flex flex-col lg:flex-row justify-between lg:items-center py-6 px-8 gap-8">
         <Address />
         <SocialMedia />
       </div>
