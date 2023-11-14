@@ -24,7 +24,7 @@ function Header({ page }) {
       <div className="bg-pink fixed top-0 z-10 w-full">
         <div className="flex container mx-auto lg:max-w-4xl xl:max-w-5xl xl-2:max-w-7xl justify-between py-2 px-8 lg:px-0">
           <Link to="/">
-            <img src={Images.Logo} alt="logo pulih at the peak" width="70px" />
+            <img src={Images.Logo} alt="logo pulih at the peak" className="w-10 lg:w-16" />
           </Link>
           <div className="hidden lg:flex items-center gap-10 text-primary font-medium">
             <a href="/" className={`header-menu ${page === 'Home' ? 'border-b-primary' : 'text-primary-disabled hover:text-primary transition-colors duration-700'}`}>
