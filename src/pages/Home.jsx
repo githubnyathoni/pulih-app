@@ -19,7 +19,7 @@ function MainHomeSection() {
 
   return (
     <div className="bg-pink bg-shape-1">
-      <div className="flex flex-col-reverse lg:flex-row justify-between items-center container lg:max-w-4xl xl:max-w-6xl xl-2:max-w-7xl mx-auto lg:h-screen h-auto lg:gap-16 lg:overflow-visible overflow-hidden">
+      <div className="flex flex-col-reverse lg:flex-row justify-between items-center container lg:max-w-4xl xl:max-w-5xl xl-2:max-w-7xl mx-auto lg:h-screen h-auto lg:gap-16 lg:overflow-visible overflow-hidden">
         <div className="lg:pt-12 pt-8 w-9/12 lg:w-full">
           <h1
             className="text-4xl lg:text-5xl xl:text-7xl text-primary block font-bold duration-700 relative transform opacity-0 transition-all translate-y-12 ease-out animation-slide-up"
@@ -57,7 +57,7 @@ function AboutSection() {
 
   return (
     <div className="bg-shape-2">
-      <div className="container lg:max-w-4xl xl:max-w-6xl xl-2:max-w-7xl mx-auto flex flex-col lg:flex-row items-center lg:items-start justify-between lg:gap-12 lg:pt-36 lg:pb-20 py-16">
+      <div className="container lg:max-w-4xl xl:max-w-5xl 2xl:max-w-6xl mx-auto flex flex-col lg:flex-row items-center lg:items-start justify-between lg:gap-12 lg:pt-36 lg:pb-20 py-16">
         <img src={Images.HomeImage2} alt="pulih at the psychologists" className="lg:block hidden lg:w-2/5 w-9/12" />
         <img src={Images.About} alt="pulih at the psychologists" className="lg:hidden rounded-3xl w-9/12" />
         <div className="lg:mt-20 mt-10 w-9/12 lg:w-full">
@@ -484,8 +484,8 @@ function MerchandiseCard() {
 function CloserSection() {
   return (
     <div className="bg-shape-closer">
-      <div className="lg:container flex justify-center items-center lg:mx-auto lg:my-24">
-        <div className="flex flex-col lg:flex-row justify-around w-full gap-12">
+      <div className="container flex justify-center items-center lg:mx-auto lg:my-24">
+        <div className="flex flex-col lg:flex-row justify-evenly w-full gap-12">
           <InstagramCard />
           <MerchandiseCard />
         </div>
@@ -520,7 +520,7 @@ function Home() {
       <Header page="Home" />
       <MainHomeSection />
       <AboutSection />
-      <div className="container-xl mx-auto">
+      <div className="container lg:max-w-4xl xl:max-w-5xl 2xl:max-w-6xl mx-auto">
         <h1 className="text-center text-primary text-2xl lg:text-4xl font-bold mt-6">{t('home.service.title')}</h1>
         <div className="flex flex-col lg:flex-row lg:justify-between lg:mt-12 px-12 lg:gap-16">
           <ServiceCard

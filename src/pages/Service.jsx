@@ -226,7 +226,7 @@ function WhySection() {
   const { t } = useTranslation();
 
   return (
-    <div className="container mx-auto lg:my-24 w-3/4 lg:w-full lg:pb-20">
+    <div className="container mx-auto lg:max-w-4xl xl:max-w-5xl 2xl:max-w-6xl lg:my-24 w-3/4 lg:w-full lg:pb-20">
       <h1 className="text-center text-primary text-2xl lg:text-5xl font-bold">
         {t('services.why.title')}
       </h1>
