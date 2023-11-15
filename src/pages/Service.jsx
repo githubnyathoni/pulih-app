@@ -192,7 +192,7 @@ function ServiceCategories() {
                     </p>
                     <img src={ServiceImages.Workshop} alt="ilustrasi konseling workshop" width="200px" />
                   </div>
-                  <div className="flex flex-col-reverse text-secondary lg:flex-row items-center w-250 sm:w-500 md:w-600 lg:w-750 gap-4">
+                  <div className="flex flex-col-reverse text-secondary lg:flex-row items-center w-250 sm:w-500 md:w-600 lg:w-750 gap-4 justify-center">
                     <p>
                       { t('services.categories.webinars.description') }
                     </p>
