@@ -169,7 +169,7 @@ code {
   }
 
   .w-42-percent {
-    width: 42%;
+    width: 42% !important;
   }
 
   .services-category {

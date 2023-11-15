@@ -45,7 +45,7 @@ function MainHomeSection() {
         <img
           src={Images.HomeImage1}
           alt="psychologist holding hand patient"
-          className="w-4/6 sm:w-1/2 w-42-percent lg:mt-0 mt-24 duration-700 transform opacity-0 transition-all translate-y-12 ease-out animation-slide-up"
+          className="w-4/6 sm:w-1/2 w-42-percent lg:mt-0 mt-24 duration-700 transform opacity-0 transition-all translate-y-12 ease-out animation-slide-up relative left-10"
         />
       </div>
     </div>
