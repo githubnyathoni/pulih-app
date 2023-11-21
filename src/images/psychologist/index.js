@@ -25,6 +25,7 @@ import Rika from './rika.png';
 import Shanen from './shanen.png';
 import Shinta from './shinta.png';
 import Silvia from './silvia.png';
+import Sylvia from './sylvia.png';
 import Upik from './upik.png';
 import Viera from './viera.jpg';
 import Widaningrum from './widaningrum.png';
@@ -60,6 +61,7 @@ const PsychologistImages = {
   Shanen,
   Shinta,
   Silvia,
+  Sylvia,
   Upik,
   Viera,
   Widaningrum,

@@ -9,7 +9,7 @@ function Address() {
       <p className="text-secondary font-medium lg:text-sm text-xs mt-3">Jl. Brawijaya Raya No.15, RT.3/RW.3, Pulo, Kec. Kby. Baru, Kota Jakarta</p>
       <p className="text-secondary font-medium lg:text-sm text-xs">Selatan, Daerah Khusus Ibukota Jakarta 12160</p>
       <p className="text-secondary font-medium lg:text-sm text-xs mt-3">Jl Wolter Mongonsidi No. 73 Zm 23 B, Kebayoran Baru, 12180.</p>
-      <p className="text-secondary font-medium lg:text-sm text-xs mt-3">(021) 72798747 / 083128769871</p>
+      <p className="text-secondary font-medium lg:text-sm text-xs mt-3">083128769871</p>
     </div>
   );
 }

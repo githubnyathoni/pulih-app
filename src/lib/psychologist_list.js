@@ -567,6 +567,27 @@ const psychologistList = [
     slug: 'silvia-hanny',
     profile: 'Lulusan Fakultas Psikologi, Universitas Maranatha Bandung, dan Magister Profesi Psikologi jurusan Klinis Dewasa, Universitas Atma Jaya Jakarta. Memiliki pengalaman diantaranya di bidang Psikologi Pendidikan, melakukan pemeriksaan terkait kecerdasan serta minat & bakat. Di bidang Industri & Organisasi, melakukan assessment dan feedback terkait pemenuhan kompetensi, rekrutmen, dan promosi. Di bidang Klinis, melakukan konseling individual. Saat ini menjabat sebagai dosen Fakultas Psikologi dan pembimbing kasus di Magister Profesi Psikologi jurusan Klinis Dewasa, Universitas Atma Jaya.',
   },
+  {
+    name: 'Sylvia Dewi',
+    skills: [
+      'Regulasi emosi',
+      'Depresi, stres dan kecemasan',
+      'Kedukaan',
+      'Pengembangan diri dan perencanaan karir',
+      'Relasi dan dinamika di dalam keluarga',
+    ],
+    skills_detail: [
+      'Regulasi emosi',
+      'Depresi, stres dan kecemasan',
+      'Kedukaan',
+      'Pengembangan diri dan perencanaan karir',
+      'Relasi dan dinamika di dalam keluarga',
+    ],
+    photo: PsychologistImages.Sylvia,
+    alt: 'Ibu Sylvia',
+    slug: 'sylvia-dewi',
+    profile: 'Lulusan Magister Psikologi Profesi Klinis Unika Atma Jaya. Mengawali karir di bidang industri organisasi, kemudian mendalami psikologi profesi klinis. Memiliki ketertarikan terhadap berbagai isu kesehatan mental, seperti depresi, kecemasan, trauma dan kedukaan. Sylvia juga memiliki ketertarikan terhadap dinamika dan relasi di dalam keluarga, khususnya pada keluarga dengan anak berkebutuhan khusus. Memiliki pengalaman dalam penyelenggaraan berbagai program pengembangan diri, baik dalam lingkup individu, kelompok, maupun organisasi. Sylvia meyakini bahwa setiap individu memiliki keunikan dan potensinya tersendiri, serta memiliki kesempatan untuk mewujudkannya.',
+  },
 ];
 
 export default psychologistList;

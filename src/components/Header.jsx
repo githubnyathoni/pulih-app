@@ -63,7 +63,7 @@ function Header({ page }) {
               </div>
               <div className={`absolute shadow-lg bg-solid-lang rounded-lg w-40 top-8 right-0 transition-all duration-500 ${isShow ? 'opacity-100' : 'opacity-0'}`}>
                 <div
-                  className="text-white cursor-pointer px-3 py-2 rounded-t-lg hover:bg-pink hover:text-primary"
+                  className="text-white cursor-pointer px-3 py-2 rounded-t-lg transition-all duration-700 hover:bg-pink hover:text-primary"
                   onClick={() => changeLanguage('id')}
                   role="button"
                   tabIndex={0}
@@ -71,7 +71,7 @@ function Header({ page }) {
                   Bahasa Indonesia
                 </div>
                 <div
-                  className="text-white cursor-pointer rounded-b-lg px-3 py-2 hover:bg-pink hover:text-primary"
+                  className="text-white cursor-pointer rounded-b-lg px-3 py-2 transition-all duration-700 hover:bg-pink hover:text-primary"
                   onClick={() => changeLanguage('en')}
                   role="button"
                   tabIndex={0}
