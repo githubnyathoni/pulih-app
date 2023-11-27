@@ -120,7 +120,7 @@ function PsychologistSection() {
             <h6 className="text-secondary text-justify font-medium my-4">
               {t('home.psychological.description')}
             </h6>
-            <Link to="/psychologist" className="hidden lg:block">
+            <Link to="/psychologs" className="hidden lg:block">
               <Button className="w-max">
                 {t('home.psychological.more')}
                 <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -185,7 +185,7 @@ function PsychologistSection() {
             </div>
           </div>
         </div>
-        <Link to="/psychologist" className="ml-12 mt-2 lg:hidden">
+        <Link to="/psychologs" className="ml-12 mt-2 lg:hidden">
           <Button className="w-max">
             {t('home.psychological.more')}
             <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
