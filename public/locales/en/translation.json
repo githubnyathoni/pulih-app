@@ -3,7 +3,7 @@
     "home": "Home",
     "about": "About Us",
     "services": "Services",
-    "psycholog": "Psycholog",
+    "psycholog": "Psychologists",
     "merchandise": "Merchandise",
     "contact": "Contact Us"
   },
@@ -109,9 +109,9 @@
     }
   },
   "psychological": {
-    "title": "Professional Psychologist",
+    "title": "Professional Psychologists",
     "description": "Our professional psychologists are licensed and have helped thousands of personal and family problems. Your safety and comfort is our priority so that you get the best solution from experts.",
-    "subcategory": "Psycholog",
+    "subcategory": "Psychologists",
     "profile": "Profile",
     "specialization": "Specialization"
   },
@@ -186,16 +186,16 @@
       ]
     },
     "agustina-indrawati": {
-      "profile": "Graduate of the Faculty of Psychology and the Master of Professional Psychology Study Program in Industrial and Organizational Psychology from the University of Indonesia. Completed the Loop Certified Professional Coach and Hogan Assessment Certification programs. Member of the Indonesian Psychology Association and the Indonesian Association of Clinical Psychologists. \n\nCurrently providing Clinical Psychology and Counseling services/practice related to improving mental health in teenager and adult clients. Apart from that, carrying out coaching activities to find a more meaningful life (life coaching) and career coaching. Become a freelance contributor to the psychoeducation series “Cool Young People Understand Men's Health (Mental Health)” on the Kompasiana website.\n\nAgustina Indrawati is also involved in Employee Wellness Program activities for clients within the organization which aims to maintain mental health and maintain the well-being of employees and their family members. Has work experience as an HR Practitioner in several multinational companies and international organizations, such as the World Bank Group and the United Nations.",
+      "profile": "Graduated from the Faculty of Psychology and Master of Professional Psychology program majoring in Industrial and Organizational Psychology from University of Indonesia. Completed Loop Certified Professional Coach and Hogan Assessment Certification programs. Member of the Indonesian Psychological Association (HIMPSI) and the Association of Indonesian Clinical Psychologists (IPK Indonesia).\n\nCurrently providing the services/practices of Clinical Psychology and Counseling related to mental health improvement for adolescent and adult clients. In addition, carrying out coaching activities to find a more meaningful life (life coaching), as well as career coaching. Becoming a freelance contributor of the psychoeducation series “Anak Muda Keren Paham KesMen (Kesehatan Mental)” on the website of Kompasiana.\n\nAgustina Indrawati is also involved in the Employee Assistance Programs (EAP) for clients within the organizations which aim to maintain mental health and well-being of the employees and their family members. Having work experience as an HR Practitioner in several multinational companies and international organizations, such as the World Bank Group and the United Nations.",
       "skills": [
-        "Stress and Health",
-        "Depression",
-        "Self-development"
+        "Stress and Mental Health Issues",
+        "Personal Development",
+        "Career Development"
       ],
       "skills_detail": [
-        "Stress, anxiety disorders, depression and trauma",
-        "Self-development, interpersonal relationships, premarital/couple/family relationships",
-        "Career development, performance and relationships in the world of work"
+        "Stress, anxiety disorders, depression, and trauma",
+        "Personal development, interpersonal relationships, premarital/couple/family relationships",
+        "Career development, performance, and relationships in the work environment"
       ]
     },
     "ammy-kadarharutami": {
@@ -550,7 +550,7 @@
     }
   },
   "practioners": {
-    "title": "Expert Practitioner",
+    "title": "Expert Practitioners",
     "wrenges-widyastuti": {
       "profile": "Wrenges Widyastuti is an accountant who also continued her Masters in Development Management at the Asian Institute of Management, Manila, until he obtained a Master in Development Management (MDM). Started her career as an auditor at the Ministry of Finance of the Republic of Indonesia in 1987. Experienced working in several private companies, namely Nestle, Natra Raya, and Price Waterhouse, before finally focusing on strengthening financial management in various NGOs starting in 2005.\n\nHer interest to personal financial issues means her preference is stuck at Pulih@thePeak. Wrenges Widyastuti conducts various financial literacy training. Apart from that, we also provide personal financial consultations to clients who need them. Her interest to financial literacy issues encouraged her to focus more on researching these issues, so she is currently pursuing doctoral studies at FEB Gadjahmada University.",
       "skills": [
