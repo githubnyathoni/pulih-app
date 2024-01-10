@@ -68,7 +68,7 @@ function PsychologistSection() {
             )
         }
         {
-          psychologistIndex < 30
+          psychologistIndex < 31
             ? (
               <Link to={`/psychologs/${nextPsychologist.slug}`} className="w-1/2">
                 <div className="flex items-center">

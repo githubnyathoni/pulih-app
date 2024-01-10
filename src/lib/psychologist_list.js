@@ -588,6 +588,26 @@ const psychologistList = [
     slug: 'sylvia-dewi',
     profile: 'Lulusan Magister Psikologi Profesi Klinis Unika Atma Jaya. Mengawali karir di bidang industri organisasi, kemudian mendalami psikologi profesi klinis. Memiliki ketertarikan terhadap berbagai isu kesehatan mental, seperti depresi, kecemasan, trauma dan kedukaan. Sylvia juga memiliki ketertarikan terhadap dinamika dan relasi di dalam keluarga, khususnya pada keluarga dengan anak berkebutuhan khusus. Memiliki pengalaman dalam penyelenggaraan berbagai program pengembangan diri, baik dalam lingkup individu, kelompok, maupun organisasi. Sylvia meyakini bahwa setiap individu memiliki keunikan dan potensinya tersendiri, serta memiliki kesempatan untuk mewujudkannya.',
   },
+  {
+    name: 'Sri Susanti',
+    skills: [
+      'Pre-marriage',
+      'Marriage',
+      'Family',
+      '+2',
+    ],
+    skills_detail: [
+      'Pre-marriage',
+      'Marriage',
+      'Family',
+      'Pengembangan Diri',
+      'Permasalahan terkait individu',
+    ],
+    photo: PsychologistImages.Susanti,
+    alt: 'Ibu Sri Susanti',
+    slug: 'sri-susanti',
+    profile: 'Merupakan lulusan Fakultas Psikologi Universitas Surabaya dengan fokus bidang klinis. Pengalaman di bidang pendidikan merupakan pembelajaran untuk lebih mengenal remaja dengan segala macam cerita kehidupan.\n\nBerlanjut dengan terjun di bidang industri dan organisasi, mengikuti kegiatan asesmen terkait pemenuhan kompetensi, rekrutmen dan promosi.\n\nDi bidang klinis  untuk individu dengan berbagai problematika hidup yang menyebabkan timbulnya berbagai macam gangguan seperti cemas, trauma dan juga permasalahan di bidang pekerjaan.Berpengalaman dalam menangani pasangan baik yang belum menikah maupun yang sudah menjalani pernikahan juga terkait permasalahan dalam keluarga.',
+  },
 ];
 
 export default psychologistList;

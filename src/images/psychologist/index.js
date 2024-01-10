@@ -22,6 +22,7 @@ import Prita from './prita.png';
 import Rami from './rami.png';
 import Raymond from './raymond.png';
 import Rika from './rika.png';
+import Susanti from './susanti.png';
 import Shanen from './shanen.png';
 import Shinta from './shinta.png';
 import Silvia from './silvia.png';
@@ -58,6 +59,7 @@ const PsychologistImages = {
   Rami,
   Raymond,
   Rika,
+  Susanti,
   Shanen,
   Shinta,
   Silvia,
