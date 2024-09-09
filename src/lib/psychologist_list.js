@@ -305,7 +305,7 @@ const psychologistList = [
     Berpengalaman dalam bidang training dan pembicara pada beberapa acara diantaranya “Peran Orang Tua Terhadap Kemampuan Berpikir Kognitif Anak Usia Balita” (Gramedia-1998), “Do Not Running From U’r Problem” (dbb/vertigo-2004), dan “Self Motivation For Better Life” (SMART Concept-Manulife Indonesia 2008).`,
   },
   {
-    name: 'Drs. Danny Irawan Yatim, M.A., Ed. M.',
+    name: 'Danny I. Yatim, M. A, Ed. M, psikolog',
     skills: [
       'Youth related to drug abuse and HIV',
     ],

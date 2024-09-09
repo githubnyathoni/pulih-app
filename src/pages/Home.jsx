@@ -449,9 +449,6 @@ function InstagramCard() {
             </Link>
           ))
         }
-        {/* <img src={Images.Instagram1} alt="post of instagram" className="w-20 lg:w-32" />
-        <img src={Images.Instagram2} alt="post of instagram" className="w-20 lg:w-32" />
-        <img src={Images.Instagram3} alt="post of instagram" className="w-20 lg:w-32" /> */}
       </div>
       <Link to="https://www.instagram.com/pulihatp/" target="_blank">
         <Button>
