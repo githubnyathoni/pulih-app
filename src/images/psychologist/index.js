@@ -77,7 +77,7 @@ const PsychologistImages = {
   Frisca,
   Prasti,
   Veny,
-  Nafisa
+  Nafisa,
 };
 
 export default PsychologistImages;
