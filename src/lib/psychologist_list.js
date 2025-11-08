@@ -417,18 +417,25 @@ const psychologistList = [
   },
   {
     name: 'Rini Ariani, M. Psi., Psikolog',
-    skills: ['Interest and talent', '+2'],
+    skills: [
+      "⁠Asesmen Psikologis",
+      "Intervensi Edukasi",
+      "+6"
+    ],
     skills_detail: [
-      'Educational of Child and Teenager',
-      'School-related problems',
-      'Interest and talent',
+      "⁠Asesmen Psikologis",
+      "Intervensi Edukasi",
+      "Bimbingan dan Konseling Edukasi",
+      "Pendampingan Siswa",
+      "Konsultasi Guru dan Orang Tua",
+      "Deteksi Dini Masalah",
+      "Intervensi Kesehatan Mental",
+      "Promosi Kesehatan Mental"
     ],
     photo: PsychologistImages.Ariani,
     alt: 'Ibu Rini',
     slug: 'rini-ariani',
-    profile: `Lulusan Fakultas Psikologi Universitas Paramadina (2012) dengan beasiswa penuh dari program Paramadina Fellowship donor Newmont Mining Corporation. Mendapatkan gelar magister dari Pendidikan Magister Profesi Psikologi Pendidikan Anak dan Remaja Universitas Atma Jaya Jakarta (2019). 
-
-    Rini Ariani memiliki pengalaman mengajar anak dan remaja selama 8 tahun di beberapa lembaga khususnya Perguruan Islam Al-Izhar Pondok Labu. Saat ini ia bekerja sebagai Psikolog Sekolah di Perguruan Islam Al-Izhar Pondok Labu. Ia juga aktif menjadi pengurus pusat dari Asosiasi Psikologi Pendidikan Indonesia periode 2020-2024 yang berada dalam naungan HIMPSI (Himpunan Psikologi Indonesia).`,
+    profile: `Rini Ariani, S. Psi., M. Psi., Psikolog, adalah psikolog pendidikan dengan pengalaman lebih dari 15 tahun dalam mendampingi anak dan remaja. Ia menyelesaikan studi Sarjana Psikologi di Universitas Paramadina melalui program Paramadina Fellowship yang didanai penuh oleh Newmont Mining Corporation, serta meraih Magister Profesi Psikologi Pendidikan Anak dan Remaja dari Universitas Atma Jaya Jakarta. Rini pernah aktif berkontribusi di berbagai lembaga pendidikan seperti Perguruan Islam Al-Izhar Pondok Labu. Saat ini Rini aktif di Yayasan Inspirasi Pembelajar sebagai direktur experiential based learning dan psikolog sekolah, serta menjalankan praktik di Inspirasi Consulting. Ia juga terlibat dalam pengembangan profesional melalui peran sebagai pengurus pusat Asosiasi Psikologi Pendidikan Indonesia di bawah HIMPSI.\n\nLayanan yang Ditawarkan:\n1. Asesmen Psikologis Pemeriksaan kemampuan kognitif dan gaya belajar, identifikasi kesulitan belajar dan kebutuhan anak berkebutuhan khusus (ABK), serta penilaian perkembangan sosial-emosional anak.\n2. Intervensi Edukasional Program remedial learning bagi siswa dengan hambatan belajar, perancangan pembelajaran inklusif untuk siswa ABK, dan konseling akademik terkait manajemen waktu dan motivasi belajar.\n3. Bimbingan dan Konseling Pendidikan Sesi individu dan kelompok untuk isu akademik atau perilaku, serta sosialisasi tema seperti bullying, stres ujian, pubertas, dan tekanan teman sebaya.\n4. Pendampingan Siswa Pelatihan keterampilan sosial (social skills training) dan pengembangan keterampilan hidup (life skills) untuk anak dan remaja.\n5. Konsultasi Guru dan Orang Tua Rekomendasi strategi belajar yang sesuai kebutuhan psikologis siswa dan workshop parenting dengan berbagai topik perkembangan anak dan remaja.\n\nLayanan Khusus Kesehatan Mental:\n1. Deteksi Dini Masalah Mental Skrining gangguan emosional seperti kecemasan, stres, dan depresi, serta identifikasi perilaku menyimpang seperti bullying atau self-harm.\n2. Intervensi Kesehatan Mental Terapi kognitif-perilaku (CBT) untuk anak dan remaja, serta konseling trauma pasca-kejadian krisis seperti bencana atau kekerasan.\n3. Promosi Kesehatan Mental Edukasi dan kampanye kesadaran kesehatan mental di sekolah, serta pelatihan manajemen stres dan regulasi emosi.\nTersedia: Hanya Online`,
   },
   {
     name: 'Upik Nuri Budi Sulistyorini., S. Psi. Psikolog',
@@ -554,6 +561,16 @@ const psychologistList = [
     slug: 'veny-oktaviani',
     profile:
       'Veny Oktaviani adalah seorang Psikolog Klinis lulusan Universitas Tarumanagara. Sebagai Psikolog Klinis, Veny berdedikasi untuk membantu individu berkembang dengan meningkatkan kesejahteraan emosional dan ketahanan diri. Veny menawarkan dukungan personal berbasis bukti dalam lingkungan yang penuh kasih dan aman—memberdayakan individu untuk mengatasi tantangan dan menjalani kehidupan yang lebih seimbang dan memuaskan. Ia memiliki minat di bidang Psikologi Forensik dan Perkembangan Anak.',
+  },
+  {
+    name: 'Nabila Nafisa',
+    skills: ['⁠Penilaian minat dan bakat', 'Bimbingan karir dan perencanaan pendidikan'],
+    skills_detail: ['⁠Penilaian minat dan bakat', 'Bimbingan karir dan perencanaan pendidikan'],
+    photo: PsychologistImages.Nafisa,
+    alt: 'Ibu Nabila Nafisa',
+    slug: 'nabila-nafisa',
+    profile:
+      'Nabila Nafisa menyelesaikan Magister Profesional Psikologi Klinis di Universitas Gadjah Mada. Ia memiliki minat yang kuat dalam bimbingan karier dan pengembangan bakat. Nabila berpengalaman dalam melaksanakan dan menginterpretasi asesmen psikologis, terutama yang berkaitan dengan kecerdasan, kepribadian, minat, dan bakat, untuk membantu memahami potensi mereka dan membuat keputusan pendidikan dan karier yang tepat bagi individu.\nTersedia: Online & Offline',
   },
 ];
 

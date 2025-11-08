@@ -36,6 +36,7 @@ import Yenny from './yenny.png';
 import Frisca from './frisca.png';
 import Prasti from './prasti.png';
 import Veny from './veny.png';
+import Nafisa from './nafisa.png';
 
 const PsychologistImages = {
   Psychologist,
@@ -76,6 +77,7 @@ const PsychologistImages = {
   Frisca,
   Prasti,
   Veny,
+  Nafisa
 };
 
 export default PsychologistImages;
