@@ -33,6 +33,9 @@ import Widaningrum from './widaningrum.png';
 import Wulan from './wulan.png';
 import Wrenges from './wrenges.png';
 import Yenny from './yenny.png';
+import Frisca from './frisca.png';
+import Prasti from './prasti.png';
+import Veny from './veny.png';
 
 const PsychologistImages = {
   Psychologist,
@@ -70,6 +73,9 @@ const PsychologistImages = {
   Wulan,
   Wrenges,
   Yenny,
+  Frisca,
+  Prasti,
+  Veny,
 };
 
 export default PsychologistImages;

@@ -9,6 +9,7 @@ function PsychologistCard({
   const { t } = useTranslation();
   const psycholog = t(`${link}.${slug}`, { returnObjects: true });
 
+  console.log(link, slug);
   return (
     <Link to={`/${link}/${slug}`} className={`${className} rounded-xl border-1-pink hover:shadow-lg transition-shadow duration-700 cursor-pointer`}>
       <div>

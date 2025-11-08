@@ -3,11 +3,7 @@ import PsychologistImages from '../images/psychologist';
 const psychologistList = [
   {
     name: 'Dr. Livia Istania DF Iskandar, M.Sc., Psikolog',
-    skills: [
-      'Anxiety',
-      'Youth',
-      '+5',
-    ],
+    skills: ['Anxiety', 'Youth', '+5'],
     skills_detail: [
       'Gender-based Violence',
       'Depression',
@@ -26,11 +22,7 @@ const psychologistList = [
   },
   {
     name: 'Soraya Salim, S.Psi., Psikolog',
-    skills: [
-      'Alzheimer',
-      'Caregiver',
-      '+3',
-    ],
+    skills: ['Alzheimer', 'Caregiver', '+3'],
     skills_detail: [
       'Youth (School-related problems)',
       'Couples Counseling',
@@ -47,12 +39,8 @@ const psychologistList = [
   },
   {
     name: 'Abas Supeli, S.Psi., M.Sc., Ph.D., Psikolog',
-    skills: [
-      'Psikologi Klinis terutama Couple Relationship',
-    ],
-    skills_detail: [
-      'Psikologi Klinis terutama Couple Relationship',
-    ],
+    skills: ['Psikologi Klinis terutama Couple Relationship'],
+    skills_detail: ['Psikologi Klinis terutama Couple Relationship'],
     photo: PsychologistImages.Abas,
     alt: 'Bapak Abas',
     slug: 'abas-supeli',
@@ -62,11 +50,7 @@ const psychologistList = [
   },
   {
     name: 'Agustina Indrawati, M.Psi., Psikolog',
-    skills: [
-      'Stres dan Kesehatan',
-      'Depresi',
-      'Pengembangan Diri',
-    ],
+    skills: ['Stres dan Kesehatan', 'Depresi', 'Pengembangan Diri'],
     skills_detail: [
       'Stres, gangguan kecemasan, depresi dan trauma',
       'Pengembangan diri, relasi interpersonal, relasi pranikah/pasangan/keluarga',
@@ -83,11 +67,7 @@ const psychologistList = [
   },
   {
     name: 'Wulan Ayu Ramadhani, M.Psi, Psikolog, CHt',
-    skills: [
-      'Anxiety',
-      'Depression',
-      '+4',
-    ],
+    skills: ['Anxiety', 'Depression', '+4'],
     skills_detail: [
       'A Licensed Clinical Psychologist providing Psychotherapy',
       'Depression',
@@ -105,11 +85,7 @@ const psychologistList = [
   },
   {
     name: 'Dyah Paramita Turner, S.Psi., CH., CHt.',
-    skills: [
-      'Meditation',
-      'Hypnotherapy',
-      '+5',
-    ],
+    skills: ['Meditation', 'Hypnotherapy', '+5'],
     skills_detail: [
       'Meditation',
       'Hypnotherapy',
@@ -122,14 +98,12 @@ const psychologistList = [
     photo: PsychologistImages.Dyah,
     alt: 'Ibu Dyah',
     slug: 'dyah-paramita',
-    profile: 'Psikolog lulusan Universitas Indonesia, berlisensi serta memiliki pengalaman lebih dari 12 tahun menangani konseling bagi dewasa dan dewasa muda, secara individu, berpasangan, keluarga, serta kelompok.',
+    profile:
+      'Psikolog lulusan Universitas Indonesia, berlisensi serta memiliki pengalaman lebih dari 12 tahun menangani konseling bagi dewasa dan dewasa muda, secara individu, berpasangan, keluarga, serta kelompok.',
   },
   {
     name: 'Dra. Viera Adella, M.Psi., Psikolog',
-    skills: [
-      'School-related Problems',
-      'Special-need Problems (autism etc.)',
-    ],
+    skills: ['School-related Problems', 'Special-need Problems (autism etc.)'],
     skills_detail: [
       'School-realted Problems',
       'Special-need Problems (autism etc.)',
@@ -143,10 +117,7 @@ const psychologistList = [
   },
   {
     name: 'Raymond Tambunan, Psi., MSos.',
-    skills: [
-      'Hypnotherapist',
-      '+4',
-    ],
+    skills: ['Hypnotherapist', '+4'],
     skills_detail: [
       'Family Counseling',
       'Self-Transformation Strategist',
@@ -163,10 +134,7 @@ const psychologistList = [
   },
   {
     name: 'Ika Putri Dewi, S.Psi., Psikolog',
-    skills: [
-      'Interest and talent',
-      '+2',
-    ],
+    skills: ['Interest and talent', '+2'],
     skills_detail: [
       'Trauma (peristiwa yang sangat tidak menyenangkan, berbagai jenis kekerasan, bencana, kehilangan, dll)',
       'Klinis anak / anak dan remaja dengan berbagai gangguan emosinya.',
@@ -174,31 +142,22 @@ const psychologistList = [
     photo: PsychologistImages.Ika,
     alt: 'Ibu Ika',
     slug: 'ika-putri-dewi',
-    profile: 'Ika Putri Dewi, psikolog anak dan remaja, yang sudah bergabung di Yayasan PULIH sejak tahun 2011 ; dan sekarang (per 2022) bergabung dalam keluarga Pulih@thePeak. Ika merupakan lulusan Atmajaya S1 pada tahun 1993, dan profesi psikologi pada tahun 2000.',
+    profile:
+      'Ika Putri Dewi, psikolog anak dan remaja, yang sudah bergabung di Yayasan PULIH sejak tahun 2011 ; dan sekarang (per 2022) bergabung dalam keluarga Pulih@thePeak. Ika merupakan lulusan Atmajaya S1 pada tahun 1993, dan profesi psikologi pada tahun 2000.',
   },
   {
     name: 'Dra. Ammy Kadarharutami MD, M.Psi. Psikolog',
-    skills: [
-      'Marital Case',
-      'Parenting issues',
-      '+1',
-    ],
-    skills_detail: [
-      'Performance Problem',
-      'Marital Case',
-      'Parenting issues',
-    ],
+    skills: ['Marital Case', 'Parenting issues', '+1'],
+    skills_detail: ['Performance Problem', 'Marital Case', 'Parenting issues'],
     photo: PsychologistImages.Ammy,
     alt: 'Ibu Ammy',
     slug: 'ammy-kadarharutami',
-    profile: 'Lulusan Fakultas Psikologi Universitas Padjadjaran jurusan Klinis Dewasa dan Magister Profesional Psikologi Universitas Padjadjaran jurusan Klinis Anak. Berpengalaman sebagai praktisi dan konsultan di beberapa perusahaan. Saat ini mengelola sebuah perusahaan konsultan yang bergerak dalam bidang pengelolaan SDM. Terbiasa menjalankan peran sebagai trainer, fasilitator dan asesor dalam dunia industry serta konselor dan professional coach untuk individu.',
+    profile:
+      'Lulusan Fakultas Psikologi Universitas Padjadjaran jurusan Klinis Dewasa dan Magister Profesional Psikologi Universitas Padjadjaran jurusan Klinis Anak. Berpengalaman sebagai praktisi dan konsultan di beberapa perusahaan. Saat ini mengelola sebuah perusahaan konsultan yang bergerak dalam bidang pengelolaan SDM. Terbiasa menjalankan peran sebagai trainer, fasilitator dan asesor dalam dunia industry serta konselor dan professional coach untuk individu.',
   },
   {
     name: 'Astarini Retno Y (Ajeng Raviando), S.Psi., Psikolog',
-    skills: [
-      'Family Counseling',
-      '+3',
-    ],
+    skills: ['Family Counseling', '+3'],
     skills_detail: [
       'Youth and Adult Psychologist',
       'Family Counseling',
@@ -214,10 +173,7 @@ const psychologistList = [
   },
   {
     name: 'Andi Miriam Amiruddin, S.Psi., Psikolog',
-    skills: [
-      'Depresi',
-      '+3',
-    ],
+    skills: ['Depresi', '+3'],
     skills_detail: [
       'Psikolog anak terkait dengan tumbuh kembang dan kematangan anak.',
       'Menangani pengukuran kecerdasan dan minat bakat siswa.',
@@ -227,14 +183,12 @@ const psychologistList = [
     photo: PsychologistImages.Andi,
     alt: 'Ibu Andi',
     slug: 'andi-miriam',
-    profile: 'Lulusan Fakultas Psikologi jurusan Perkembangan, Universitas Surabaya. Memiliki pengalaman diantaranya di bidang Psikologi Perkembangan : melakukan pemeriksaan dan konsultasi terkait tumbuh kembang, dan kematangan anak. Di bidang Psikologi Pendidikan : melakukan pemeriksaan dan konsultasi terkait  pengukuran kecerdasan serta minat & bakat siswa. Di bidang Psikologi Industri : melakukan assessment dan feedback terkait pemenuhan kompetensi, rekrutmen, dan promosi.',
+    profile:
+      'Lulusan Fakultas Psikologi jurusan Perkembangan, Universitas Surabaya. Memiliki pengalaman diantaranya di bidang Psikologi Perkembangan : melakukan pemeriksaan dan konsultasi terkait tumbuh kembang, dan kematangan anak. Di bidang Psikologi Pendidikan : melakukan pemeriksaan dan konsultasi terkait  pengukuran kecerdasan serta minat & bakat siswa. Di bidang Psikologi Industri : melakukan assessment dan feedback terkait pemenuhan kompetensi, rekrutmen, dan promosi.',
   },
   {
     name: 'Yeni Duriana Wijaya',
-    skills: [
-      'Youth & Adult',
-      '+3',
-    ],
+    skills: ['Youth & Adult', '+3'],
     skills_detail: [
       'Remaja dan Dewasa',
       'Konseling individu : relasi, depresi, kecemasan, masalah remaja',
@@ -250,10 +204,7 @@ const psychologistList = [
   },
   {
     name: 'Widaningrum, S.Psi., Psikolog',
-    skills: [
-      'Youth and Adult Psychologist',
-      'Human Resources Consultant',
-    ],
+    skills: ['Youth and Adult Psychologist', 'Human Resources Consultant'],
     skills_detail: [
       'Youth and Adult Psychologist',
       'Human Resources Consultant',
@@ -261,15 +212,12 @@ const psychologistList = [
     photo: PsychologistImages.Widaningrum,
     alt: 'Ibu Widaningrum',
     slug: 'widaningrum',
-    profile: 'Lulusan Fakultas Psikologi Universitas Padjadjaran. Memiliki pengalaman lebih dari 20 tahun di bidang pengembangan Sumber Daya Manusia (Human Resources), pengembangan organisasi, assessment, konseling (individual/karyawan). Widaningrum juga menangani proyek terkait dengan pengembangan SDM di organisasi baik BUMN maupun Swasta. Selain itu juga adalah seorang praktisi HR di korporasi dan konsultan pada lembaga konsultan.',
+    profile:
+      'Lulusan Fakultas Psikologi Universitas Padjadjaran. Memiliki pengalaman lebih dari 20 tahun di bidang pengembangan Sumber Daya Manusia (Human Resources), pengembangan organisasi, assessment, konseling (individual/karyawan). Widaningrum juga menangani proyek terkait dengan pengembangan SDM di organisasi baik BUMN maupun Swasta. Selain itu juga adalah seorang praktisi HR di korporasi dan konsultan pada lembaga konsultan.',
   },
   {
     name: 'Mersedes Tanok, M.Psi., Psikolog',
-    skills: [
-      'Job Profile',
-      'Talent Acquisition',
-      '+6',
-    ],
+    skills: ['Job Profile', 'Talent Acquisition', '+6'],
     skills_detail: [
       'Menangani Kesulitan Belajar Pada Anak',
       'Menangani Masalah Psikologis Anak dan Dewasa',
@@ -289,14 +237,8 @@ const psychologistList = [
   },
   {
     name: 'Dra. Diah Astarini',
-    skills: [
-      'Konseling Pernikahan',
-      'Hubungan Perkawinan',
-    ],
-    skills_detail: [
-      'Konseling Pernikahan',
-      'Hubungan Perkawinan',
-    ],
+    skills: ['Konseling Pernikahan', 'Hubungan Perkawinan'],
+    skills_detail: ['Konseling Pernikahan', 'Hubungan Perkawinan'],
     photo: PsychologistImages.Diah,
     alt: 'Ibu Diah',
     slug: 'diah-astarini',
@@ -306,24 +248,17 @@ const psychologistList = [
   },
   {
     name: 'Danny I. Yatim, M. A, Ed. M, psikolog',
-    skills: [
-      'Youth related to drug abuse and HIV',
-    ],
-    skills_detail: [
-      'Youth related to drug abuse and HIV',
-    ],
+    skills: ['Youth related to drug abuse and HIV'],
+    skills_detail: ['Youth related to drug abuse and HIV'],
     photo: PsychologistImages.Danny,
     alt: 'Bapak Danny',
     slug: 'danny-irawan',
-    profile: 'Danny Irawan Yatim adalah psikolog lulusan Universitas Gadjah Mada,  Connecticut College dan Harvard University. Banyak berkecimpung di bidang kesehatan masyarakat. Berpengalaman di bidang konseling narkoba, HIV dan seksualitas, khususnya bagi remaja.',
+    profile:
+      'Danny Irawan Yatim adalah psikolog lulusan Universitas Gadjah Mada,  Connecticut College dan Harvard University. Banyak berkecimpung di bidang kesehatan masyarakat. Berpengalaman di bidang konseling narkoba, HIV dan seksualitas, khususnya bagi remaja.',
   },
   {
     name: 'Rika Ermasari, Psikolog',
-    skills: [
-      'Stres dan Kesehatan',
-      'Depresi',
-      '+1',
-    ],
+    skills: ['Stres dan Kesehatan', 'Depresi', '+1'],
     skills_detail: [
       'Hypnotherapy',
       'Direction Technique/Non Hypnotherapy',
@@ -339,14 +274,12 @@ const psychologistList = [
     photo: PsychologistImages.Rika,
     alt: 'Ibu Rika',
     slug: 'rika-ermasari',
-    profile: 'Memiliki pengalaman 20 tahun sebagai HR Executive. Rika menekuni passionnya sebagai psikolog hingga saat ini dan mendapatkan sertifikasi sebagai coach dari ICF serta memiliki banyak sertifikasi di bidang Psikoterapi dan terus mengupdate skillnya sebagai terapis.',
+    profile:
+      'Memiliki pengalaman 20 tahun sebagai HR Executive. Rika menekuni passionnya sebagai psikolog hingga saat ini dan mendapatkan sertifikasi sebagai coach dari ICF serta memiliki banyak sertifikasi di bidang Psikoterapi dan terus mengupdate skillnya sebagai terapis.',
   },
   {
     name: 'Ariesti Pritawati, M. Psi., Psikolog',
-    skills: [
-      'Konseling individu',
-      'Konseling pasangan',
-    ],
+    skills: ['Konseling individu', 'Konseling pasangan'],
     skills_detail: [
       'Konseling individu : relasi, penyesuaian diri, optimalisasi peran, dsb.',
       'Konseling pasangan : pranikah, pernikahan.',
@@ -360,11 +293,7 @@ const psychologistList = [
   },
   {
     name: 'Shanen Emily, M.Psi., Psikolog',
-    skills: [
-      'Depresi',
-      'Kecemasan',
-      '+2',
-    ],
+    skills: ['Depresi', 'Kecemasan', '+2'],
     skills_detail: [
       'Depresi, Kecemasan, dan Trauma',
       'Stres dan Kesehatan',
@@ -380,11 +309,7 @@ const psychologistList = [
   },
   {
     name: 'Prita Pradipta, M.Psi., Psikolog',
-    skills: [
-      'Pengampunan',
-      'Manajemen stress',
-      '+3',
-    ],
+    skills: ['Pengampunan', 'Manajemen stress', '+3'],
     skills_detail: [
       'Depresi dan kecemasan',
       'Manajemen stress',
@@ -395,33 +320,22 @@ const psychologistList = [
     photo: PsychologistImages.Prita,
     alt: 'Ibu Prita',
     slug: 'prita-pradipta',
-    profile: 'Prita Pradipta merupakan lulusan Magister Psikologi Profesi Kekhususan Klinis Dewasa UNIKA Atma Jaya. Prita memiliki ketertarikan terhadap isu yang berkaitan dengan pertumbuhan diri individu dan relasi pasangan. Prita juga memiliki pengalaman menangani masalah terkait dengan kecemasan, depresi, manajemen stress, perselingkuhan dalam relasi romantis, serta LGBT.',
+    profile:
+      'Prita Pradipta merupakan lulusan Magister Psikologi Profesi Kekhususan Klinis Dewasa UNIKA Atma Jaya. Prita memiliki ketertarikan terhadap isu yang berkaitan dengan pertumbuhan diri individu dan relasi pasangan. Prita juga memiliki pengalaman menangani masalah terkait dengan kecemasan, depresi, manajemen stress, perselingkuhan dalam relasi romantis, serta LGBT.',
   },
   {
     name: 'Bella Amanda Maharani, M.Psi., Psikolog',
-    skills: [
-      'Klinis',
-      'Minat Bakat',
-      '+1',
-    ],
-    skills_detail: [
-      'Klinis',
-      'Konseling Orang Tua',
-      'Minat Bakat',
-    ],
+    skills: ['Klinis', 'Minat Bakat', '+1'],
+    skills_detail: ['Klinis', 'Konseling Orang Tua', 'Minat Bakat'],
     photo: PsychologistImages.Bella,
     alt: 'Ibu Bella',
     slug: 'bella-amanda',
-    profile: 'Bella Amanda Maharani merupakan psikolog klinis anak dan remaja lulusan Universitas Padjajaran. Memiliki ketertarikan pada masalah anak dan remaja. Berpengalaman melakukan asesmen klinis, minat bakat, dan konseling orang tua.',
+    profile:
+      'Bella Amanda Maharani merupakan psikolog klinis anak dan remaja lulusan Universitas Padjajaran. Memiliki ketertarikan pada masalah anak dan remaja. Berpengalaman melakukan asesmen klinis, minat bakat, dan konseling orang tua.',
   },
   {
     name: 'Hanina Maulidha, M.Psi., Psikolog',
-    skills: [
-      'Bullying',
-      'Minat Bakat',
-      'Emosi',
-      '+5',
-    ],
+    skills: ['Bullying', 'Minat Bakat', 'Emosi', '+5'],
     skills_detail: [
       'Anak dan Remaja',
       'Bullying',
@@ -435,15 +349,12 @@ const psychologistList = [
     photo: PsychologistImages.Hanina,
     alt: 'Ibu Hanina',
     slug: 'hanina-maulidha',
-    profile: 'Hanina Maulidha merupakan Psikolog Pendidikan yang merupakan lulusan dari Magister Profesi Psikologi UNTAR (Universitas Tarumanegara). Selain itu menjadi Founder @speakupnow.id yang merupakan Social Enterprise bergerak di bidang Pendidikan Public Speaking dan Psikologi untuk Anak dan Remaja. Hanina juga aktif sebagai Konselor Kekerasan pada Perempuan dan Anak di P2TP2A Provinsi DKI Jakarta dan menjadi Psikolog Sekolah di salah satu SMP Swasta di Jakarta.',
+    profile:
+      'Hanina Maulidha merupakan Psikolog Pendidikan yang merupakan lulusan dari Magister Profesi Psikologi UNTAR (Universitas Tarumanegara). Selain itu menjadi Founder @speakupnow.id yang merupakan Social Enterprise bergerak di bidang Pendidikan Public Speaking dan Psikologi untuk Anak dan Remaja. Hanina juga aktif sebagai Konselor Kekerasan pada Perempuan dan Anak di P2TP2A Provinsi DKI Jakarta dan menjadi Psikolog Sekolah di salah satu SMP Swasta di Jakarta.',
   },
   {
     name: 'Angellia Lestari Christiani, M.Psi., Psikolog',
-    skills: [
-      'Sexual Orientation',
-      'Self Development',
-      '+1',
-    ],
+    skills: ['Sexual Orientation', 'Self Development', '+1'],
     skills_detail: [
       'Romantic Relationship with Partner',
       'Sexual Orientation',
@@ -452,15 +363,12 @@ const psychologistList = [
     photo: PsychologistImages.Angelia,
     alt: 'Ibu Angellia',
     slug: 'angellia-lestari',
-    profile: 'Angellia Lestari Christiani, lebih akrab dipanggil dengan Angel merupakan lulusan Psikologi Klinis Dewasa dari Unika Atma Jaya Jakarta. Ketertarikannya dalam isu relasi dan orientasi seksual terlihat dari pengalamannya menangani konseling individual, maupun pasangan dengan topik terkait. Angel telah bergabung di Pulih@thePeak sejak 2019, serta aktif sebagai pembicara di berbagai Webinar dan Training. Angel juga merupakan dosen honorer di salah satu universitas swasta di Jakarta. Saat ini, Angel juga praktik konseling di @bicarakan.id dan @grome (Grow with Fame Consultant).',
+    profile:
+      'Angellia Lestari Christiani, lebih akrab dipanggil dengan Angel merupakan lulusan Psikologi Klinis Dewasa dari Unika Atma Jaya Jakarta. Ketertarikannya dalam isu relasi dan orientasi seksual terlihat dari pengalamannya menangani konseling individual, maupun pasangan dengan topik terkait. Angel telah bergabung di Pulih@thePeak sejak 2019, serta aktif sebagai pembicara di berbagai Webinar dan Training. Angel juga merupakan dosen honorer di salah satu universitas swasta di Jakarta. Saat ini, Angel juga praktik konseling di @bicarakan.id dan @grome (Grow with Fame Consultant).',
   },
   {
     name: 'Rami Busyra Ikram, M.Psi., Psikolog',
-    skills: [
-      'Family Issues',
-      'Trauma',
-      '+6',
-    ],
+    skills: ['Family Issues', 'Trauma', '+6'],
     skills_detail: [
       'A clinical adult psychologist',
       'Interests in the field of healthy mind-body',
@@ -480,10 +388,7 @@ const psychologistList = [
   },
   {
     name: 'Niken Paramita, M.Psi., Psikolog',
-    skills: [
-      'Bakat Siswa',
-      'Anak dan Remaja',
-    ],
+    skills: ['Bakat Siswa', 'Anak dan Remaja'],
     skills_detail: [
       'Menangani pengukuran kecerdasan dan minat bakat siswa',
       'Menangani kesulitan belajar anak dan remaja',
@@ -491,15 +396,12 @@ const psychologistList = [
     photo: PsychologistImages.Niken,
     alt: 'Ibu Niken',
     slug: 'niken-paramita',
-    profile: 'Psikolog klinis dewasa yang mengenyam Pendidikan S1 Fakultas Psikologi Unika Atma Jaya dan Program Magister Profesi Klinis Dewasa Unika Atma Jaya. Memiliki pengalaman diantaranya di bidang Psikologi Pendidikan: melakukan pemeriksaan dan konsultasi terkait  pengukuran kecerdasan serta minat dan bakat siswa, serta menangani kesulitan belajar anak dan remaja. Di bidang Psikologi Industri: melakukan assessment dan feedback terkait pemenuhan kompetensi, rekrutmen, dan promosi.',
+    profile:
+      'Psikolog klinis dewasa yang mengenyam Pendidikan S1 Fakultas Psikologi Unika Atma Jaya dan Program Magister Profesi Klinis Dewasa Unika Atma Jaya. Memiliki pengalaman diantaranya di bidang Psikologi Pendidikan: melakukan pemeriksaan dan konsultasi terkait  pengukuran kecerdasan serta minat dan bakat siswa, serta menangani kesulitan belajar anak dan remaja. Di bidang Psikologi Industri: melakukan assessment dan feedback terkait pemenuhan kompetensi, rekrutmen, dan promosi.',
   },
   {
     name: 'Shinta Utami, S.Psi., M.Psi., Psikolog',
-    skills: [
-      'Minat Bakat',
-      'Youth & Adult',
-      '+3',
-    ],
+    skills: ['Minat Bakat', 'Youth & Adult', '+3'],
     skills_detail: [
       'Remaja dan Dewasa (Youth & Adult)',
       'Pasangan dan Keluarga (Couple and Family)',
@@ -510,14 +412,12 @@ const psychologistList = [
     photo: PsychologistImages.Shinta,
     alt: 'Ibu Shinta',
     slug: 'shinta-utami',
-    profile: 'Shinta Utami adalah lulusan Magister Profesi Psikologi Klinis Dewasa Universitas Tarumanagara tahun 2017. Saat ini aktif berpraktik sebagai psikolog klinis di Pulih at The Peak sejak 2017 hingga saat ini dan Klinik Utama Infinity sejak 2021 hingga saat ini. Dalam setting Industri, ia terlibat bersama PPM Manajemen untuk proses rekrutmen maupun bersama biro psikologi lainnya sejak tahun 2017 hingga saat ini. Selain itu, pengalaman sebagai dosen dari tahun 2017 - 2020 di Universitas Prof. Dr. Hamka Jakarta dan Universitas Mercu Buana Jakarta.',
+    profile:
+      'Shinta Utami adalah lulusan Magister Profesi Psikologi Klinis Dewasa Universitas Tarumanagara tahun 2017. Saat ini aktif berpraktik sebagai psikolog klinis di Pulih at The Peak sejak 2017 hingga saat ini dan Klinik Utama Infinity sejak 2021 hingga saat ini. Dalam setting Industri, ia terlibat bersama PPM Manajemen untuk proses rekrutmen maupun bersama biro psikologi lainnya sejak tahun 2017 hingga saat ini. Selain itu, pengalaman sebagai dosen dari tahun 2017 - 2020 di Universitas Prof. Dr. Hamka Jakarta dan Universitas Mercu Buana Jakarta.',
   },
   {
     name: 'Rini Ariani, M. Psi., Psikolog',
-    skills: [
-      'Interest and talent',
-      '+2',
-    ],
+    skills: ['Interest and talent', '+2'],
     skills_detail: [
       'Educational of Child and Teenager',
       'School-related problems',
@@ -546,7 +446,8 @@ const psychologistList = [
     photo: PsychologistImages.Upik,
     alt: 'Ibu Upik',
     slug: 'upik',
-    profile: 'Lulusan Fakultas Psikologi Universitas Surabaya (Ubaya) Surabaya, pada tahun 1993. Sempat bergabung menjadi professional SDM di salah satu perusahaan swasta Jakarta dan kemudian membuka Biro Psikologi. Hingga saat ini bergabung juga sebagai Counselor, Assessor dan Psychologist Associate di beberapa Biro Psikologi.',
+    profile:
+      'Lulusan Fakultas Psikologi Universitas Surabaya (Ubaya) Surabaya, pada tahun 1993. Sempat bergabung menjadi professional SDM di salah satu perusahaan swasta Jakarta dan kemudian membuka Biro Psikologi. Hingga saat ini bergabung juga sebagai Counselor, Assessor dan Psychologist Associate di beberapa Biro Psikologi.',
   },
   {
     name: 'Silvia Hanny Liestyani, M.Psi., Psikolog',
@@ -565,7 +466,8 @@ const psychologistList = [
     photo: PsychologistImages.Silvia,
     alt: 'Ibu Silvia',
     slug: 'silvia-hanny',
-    profile: 'Lulusan Fakultas Psikologi, Universitas Maranatha Bandung, dan Magister Profesi Psikologi jurusan Klinis Dewasa, Universitas Atma Jaya Jakarta. Memiliki pengalaman diantaranya di bidang Psikologi Pendidikan, melakukan pemeriksaan terkait kecerdasan serta minat & bakat. Di bidang Industri & Organisasi, melakukan assessment dan feedback terkait pemenuhan kompetensi, rekrutmen, dan promosi. Di bidang Klinis, melakukan konseling individual. Saat ini menjabat sebagai dosen Fakultas Psikologi dan pembimbing kasus di Magister Profesi Psikologi jurusan Klinis Dewasa, Universitas Atma Jaya.',
+    profile:
+      'Lulusan Fakultas Psikologi, Universitas Maranatha Bandung, dan Magister Profesi Psikologi jurusan Klinis Dewasa, Universitas Atma Jaya Jakarta. Memiliki pengalaman diantaranya di bidang Psikologi Pendidikan, melakukan pemeriksaan terkait kecerdasan serta minat & bakat. Di bidang Industri & Organisasi, melakukan assessment dan feedback terkait pemenuhan kompetensi, rekrutmen, dan promosi. Di bidang Klinis, melakukan konseling individual. Saat ini menjabat sebagai dosen Fakultas Psikologi dan pembimbing kasus di Magister Profesi Psikologi jurusan Klinis Dewasa, Universitas Atma Jaya.',
   },
   {
     name: 'Sylvia Dewi',
@@ -586,16 +488,12 @@ const psychologistList = [
     photo: PsychologistImages.Sylvia,
     alt: 'Ibu Sylvia',
     slug: 'sylvia-dewi',
-    profile: 'Lulusan Magister Psikologi Profesi Klinis Unika Atma Jaya. Mengawali karir di bidang industri organisasi, kemudian mendalami psikologi profesi klinis. Memiliki ketertarikan terhadap berbagai isu kesehatan mental, seperti depresi, kecemasan, trauma dan kedukaan. Sylvia juga memiliki ketertarikan terhadap dinamika dan relasi di dalam keluarga, khususnya pada keluarga dengan anak berkebutuhan khusus. Memiliki pengalaman dalam penyelenggaraan berbagai program pengembangan diri, baik dalam lingkup individu, kelompok, maupun organisasi. Sylvia meyakini bahwa setiap individu memiliki keunikan dan potensinya tersendiri, serta memiliki kesempatan untuk mewujudkannya.',
+    profile:
+      'Lulusan Magister Psikologi Profesi Klinis Unika Atma Jaya. Mengawali karir di bidang industri organisasi, kemudian mendalami psikologi profesi klinis. Memiliki ketertarikan terhadap berbagai isu kesehatan mental, seperti depresi, kecemasan, trauma dan kedukaan. Sylvia juga memiliki ketertarikan terhadap dinamika dan relasi di dalam keluarga, khususnya pada keluarga dengan anak berkebutuhan khusus. Memiliki pengalaman dalam penyelenggaraan berbagai program pengembangan diri, baik dalam lingkup individu, kelompok, maupun organisasi. Sylvia meyakini bahwa setiap individu memiliki keunikan dan potensinya tersendiri, serta memiliki kesempatan untuk mewujudkannya.',
   },
   {
     name: 'Sri Susanti',
-    skills: [
-      'Pre-marriage',
-      'Marriage',
-      'Family',
-      '+2',
-    ],
+    skills: ['Pre-marriage', 'Marriage', 'Family', '+2'],
     skills_detail: [
       'Pre-marriage',
       'Marriage',
@@ -606,7 +504,56 @@ const psychologistList = [
     photo: PsychologistImages.Susanti,
     alt: 'Ibu Sri Susanti',
     slug: 'sri-susanti',
-    profile: 'Merupakan lulusan Fakultas Psikologi Universitas Surabaya dengan fokus bidang klinis. Pengalaman di bidang pendidikan merupakan pembelajaran untuk lebih mengenal remaja dengan segala macam cerita kehidupan.\n\nBerlanjut dengan terjun di bidang industri dan organisasi, mengikuti kegiatan asesmen terkait pemenuhan kompetensi, rekrutmen dan promosi.\n\nDi bidang klinis  untuk individu dengan berbagai problematika hidup yang menyebabkan timbulnya berbagai macam gangguan seperti cemas, trauma dan juga permasalahan di bidang pekerjaan.Berpengalaman dalam menangani pasangan baik yang belum menikah maupun yang sudah menjalani pernikahan juga terkait permasalahan dalam keluarga.',
+    profile:
+      'Merupakan lulusan Fakultas Psikologi Universitas Surabaya dengan fokus bidang klinis. Pengalaman di bidang pendidikan merupakan pembelajaran untuk lebih mengenal remaja dengan segala macam cerita kehidupan.\n\nBerlanjut dengan terjun di bidang industri dan organisasi, mengikuti kegiatan asesmen terkait pemenuhan kompetensi, rekrutmen dan promosi.\n\nDi bidang klinis  untuk individu dengan berbagai problematika hidup yang menyebabkan timbulnya berbagai macam gangguan seperti cemas, trauma dan juga permasalahan di bidang pekerjaan.Berpengalaman dalam menangani pasangan baik yang belum menikah maupun yang sudah menjalani pernikahan juga terkait permasalahan dalam keluarga.',
+  },
+  {
+    name: 'Frisca Priscilia Boentario, S.Psi., M.Psi., Psikolog',
+    skills: ['Depression', 'Anxiety', '+6'],
+    skills_detail: [
+      'Depression',
+      'Anxiety',
+      'Personal growth',
+      'Family therapy',
+      'Relationships ',
+      'Trauma',
+      'Teen',
+      'English-speaking clients',
+    ],
+    photo: PsychologistImages.Frisca,
+    alt: 'Ibu Frisca Priscilia',
+    slug: 'frisca-priscilia',
+    profile:
+      'Frisca adalah seorang Psikolog Klinis Dewasa yang memperoleh gelar profesionalnya dari Universitas Tarumanagara. Sebelumnya, ia telah menyelesaikan gelar Sarjana Sains (B.Sc Hons) dari City University of London dan gelar Magister Sains (M.Sc) dari University of Surrey. Sebagai warga negara Indonesia yang telah tinggal di Inggris selama 5 tahun, ia memiliki kompetensi untuk menangani berbagai klien yang berasal dari latar belakang budaya yang berbeda.\n\nFrisca sebagian besar menangani klien mulai dari remaja akhir hingga dewasa. Ia menerapkan berbagai perawatan berbasis bukti dalam sesi terapinya, yang disesuaikan dengan kebutuhan spesifik klien.',
+  },
+  {
+    name: 'Prasti Wardani',
+    skills: ['Caregiver', 'Psychologist'],
+    skills_detail: ['Caregiver', 'Psychologist'],
+    photo: PsychologistImages.Prasti,
+    alt: 'Ibu Prasti Wardani',
+    slug: 'prasti-wardani',
+    profile:
+      'Seorang Psikolog sekaligus praktisi di bidang Pengembangan Sumber Daya Manusia dan Organisasi dengan pengalaman lebih dari 15 tahun di perusahaan multinasional. Keahliannya mencakup pengembangan talenta, peningkatan kapabilitas organisasi, serta pendampingan transformasi sumber daya manusia. Selain perjalanan profesionalnya, beliau juga memiliki pengalaman personal sebagai caregiver mendampingi almarhum ayah yang menderita Alzheimer. Pengalaman ini memperkuat kepedulian dan komitmennya dalam isu perawatan lansia serta pendamping keluarga. Saat ini, beliau juga berperan sebagai Mitra Profesional di Pulih at The Peak, dengan fokus pada konsultasi dan penanganan tantangan yang dihadapi caregiver Alzheimer dan lansia.',
+  },
+  {
+    name: 'Veny Oktaviani',
+    skills: ['Anxiety', 'Depression', '+6'],
+    skills_detail: [
+      'Anxiety',
+      'Depression',
+      'Mood & Stress',
+      'Behavioral & Emotional Disorders',
+      'Interpersonal Relationships',
+      'Self-Image Issues',
+      'Sleep Problems',
+      'Addictive Behaviors',
+    ],
+    photo: PsychologistImages.Veny,
+    alt: 'Ibu Veny Oktaviani',
+    slug: 'veny-oktaviani',
+    profile:
+      'Veny Oktaviani adalah seorang Psikolog Klinis lulusan Universitas Tarumanagara. Sebagai Psikolog Klinis, Veny berdedikasi untuk membantu individu berkembang dengan meningkatkan kesejahteraan emosional dan ketahanan diri. Veny menawarkan dukungan personal berbasis bukti dalam lingkungan yang penuh kasih dan aman—memberdayakan individu untuk mengatasi tantangan dan menjalani kehidupan yang lebih seimbang dan memuaskan. Ia memiliki minat di bidang Psikologi Forensik dan Perkembangan Anak.',
   },
 ];
 

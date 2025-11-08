@@ -122,11 +122,7 @@
   "psychologs": {
     "livia-istania": {
       "profile": "Graduated from the Faculty of Psychology, University of Indonesia (1988-1994). Received a Master of Science degree in Psychological Counseling from City University, London (1996-1997). Obtained a Doctor of Public Health (DrPH) degree from the University of Hawaii at Manoa with a full scholarship from the East West Center (2009-2012). \n\nLivia Iskandar has experience including as National Manager for the UNFPA and UNIFEM Violence Against Women Program. Became the Coordinator for the Development of Service Systems for Violence Survivors at the National Commission Against Violence against Women. Livia Iskandar is also one of the founders of Pulih Foundation and in 2014 founded Pulih@thePeak together with her colleagues.",
-      "skills": [
-        "Anxiety",
-        "Youth",
-        "+5"
-      ],
+      "skills": ["Anxiety", "Youth", "+5"],
       "skills_detail": [
         "Gender-based Violence",
         "Depression",
@@ -139,11 +135,7 @@
     },
     "soraya-salim": {
       "profile": "Graduate of the Faculty of Psychology, University of Indonesia. Became a psychology volunteer at the Pulih Foundation which has been working in the field of post-traumatic recovery since 2005 and was the Project Leader in collaboration between the Pulih Foundation and UN Women for the Stop Violence Against Women and Girls campaign. \n\nIn 2014, Soraya Salim founded Pulih@thePeak together with her colleague, Livia Iskandar, who is also a senior psychologist. Soraya Salim has work experience including as a consultant at Daya Dimensi Indonesia in the field of assessment and as a researcher at Asia Market Intelligence.",
-      "skills": [
-        "Alzheimer",
-        "Caregiver",
-        "+3"
-      ],
+      "skills": ["Alzheimer", "Caregiver", "+3"],
       "skills_detail": [
         "Youth (School-related problems)",
         "Couples Counseling",
@@ -154,11 +146,7 @@
     },
     "dyah-paramita": {
       "profile": "Psychologist graduated from the University of Indonesia, licensed and has more than 12 years of experience handling counseling for adults and young adults, individually, in couples, families and groups.",
-      "skills": [
-        "Meditation",
-        "Hypnotherapy",
-        "+5"
-      ],
+      "skills": ["Meditation", "Hypnotherapy", "+5"],
       "skills_detail": [
         "Meditation",
         "Hypnotherapy",
@@ -171,11 +159,7 @@
     },
     "wulan-ayu": {
       "profile": "Graduate of the Faculty of Psychology and Master of Adult Clinical Profession, University of Indonesia. Wulan has been a practicing Clinical Psychologist since 2008 and handles many cases related to anxiety, depression, trauma in relationships, as well as marriage and family issues.\n\nWulan is also currently a Psychologist at the Ministry of Social Affairs' Trauma Center Protection House which provides psychosocial protection and recovery for victims of violence (gender violence, domestic violence, and human trafficking).",
-      "skills": [
-        "Anxiety",
-        "Depression",
-        "+4"
-      ],
+      "skills": ["Anxiety", "Depression", "+4"],
       "skills_detail": [
         "A Licensed Clinical Psychologist providing Psychotherapy",
         "Depression",
@@ -200,11 +184,7 @@
     },
     "ammy-kadarharutami": {
       "profile": "Graduated from the Faculty of Psychology, Padjadjaran University, majoring in Adult Clinical and Master of Professional Psychology, Padjadjaran University, majoring in Child Clinical. Experienced as a practitioner and consultant in several companies. Currently managing a consulting company which operates in the field of HR management. Accustomed to playing the role of trainer, facilitator and assessor in the industrial world as well as counselor and professional coach for individuals.",
-      "skills": [
-        "Marital Case",
-        "Parenting issues",
-        "+1"
-      ],
+      "skills": ["Marital Case", "Parenting issues", "+1"],
       "skills_detail": [
         "Performance Problem",
         "Marital Case",
@@ -224,10 +204,7 @@
     },
     "astarini-retno": {
       "profile": "Graduate of the Faculty of Psychology, University of Indonesia. Has more than 20 years of experience in the fields of counseling, training, assessment and personal development. Astarini Retno or better known as Ajeng Raviando is active as a Psychologist at Taman Hati Konseling and Pulih@thePeak. Apart from that, she is also a Facilitator at Talk inc Jakarta and at Look Modeling School Jakarta. He is also active as a seminar speaker, television source, and writer for various media in Indonesia.",
-      "skills": [
-        "Family Counseling",
-        "+3"
-      ],
+      "skills": ["Family Counseling", "+3"],
       "skills_detail": [
         "Youth and Adult Psychologist",
         "Family Counseling",
@@ -237,10 +214,7 @@
     },
     "raymond-tambunan": {
       "profile": "Graduated from the Faculty of Psychology, University of Indonesia and received a Master's degree in Anthropology from the Faculty of Social and Political Sciences, University of Indonesia. Apart from having more than twelve years of teaching experience at universities, Raymond Tambunan is also a certified hypnotherapist.\n\nHis activities while serving as a lecturer made him attached to research. His research topics range from social intervention to self-development. From 2008 to 2010 he served as Director of the AIDS Research Center at Atma Jaya University, Jakarta. He was the Coordinator for Increasing Indonesian Research Capacity at the University of Illinois, Chicago, in 2011-2013.",
-      "skills": [
-        "Hypnotherapist",
-        "+4"
-      ],
+      "skills": ["Hypnotherapist", "+4"],
       "skills_detail": [
         "Family Counseling",
         "Self-Transformation Strategist",
@@ -251,10 +225,7 @@
     },
     "andi-miriam": {
       "profile": "Graduated from the Faculty of Psychology, Department of Development, University of Surabaya. Has experience, among others, in the field of Developmental Psychology: conducting examinations and consultations related to children's growth and development and maturity. Educational Psychology Sector: carries out examinations and consultations related to measuring students' intelligence and interests & talents. Field of Industrial Psychology: conducting assessments and feedback related to competency fulfillment, recruitment and promotion.",
-      "skills": [
-        "Depression",
-        "+3"
-      ],
+      "skills": ["Depression", "+3"],
       "skills_detail": [
         "Child psychologists are concerned with the growth and development and maturity of children",
         "Involves measuring students' intelligence and talent interests",
@@ -264,10 +235,7 @@
     },
     "yeni-duriana": {
       "profile": "Pursuing Masters in Clinical Professional Psychology at Gadjah Mada University. Currently actively practicing counseling and psychotherapy at the Psychological Services Unit, Faculty of Psychology, Esa Unggul University. Apart from that, he also works as a permanent lecturer at the Faculty of Psychology, at Esa Unggul University, teaching courses in clinical psychology, psychopathology, psychotherapy.\n\nHas an interest in depression, anxiety, relationships between couples (husband and wife or family), adolescent problems and issues related to violence against women and children.",
-      "skills": [
-        "Teenagers & Adult",
-        "+3"
-      ],
+      "skills": ["Teenagers & Adult", "+3"],
       "skills_detail": [
         "Teenagers and Adults",
         "Individual counseling: relationships, depression, anxiety, adolescent problems",
@@ -277,10 +245,7 @@
     },
     "ika-putri-dewi": {
       "profile": "Ika Putri Dewi, child and teenager psychologist, who has joined the PULIH Foundation since 2011 and now (as of 2022) joining the Pulih@thePeak family. Ika graduated from Atmajaya Bachelor's degree in 1993, and graduated from psychology in 2000.",
-      "skills": [
-        "Interest and talent",
-        "+1"
-      ],
+      "skills": ["Interest and talent", "+1"],
       "skills_detail": [
         "Trauma (very unpleasant events, various types of violence, disasters, losses, etc.)",
         "Clinical care for children/children and adolescents with various emotional disorders"
@@ -288,10 +253,7 @@
     },
     "widaningrum": {
       "profile": "Graduated from the Faculty of Psychology, Padjadjaran University. Has more than 20 years of experience in the field of Human Resources development, organizational development, assessment, counseling (individuals/employees). Widaningrum also handles projects related to HR development in both state-owned and private organizations. Apart from that, he is also an HR practitioner at a corporation and a consultant at a consulting agency.",
-      "skills": [
-        "Youth and Adult Psychologist",
-        "Human Resources Consultant"
-      ],
+      "skills": ["Youth and Adult Psychologist", "Human Resources Consultant"],
       "skills_detail": [
         "Youth and Adult Psychologist",
         "Human Resources Consultant"
@@ -299,20 +261,12 @@
     },
     "abas-supeli": {
       "profile": "Graduated from the Faculty of Psychology, Padjadjaran University and the Master of Science Program from Leiden University. Growing well-being as a clinical psychologist by becoming a teaching assistant in his field. Experienced in the field of human resources in various macro-national companies and as an assessor for multi-national companies.\n\nReceived a Master's scholarship program through StuNed (Studeren In Nederland) where he studied “Health Psychology” which can be implemented in Indonesia as a combination of Clinical Psychology and Industrial and Organizational Psychology. Abbas Supeli took a doctoral degree at Griffith University in Australia and is a member of MAREAA (Marriage and Relationship Educators Association of Australia).",
-      "skills": [
-        "Clinical Psychology especially Couple Relationships"
-      ],
-      "skills_detail": [
-        "Clinical Psychology especially Couple Relationships"
-      ]
+      "skills": ["Clinical Psychology especially Couple Relationships"],
+      "skills_detail": ["Clinical Psychology especially Couple Relationships"]
     },
     "mersedes-tanok": {
       "profile": "Graduated from the Faculty of Psychology, Department of Development, Padjadjaran University. Work experience as a recruiter for one of Astra's subsidiaries and then held several managerial positions in the field of Human Resources at multinational companies. Served as Talent and Acquisition General Manager at a commodity company in Jakarta until 2017.\n\nMersedes Tanok was invited several times by state universities in Jakarta as a speaker on the world of work and was involved in assisting Atma Jaya psychology students in handling casuistry. In 2017 decided to focus on the world of counseling.",
-      "skills": [
-        "Job Profile",
-        "Talent Acquisition",
-        "+6"
-      ],
+      "skills": ["Job Profile", "Talent Acquisition", "+6"],
       "skills_detail": [
         "Helps deal with Learning Difficulties in Children",
         "Concerning Psychological Problems in Children and Adults",
@@ -326,23 +280,12 @@
     },
     "diah-astarini": {
       "profile": "Graduated from the Faculty of Psychology, University of Indonesia in 1994. She took the Educational & Helping Child Course in 1995 at the same Faculty and University. A certified hypnotherapist, certified negotiation specialist, and marketing strategist.\n\nExperienced in the field of training and speaker at several events including “The Role of Parents in the Cognitive Thinking Ability of Toddlers” (Gramedia-1998), “Don't Run From Your Problems” (dbb/vertigo-2004), and “Self-Motivation for a Better Life Good” (SMART Concept-Manulife Indonesia 2008).",
-      "skills": [
-        "Marriage Counseling",
-        "Marital Relations"
-      ],
-      "skills_detail": [
-        "Marriage Counseling",
-        "Marital Relations"
-      ]
+      "skills": ["Marriage Counseling", "Marital Relations"],
+      "skills_detail": ["Marriage Counseling", "Marital Relations"]
     },
     "danny-irawan": {
       "profile": "Danny I Yatim graduated from Universitas Gadjah Mada, Connecticut College and Harvard University and has more than 40 years of practical and academic experience in the fields of behavior change, health promotion, intercultural communications and social marketing.  He has worked as consultant in various public health programs, mostly related to HIV-AIDS, sexuality, and drug matters.\n\nFor over 20 years he served as adjunct lecturer in psychology at Atma Jaya Catholic University of Indonesia and as adjunct lecturer for the International Program in Communications at the University of Indonesia.\n\nHe has facilitated various workshops in Indonesia and abroad on matters related to interpersonal communications, counselor training, diversity awareness, personal development for youth, active aging for the elderly, and writing workshops (including memoir writing for Pulih@The Peak).",
-      "skills": [
-        "Stress management",
-        "Addiction",
-        "Sexuality",
-        "+3"
-      ],
+      "skills": ["Stress management", "Addiction", "Sexuality", "+3"],
       "skills_detail": [
         "Stress management",
         "Addiction",
@@ -354,11 +297,7 @@
     },
     "rika-ermasari": {
       "profile": "Has 20 years of experience as an HR Executive. Rika continues to pursue her passion as a psychologist to this day and has received certification as a coach from ICF and has many certifications in the field of Psychotherapy and continues to update her skills as a therapist.",
-      "skills": [
-        "Hypnotherapy",
-        "Assessment",
-        "+8"
-      ],
+      "skills": ["Hypnotherapy", "Assessment", "+8"],
       "skills_detail": [
         "Hypnotherapy",
         "Direction Technique/Non Hypnotherapy",
@@ -374,10 +313,7 @@
     },
     "ariesti-pritawati": {
       "profile": "Adult Clinical Psychologist studying Masters in Professional Psychology majoring in Adult Clinical at Unika Atma Jaya Jakarta. Currently actively practicing counseling and psychotherapy for clients aged 17 years and over.\n\nAriesti has an interest in issues surrounding relationships (couple relationships, mother-child relationships, etc.) and optimizing individual roles. Apart from that, he is also active as a casuistry supervisor for students of the Adult Clinical Psychologist profession at the Faculty of Psychology, Unika Atma Jaya Jakarta.",
-      "skills": [
-        "Individual counseling",
-        "Couples counseling"
-      ],
+      "skills": ["Individual counseling", "Couples counseling"],
       "skills_detail": [
         "Individual counseling: relationships, self-adjustment, role optimization, etc.",
         "Couples counseling: premarital, wedding."
@@ -385,11 +321,7 @@
     },
     "shanen-emily": {
       "profile": "Shanen Emily is a graduate of the Professional Masters in Adult Clinical Psychology at UNIKA Atma Jaya. Have an interest in issues related to the emotional well-being of individuals in families and couple relationships.\n\nApart from that, Shanen also handles problems in adolescents and adults, especially in the areas of self-development, career and interpersonal relationships. Shanen also handles a number of stress cases related to physical health conditions. Currently, Shanen also actively acts as an assessor for company recruitment purposes.",
-      "skills": [
-        "Depression",
-        "Anxiety",
-        "+2"
-      ],
+      "skills": ["Depression", "Anxiety", "+2"],
       "skills_detail": [
         "Depression, Anxiety, and Trauma",
         "Stress and Health",
@@ -399,11 +331,7 @@
     },
     "prita-pradipta": {
       "profile": "Prita Pradipta is a graduate of the UNIKA Atma Jaya Adult Clinical Professional Psychology Masters Degree. Prita has an interest in issues related to individual self-growth and couple relationships. Prita also has experience dealing with problems related to anxiety, depression, stress management, infidelity in romantic relationships, and LGBT.",
-      "skills": [
-        "Forgiveness",
-        "Stress management",
-        "+3"
-      ],
+      "skills": ["Forgiveness", "Stress management", "+3"],
       "skills_detail": [
         "Depression and anxiety",
         "Stress management",
@@ -414,25 +342,12 @@
     },
     "bella-amanda": {
       "profile": "Bella Amanda Maharani is a child and teenagers clinical psychologist who graduated from Padjadjaran University. Has an interest in children and youth issues. Experienced in conducting clinical assessments, talent interests, and parent counseling.",
-      "skills": [
-        "Clinical",
-        "Interest talent",
-        "+1"
-      ],
-      "skills_detail": [
-        "Clinical",
-        "Parent Counseling",
-        "Interest talent"
-      ]
+      "skills": ["Clinical", "Interest talent", "+1"],
+      "skills_detail": ["Clinical", "Parent Counseling", "Interest talent"]
     },
     "hanina-maulidha": {
       "profile": "Hanina Maulidha is an Educational Psychologist who graduated from the Master of Professional Psychology at UNTAR (Tarumanegara University). Apart from that, she is the Founder of @speakupnow.id which is a Social Enterprise engaged in Public Speaking and Psychology Education for Children and Teenagers. Hanina is also active as a Counselor for Violence against Women and Children at P2TP2A DKI Jakarta Province and is a School Psychologist at one of the Private Middle Schools in Jakarta.",
-      "skills": [
-        "Bullying",
-        "Interest talent",
-        "Emotion",
-        "+5"
-      ],
+      "skills": ["Bullying", "Interest talent", "Emotion", "+5"],
       "skills_detail": [
         "Children and Teenagers",
         "Oppression",
@@ -441,16 +356,12 @@
         "Emotion",
         "School Readiness",
         "Barriers to Learning",
-        "Violence against Women and Children"   
+        "Violence against Women and Children"
       ]
     },
     "angellia-lestari": {
       "profile": "Angellia Lestari Christiani, more familiarly known as Angel, is a graduate of Adult Clinical Psychology from Unika Atma Jaya Jakarta. Her interest in relationship and sexual orientation issues can be seen from her experience in counseling individuals and couples on related topics. Angel has joined Pulih@thePeak since 2019, and is active as a speaker at various Webinars and Training. Angel is also an honorary lecturer at a private university in Jakarta. Currently, Angel is also doing counseling at @cepatkan.id and @grome (Grow with Fame Consultant).",
-      "skills": [
-        "Sexual Orientation",
-        "Self Development",
-        "+1"
-      ],
+      "skills": ["Sexual Orientation", "Self Development", "+1"],
       "skills_detail": [
         "Romantic Relationship with Partner",
         "Sexual Orientation",
@@ -459,11 +370,7 @@
     },
     "rami-busyra": {
       "profile": "Rami is a graduate of the UI Professional Masters in Psychology. As an adult clinical psychologist, Rami has an interest in areas of psychology related to chronic illness, trauma, stress and work performance, pre-marital and marital relationships.\n\nIn her practice, Rami typically uses cognitive-behavioral therapy, mindfulness, and ACT approaches; with an evidence-based orientation. Rami is also active as a psychological intervention consultant at an applied psychology institute; and has been invited several times to be a webinar speaker, online mini class, and magazine contributor. In his busy schedule, Rami makes time to be involved in various volunteer activities to help improve the psychological well-being of society.",
-      "skills": [
-        "Family Issues",
-        "Trauma",
-        "+6"
-      ],
+      "skills": ["Family Issues", "Trauma", "+6"],
       "skills_detail": [
         "A clinical adult psychologist",
         "Interests in the field of healthy mind-body",
@@ -477,22 +384,15 @@
     },
     "niken-paramita": {
       "profile": "Adult clinical psychologist who received a bachelor's degree from the Faculty of Psychology, Unika Atma Jaya and the Master's Program in Adult Clinical Profession at Unika Atma Jaya. Has experience, among others, in the field of Educational Psychology: conducting examinations and consultations related to measuring intelligence, interests and talents of students, as well as dealing with learning difficulties in children and adolescents. In the field of Industrial Psychology: conducting assessments and feedback related to competency, recruitment and promotion.",
-      "skills": [
-        "Talent Interests",
-        "Children and Teenagers"
-      ],
+      "skills": ["Talent Interests", "Children and Teenagers"],
       "skills_detail": [
         "Involves measuring students intelligence and talent interests",
-        "Help children and teenagers with learning difficulties "       
+        "Help children and teenagers with learning difficulties "
       ]
     },
     "shinta-utami": {
       "profile": "Shinta Utami is a 2017 graduate of the Professional Masters in Adult Clinical Psychology at Tarumanagara University. Currently actively practicing as a Clinical Psychologist at Pulih at The Peak from 2017 until now and Infinity Main Clinic from 2021 until now. In the industrial environment, Shinta has been involved with PPM Management for the recruitment process and with other psychology bureaus since 2017 until now. Apart from that, his experience was as a lecturer in 2017 – 2020 at Prof. University. Dr. Hamka Jakarta and Mercu Buana University Jakarta.",
-      "skills": [
-        "Talent Interest",
-        "Youth & Adult",
-        "+3"
-      ],
+      "skills": ["Talent Interest", "Youth & Adult", "+3"],
       "skills_detail": [
         "Teens and Adults (Teens & Adults)",
         "Couples and Families (Couples and Families)",
@@ -503,10 +403,7 @@
     },
     "rini-ariani": {
       "profile": "Graduated from the Faculty of Psychology, Paramadina University (2012) with a full scholarship from the Paramadina Fellowship program donor Newmont Mining Corporation. Obtained a master's degree from Master of Professional Education in Child and Adolescent Educational Psychology, Atma Jaya University, Jakarta (2019).\n\nRini Ariani has experience teaching children and teenagers for 8 years at several institutions, especially the Al-Izhar Pondok Labu Islamic College. Currently Rini works as a School Psychologist at Al-Izhar Islamic College Pondok Labu. Rini is also active as the central administrator of the Indonesian Educational Psychology Association for the 2020-2024 period which is under the auspices of HIMPSI (Indonesian Psychological Association).",
-      "skills": [
-        "Interest and talent",
-        "+2"
-      ],
+      "skills": ["Interest and talent", "+2"],
       "skills_detail": [
         "Educational of Child and Teenager",
         "School-related problems",
@@ -529,47 +426,67 @@
     },
     "silvia-hanny": {
       "profile": "Graduate of the Faculty of Psychology, Maranatha University Bandung, and Master of Professional Psychology majoring in Adult Clinical, Atma Jaya University Jakarta. Has experience, among others, in the field of Educational Psychology, conducting examinations related to intelligence as well as interests & talents. In the Industrial & Organizational sector, carry out assessments and feedback related to competency provision, recruitment and promotion. In the Clinical area, performs individual counseling. Currently serves as a psychology lecturer and case supervisor at the Master of Professional Psychology, Adult Clinical Department, Atma Jaya University.",
-      "skills": [
-        "Teens & Adults",
-        "Self-development",
-        "+2"
-      ],
+      "skills": ["Teens & Adults", "Self-development", "+2"],
       "skills_detail": [
         "Teens & Adults",
         "Couple/Premarital",
         "Self-development",
-        "Career and Performance"      
+        "Career and Performance"
       ]
     },
     "sylvia-dewi": {
       "profile": "Unika Atma Jaya Clinical Professional Psychology Masters graduate. Starting a career in the industrial organization sector, then delving into clinical professional psychology. Has an interest in various mental health issues, such as depression, anxiety, trauma, and grief. Sylvia also has an interest in dynamics and relationships within families, especially in families with children with special needs. She has experience in organizing various self-development programs, both individual, group, and organizational. Sylvia believes that every individual has their own uniqueness and potential, and has the opportunity to realize it.",
-      "skills": [
-        "Emotion regulation",
-        "Grief",
-        "3+"
-      ],
+      "skills": ["Emotion regulation", "Grief", "3+"],
       "skills_detail": [
         "Emotion regulation",
         "Depression, stress, and anxiety",
         "Grief",
         "Self-development and career planning",
-        "Relationships and dynamics within the family"     
+        "Relationships and dynamics within the family"
       ]
     },
     "sri-susanti": {
       "profile": "Graduate of the Faculty of Psychology at the University of Surabaya with a focus on the clinical field.Experience in education serves as a learning opportunity to better understand adolescents with their diverse life stories. Transitioning into the industrial and organizational field, participates in activities related to competency fulfillment, recruitment, and promotions. \n\nIn the clinical field, works with individuals facing various life issues leading to the emergence of various disorders such as anxiety, trauma, and workplace problems. Experienced in handling couples, both unmarried and those already in marriage, as well as addressing family issues.",
-      "skills": [
-        "Pre-marriage",
-        "Marriage",
-        "Family",
-        "+2"
-      ],
+      "skills": ["Pre-marriage", "Marriage", "Family", "+2"],
       "skills_detail": [
         "Pre-marriage",
         "Marriage",
         "Family",
         "Self-Development",
-        "Issues related to individuals"  
+        "Issues related to individuals"
+      ]
+    },
+    "frisca-priscilia": {
+      "profile": "Frisca is an Adult Clinical Psychologist who obtained her professional degree from Universitas Tarumanagara. Prior to that, she completed her Bachelor's of Science (B.Sc Hons) degree from City University of London and Master's of Science (M.Sc) degree from University of Surrey. As an Indonesian citizen who lived in the UK for 5 years, she has the competence of working with various clients coming from different cultural backgrounds.\n\nFrisca is mostly working with clients ranging from late teenagers to adults. She implements various evidence-based treatment in her therapy sessions, tailored towards the clients specific needs.",
+      "skills": ["Depression", "Anxiety"],
+      "skills_detail": [
+        "Depression",
+        "Anxiety",
+        "Personal growth",
+        "Family therapy",
+        "Relationships ",
+        "Trauma",
+        "Teen",
+        "English-speaking clients"
+      ]
+    },
+    "prasti-wardani": {
+      "profile": "A Psychologist and a practitioner in Human Resource and Organizational Development, with more than 15 years of experience in multinational companies. Her expertise includes talent development, organizational capability building, and human capital transformation. Beyond her professional career, she has personal experience as a caregiver to her late father, who lived with Alzheimer’s disease. This journey strengthened her dedication and commitment to elderly care and family support. Currently, she also serves as a Professional Partner at Pulih at The Peak, focusing on consultation and support for caregivers of Alzheimer’s patients and the elderly.",
+      "skills": ["Caregiver", "Psychologist"],
+      "skills_detail": ["Caregiver", "Psychologist"]
+    },
+    "veny-oktaviani": {
+      "profile": "Veny Oktaviani is a Clinical Psychologist who graduated from Universitas Tarumanagara. As a Clinical Psychologist, Veny is dedicated to helping individuals thrive by promoting emotional well-being and resilience. Veny offers personalized, evidence-based support in a compassionate and safe environment—empowering people to overcome challenges and lead more balanced, fulfilling lives. Passionate about the field of Forensic Psychology and Child Development.",
+      "skills": ["Anxiety", "Depression", "+6"],
+      "skills_detail": [
+        "Anxiety",
+        "Depression",
+        "Mood & Stress",
+        "Behavioral & Emotional Disorders",
+        "Interpersonal Relationships",
+        "Self-Image Issues",
+        "Sleep Problems",
+        "Addictive Behaviors"
       ]
     }
   },
@@ -577,21 +494,13 @@
     "title": "Expert Practitioners",
     "wrenges-widyastuti": {
       "profile": "Wrenges Widyastuti is an accountant who also continued her Masters in Development Management at the Asian Institute of Management, Manila, until he obtained a Master in Development Management (MDM). Started her career as an auditor at the Ministry of Finance of the Republic of Indonesia in 1987. Experienced working in several private companies, namely Nestle, Natra Raya, and Price Waterhouse, before finally focusing on strengthening financial management in various NGOs starting in 2005.\n\nHer interest to personal financial issues means her preference is stuck at Pulih@thePeak. Wrenges Widyastuti conducts various financial literacy training. Apart from that, we also provide personal financial consultations to clients who need them. Her interest to financial literacy issues encouraged her to focus more on researching these issues, so she is currently pursuing doctoral studies at FEB Gadjahmada University.",
-      "skills": [
-        "Expert Practitioner"
-      ],
-      "skills_detail": [
-        "Expert Practitioner"
-      ]
+      "skills": ["Expert Practitioner"],
+      "skills_detail": ["Expert Practitioner"]
     },
     "irene-sirait": {
       "profile": "Graduate of the Faculty of Psychology, University of Indonesia, who had the opportunity to deepen the problem of HIV/AIDS at Melbourne University, Melbourne, Australia and Health Management Systems at Galillee College, Israel.\n\nHas 30 years++ career experience in various Asian-African countries with various international humanitarian agencies and the UN as the person responsible for humanitarian programs, both post-disaster psychosocial emergency response programs and mental health programs. In Indonesia, Irene Sirait was involved in leading psychosocial emergency responses in various post-disaster situations such as the earthquake and tsunami in Aceh to Central Sulawesi.",
-      "skills": [
-        "Expert Practitioner"
-      ],
-      "skills_detail": [
-        "Expert Practitioner"
-      ]
+      "skills": ["Expert Practitioner"],
+      "skills_detail": ["Expert Practitioner"]
     }
   }
 }

@@ -8,8 +8,9 @@ function Address() {
       <h1 className="text-primary font-medium text-xl">Pulih@thePeak</h1>
       <p className="text-secondary font-medium lg:text-sm text-xs mt-3">Jl. Brawijaya Raya No.15, RT.3/RW.3, Pulo, Kec. Kby. Baru, Kota Jakarta</p>
       <p className="text-secondary font-medium lg:text-sm text-xs">Selatan, Daerah Khusus Ibukota Jakarta 12160</p>
-      <p className="text-secondary font-medium lg:text-sm text-xs mt-3">Jl Wolter Mongonsidi No. 73 Zm 23 B, Kebayoran Baru, 12180.</p>
-      <p className="text-secondary font-medium lg:text-sm text-xs mt-3">083128769871</p>
+      <p className="text-secondary font-medium lg:text-sm text-xs mt-1">Jl Wolter Mongonsidi No. 73 Zm 23 B, Kebayoran Baru, 12180.</p>
+      <p className="text-secondary font-medium lg:text-sm text-xs mt-1">+6285103209515</p>
+      <p className="text-secondary font-medium lg:text-sm text-xs mt-1">pulihatthepeak@gmail.com</p>
     </div>
   );
 }

@@ -421,44 +421,48 @@ function FaqCard() {
   );
 }
 
-function InstagramCard() {
-  const { t } = useTranslation();
-  const token = process.env.REACT_APP_INSTAGRAM_TOKEN;
-  const [posts, setPosts] = useState([]);
+// function InstagramCard() {
+//   const { t } = useTranslation();
+//   const token = `IGQWRQaUZAaSFo0MEJBQzNadjB4Q21QYi1xRVJLQUJXYXhhbHFSOUd4U0FOUld3Y1
+//   ZAuRWRvYkZAiblJtdXdZALUIxQ0FsS2ZAaUWZAHdXlWRllJSTV
+//   CQ1J6NGR2aGl2NW50V2lRLVVGSlBSNWFvY1R6MFhuUUp5SDFwcjQZD`;
+//   const [posts, setPosts] = useState([]);
 
-  useEffect(() => {
-    fetch(`https://graph.instagram.com/v18.0/me/media?fields=id,caption,media_url,permalink,thumbnail_url,media_type&access_token=${token}`)
-      .then((response) => response.json())
-      .then((data) => {
-        setPosts(data.data);
-      })
-      .catch(() => {
-      });
-  }, []);
+//   useEffect(() => {
+//     fetch(`https://graph.instagram.com/v18.0/me/media?fields=id,caption,media_url,permalink,thumbnail_url,media_type&access_token=${token}`)
+//       .then((response) => response.json())
+//       .then((data) => {
+//         setPosts(data.data);
+//       })
+//       .catch(() => {
+//       });
+//   }, []);
 
-  return (
-    <div className="lg:w-1/3 mx-auto lg:m-0">
-      <h1 className="text-primary text-xl lg:text-3xl font-bold">
-        {t('home.instagram.title')}
-      </h1>
-      <div className="flex my-4 gap-4">
-        {
-          posts.slice(0, 3).map((post) => (
-            <Link target="_blank" to={post.permalink}>
-              <img src={post.media_type === 'VIDEO' ? post.thumbnail_url : post.media_url} alt="post of instagram" className="w-24 h-24 lg:h-32 lg:w-32" />
-            </Link>
-          ))
-        }
-      </div>
-      <Link to="https://www.instagram.com/pulihatp/" target="_blank">
-        <Button>
-          {t('home.instagram.button')}
-          <b>@pulihatp</b>
-        </Button>
-      </Link>
-    </div>
-  );
-}
+//   return (
+//     <div className="lg:w-1/3 mx-auto lg:m-0">
+//       <h1 className="text-primary text-xl lg:text-3xl font-bold">
+//         {t('home.instagram.title')}
+//       </h1>
+//       <div className="flex my-4 gap-4">
+//         {
+//           posts.slice(0, 3).map((post) => (
+//             <Link target="_blank" to={post.permalink}>
+//                 <img src={
+//                 post.media_type === 'VIDEO' ? post.thumbnail_url : post.media_url
+//               } alt="post of instagram" className="w-24 h-24 lg:h-32 lg:w-32" />
+//             </Link>
+//           ))
+//         }
+//       </div>
+//       <Link to="https://www.instagram.com/pulihatp/" target="_blank">
+//         <Button>
+//           {t('home.instagram.button')}
+//           <b>@pulihatp</b>
+//         </Button>
+//       </Link>
+//     </div>
+//   );
+// }
 
 function MerchandiseCard() {
   const { t } = useTranslation();
@@ -483,7 +487,7 @@ function CloserSection() {
     <div className="bg-shape-closer">
       <div className="container flex justify-center items-center lg:mx-auto lg:my-24">
         <div className="flex flex-col lg:flex-row justify-evenly w-full gap-12">
-          <InstagramCard />
+          {/* <InstagramCard /> */}
           <MerchandiseCard />
         </div>
       </div>
